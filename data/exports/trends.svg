@@ -13,29 +13,30 @@
 <text x="78" y="165.2" text-anchor="end" font-family="Arial" font-size="12">1387</text>
 <line x1="90" y1="40.0" x2="840" y2="40.0" stroke="#e5e7eb"/>
 <text x="78" y="44.0" text-anchor="end" font-family="Arial" font-size="12">1849</text>
-<text x="465.0" y="553" text-anchor="middle" font-family="Arial" font-size="12">2026-05-18</text>
-<polyline fill="none" stroke="#2563eb" stroke-width="2.5" points="465.0,40.0"/>
+<text x="90.0" y="553" text-anchor="middle" font-family="Arial" font-size="12">2026-05-18</text>
+<text x="840.0" y="553" text-anchor="middle" font-family="Arial" font-size="12">2026-05-19</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.5" points="90.0,40.0 840.0,494.3"/>
 <line x1="872" y1="64" x2="896" y2="64" stroke="#2563eb" stroke-width="3"/>
 <text x="906" y="68" font-family="Arial" font-size="13">Illustrious</text>
-<polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="465.0,338.5"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="90.0,338.5 840.0,511.1"/>
 <line x1="872" y1="88" x2="896" y2="88" stroke="#dc2626" stroke-width="3"/>
 <text x="906" y="92" font-family="Arial" font-size="13">Anima</text>
-<polyline fill="none" stroke="#16a34a" stroke-width="2.5" points="465.0,461.8"/>
+<polyline fill="none" stroke="#16a34a" stroke-width="2.5" points="90.0,461.8 840.0,516.1"/>
 <line x1="872" y1="112" x2="896" y2="112" stroke="#16a34a" stroke-width="3"/>
 <text x="906" y="116" font-family="Arial" font-size="13">Z-Image</text>
-<polyline fill="none" stroke="#9333ea" stroke-width="2.5" points="465.0,465.2"/>
+<polyline fill="none" stroke="#9333ea" stroke-width="2.5" points="90.0,465.2 840.0,520.8"/>
 <line x1="872" y1="136" x2="896" y2="136" stroke="#9333ea" stroke-width="3"/>
 <text x="906" y="140" font-family="Arial" font-size="13">Pony</text>
-<polyline fill="none" stroke="#ea580c" stroke-width="2.5" points="465.0,479.6"/>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.5" points="90.0,479.6 840.0,518.4"/>
 <line x1="872" y1="160" x2="896" y2="160" stroke="#ea580c" stroke-width="3"/>
 <text x="906" y="164" font-family="Arial" font-size="13">SDXL</text>
-<polyline fill="none" stroke="#0891b2" stroke-width="2.5" points="465.0,489.3"/>
+<polyline fill="none" stroke="#0891b2" stroke-width="2.5" points="90.0,489.3 840.0,520.0"/>
 <line x1="872" y1="184" x2="896" y2="184" stroke="#0891b2" stroke-width="3"/>
 <text x="906" y="188" font-family="Arial" font-size="13">Flux</text>
-<polyline fill="none" stroke="#4f46e5" stroke-width="2.5" points="465.0,495.4"/>
+<polyline fill="none" stroke="#4f46e5" stroke-width="2.5" points="90.0,495.4 840.0,518.4"/>
 <line x1="872" y1="208" x2="896" y2="208" stroke="#4f46e5" stroke-width="3"/>
 <text x="906" y="212" font-family="Arial" font-size="13">FLUX2 Klein 9B</text>
-<polyline fill="none" stroke="#be123c" stroke-width="2.5" points="465.0,502.2"/>
+<polyline fill="none" stroke="#be123c" stroke-width="2.5" points="90.0,502.2 840.0,522.1"/>
 <line x1="872" y1="232" x2="896" y2="232" stroke="#be123c" stroke-width="3"/>
 <text x="906" y="236" font-family="Arial" font-size="13">SD 1.5</text>
 </svg>
