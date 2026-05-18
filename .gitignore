@@ -1,0 +1,15 @@
+.repo-survey/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+.omx/
+
+data/*.sqlite-wal
+data/*.sqlite-shm
+data/*.db-wal
+data/*.db-shm
+
+plots/
+.verify/

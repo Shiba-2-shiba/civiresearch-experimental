@@ -1,0 +1,68 @@
+# Simple grouping file used by scripts/export_counts.py and scripts/plot_trends.py.
+# The parser intentionally supports only this small YAML subset:
+# Group Name:
+#   - Exact baseModel value
+
+Flux:
+  - Flux.1 D
+  - Flux.1 S
+  - Flux.1 Dev
+  - Flux.1 Schnell
+  - Flux.1 Krea
+
+FLUX2 Klein 9B:
+  - Flux.2 Klein 9B
+  - Flux.2 Klein 9B-base
+
+Ernie:
+  - Ernie
+
+Illustrious:
+  - Illustrious
+
+Z-Image:
+  - Z-Image-Turbo
+  - ZImageBase
+  - ZImageTurbo
+
+Anima:
+  - Anima
+
+Hi-Dream O1:
+  - HiDream-O1
+  - Hi-Dream O1
+
+NoobAI:
+  - NoobAI
+
+LTXV2.3:
+  - LTXV2.3
+  - LTXV 2.3
+
+Qwen:
+  - Qwen
+
+Wanvideo2.2:
+  - Wan Video 2.2 I2V-A14B
+  - Wanvideo2.2
+  - Wan Video 2.2
+
+Pony:
+  - Pony
+
+SDXL:
+  - SDXL 1.0
+  - SDXL 0.9
+
+SD 1.5:
+  - SD 1.5
+
+Legacy:
+  - Chroma
+  - Flux.2 Klein 4B
+  - Flux.2 Klein 4B-base
+  - Other
+  - SD 1.5 LCM
+  - SDXL 1.0 LCM
+  - SDXL Hyper
+  - SDXL Lightning

@@ -1,0 +1,40 @@
+status,model_type,base_model_raw,base_model_group,new_version_count,new_model_count
+grouped,Checkpoint,Illustrious,Illustrious,232,41
+grouped,Checkpoint,Anima,Anima,87,23
+grouped,Checkpoint,Pony,Pony,56,2
+grouped,Checkpoint,SDXL 1.0,SDXL,36,11
+grouped,Checkpoint,SD 1.5,SD 1.5,20,0
+grouped,Checkpoint,ZImageBase,Z-Image,15,4
+grouped,Checkpoint,ZImageTurbo,Z-Image,15,4
+grouped,Checkpoint,Ernie,Ernie,9,3
+grouped,Checkpoint,Flux.2 Klein 9B,FLUX2 Klein 9B,9,1
+grouped,Checkpoint,NoobAI,NoobAI,8,4
+grouped,Checkpoint,Flux.1 D,Flux,6,1
+grouped,Checkpoint,SDXL Hyper,Legacy,3,0
+grouped,Checkpoint,SDXL Lightning,Legacy,3,0
+grouped,Checkpoint,HiDream-O1,Hi-Dream O1,2,1
+grouped,Checkpoint,SD 1.5 LCM,Legacy,2,0
+grouped,Checkpoint,Chroma,Legacy,1,1
+grouped,Checkpoint,Flux.1 S,Flux,1,0
+grouped,Checkpoint,Flux.2 Klein 9B-base,FLUX2 Klein 9B,1,1
+grouped,Checkpoint,Other,Legacy,1,1
+grouped,Checkpoint,Qwen,Qwen,1,1
+grouped,Checkpoint,SDXL 1.0 LCM,Legacy,1,0
+grouped,Checkpoint,Wan Video 2.2 I2V-A14B,Wanvideo2.2,1,1
+grouped,LORA,Illustrious,Illustrious,69,53
+grouped,LORA,Anima,Anima,34,21
+grouped,LORA,Flux.1 D,Flux,19,6
+grouped,LORA,Pony,Pony,10,4
+grouped,LORA,ZImageTurbo,Z-Image,7,4
+grouped,LORA,SDXL 1.0,SDXL,6,4
+grouped,LORA,SD 1.5,SD 1.5,5,3
+grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,3,1
+grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,3,3
+grouped,LORA,NoobAI,NoobAI,3,1
+grouped,LORA,Other,Legacy,2,0
+grouped,LORA,ZImageBase,Z-Image,2,0
+grouped,LORA,Chroma,Legacy,1,0
+grouped,LORA,Flux.1 Krea,Flux,1,0
+grouped,LORA,Flux.1 S,Flux,1,0
+grouped,LORA,Flux.2 Klein 4B,Legacy,1,0
+grouped,LORA,Flux.2 Klein 4B-base,Legacy,1,0
