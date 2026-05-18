@@ -24,6 +24,9 @@ def parse_group_file(path: Path) -> dict[str, str]:
         if not raw_line.startswith(" ") and line.endswith(":"):
             current_group = line[:-1].strip()
             continue
+        if line == "-" and current_group:
+            mapping[""] = current_group
+            continue
         if line.startswith("- ") and current_group:
             mapping[line[2:].strip()] = current_group
     return mapping

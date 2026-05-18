@@ -19,6 +19,7 @@ Ernie:
 
 Illustrious:
   - Illustrious
+  - Illustrious 0.1
 
 Z-Image:
   - Z-Image-Turbo
@@ -29,6 +30,7 @@ Anima:
   - Anima
 
 Hi-Dream O1:
+  - HiDream
   - HiDream-O1
   - Hi-Dream O1
 
@@ -41,9 +43,12 @@ LTXV2.3:
 
 Qwen:
   - Qwen
+  - Qwen 2
 
 Wanvideo2.2:
   - Wan Video 2.2 I2V-A14B
+  - Wan Video 2.2 T2V-A14B
+  - Wan Video 2.2 TI2V-5B
   - Wanvideo2.2
   - Wan Video 2.2
 
@@ -58,11 +63,20 @@ SD 1.5:
   - SD 1.5
 
 Legacy:
+  -
+  - ACE Audio
   - Chroma
+  - Flux.2 D
   - Flux.2 Klein 4B
   - Flux.2 Klein 4B-base
+  - Hunyuan Video
+  - Kolors
+  - LTXV2
   - Other
+  - Pony V7
   - SD 1.5 LCM
   - SDXL 1.0 LCM
   - SDXL Hyper
   - SDXL Lightning
+  - Wan Video 1.3B t2v
+  - Wan Video 14B t2v

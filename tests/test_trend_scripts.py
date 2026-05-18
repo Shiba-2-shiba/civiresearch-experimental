@@ -27,6 +27,9 @@ Flux:
 
 NoobAI:
   - NoobAI
+
+Legacy:
+  -
 """.lstrip(),
                 encoding="utf-8",
             )
@@ -37,6 +40,7 @@ NoobAI:
                     "Flux.1 D": "Flux",
                     "Flux.1 S": "Flux",
                     "NoobAI": "NoobAI",
+                    "": "Legacy",
                 },
             )
 

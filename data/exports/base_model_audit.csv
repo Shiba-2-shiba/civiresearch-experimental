@@ -38,21 +38,21 @@ grouped,LORA,Ernie,Ernie,14,9
 grouped,LORA,LTXV 2.3,LTXV2.3,14,6
 grouped,LORA,Flux.1 Krea,Flux,13,4
 grouped,LORA,Other,Legacy,12,1
-ungrouped,LORA,Pony V7,,6,4
+grouped,LORA,Pony V7,Legacy,6,4
 grouped,LORA,Flux.2 Klein 4B,Legacy,5,1
 grouped,LORA,Flux.2 Klein 4B-base,Legacy,5,2
-ungrouped,LORA,Wan Video 2.2 T2V-A14B,,4,0
-ungrouped,LORA,ACE Audio,,2,2
+grouped,LORA,Wan Video 2.2 T2V-A14B,Wanvideo2.2,4,0
+grouped,LORA,ACE Audio,Legacy,2,2
 grouped,LORA,Flux.1 S,Flux,2,1
-ungrouped,LORA,Flux.2 D,,2,1
-ungrouped,LORA,Hunyuan Video,,2,0
-ungrouped,LORA,Qwen 2,,2,1
-ungrouped,LORA,Wan Video 14B t2v,,2,0
-ungrouped,LORA,Wan Video 2.2 TI2V-5B,,2,0
-ungrouped,LORA,HiDream,,1,0
+grouped,LORA,Flux.2 D,Legacy,2,1
+grouped,LORA,Hunyuan Video,Legacy,2,0
+grouped,LORA,Qwen 2,Qwen,2,1
+grouped,LORA,Wan Video 14B t2v,Legacy,2,0
+grouped,LORA,Wan Video 2.2 TI2V-5B,Wanvideo2.2,2,0
+grouped,LORA,HiDream,Hi-Dream O1,1,0
 grouped,LORA,HiDream-O1,Hi-Dream O1,1,1
-ungrouped,LORA,Illustrious 0.1,,1,1
-ungrouped,LORA,Kolors,,1,1
-ungrouped,LORA,LTXV2,,1,0
-ungrouped,LORA,Wan Video 1.3B t2v,,1,0
-ungrouped,LORA,,,0,2
+grouped,LORA,Illustrious 0.1,Illustrious,1,1
+grouped,LORA,Kolors,Legacy,1,1
+grouped,LORA,LTXV2,Legacy,1,0
+grouped,LORA,Wan Video 1.3B t2v,Legacy,1,0
+grouped,LORA,,Legacy,0,2
