@@ -12,7 +12,7 @@ on:
       skip_active_totals:
         description: "Skip active_total calls"
         required: false
-        default: "false"
+        default: "true"
 
 permissions:
   contents: write
@@ -30,7 +30,7 @@ jobs:
       - name: Collect daily data
         env:
           MAX_PAGES: ${{ github.event.inputs.max_pages || '20' }}
-          SKIP_ACTIVE_TOTALS: ${{ github.event.inputs.skip_active_totals || 'false' }}
+          SKIP_ACTIVE_TOTALS: ${{ github.event.inputs.skip_active_totals || 'true' }}
         run: |
           args=(--max-pages "$MAX_PAGES")
           if [ "$SKIP_ACTIVE_TOTALS" = "true" ]; then
