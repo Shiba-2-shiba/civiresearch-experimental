@@ -31,6 +31,10 @@ snapshots/civitai.sqlite.gz
 `snapshots/civitai.sqlite.gz` は SQLite DB の圧縮スナップショット。
 SQLite はローカル処理には便利だが、GitHub の履歴に積み続けるには重すぎるため、将来的には Hugging Face 側を主データ置き場にする。
 
+現在の workflow は、収集前に `snapshots/civitai.sqlite.gz` を Hugging Face から取得して `data/civitai.sqlite` に復元する。収集後は新しい `snapshots/civitai.sqlite.gz` を Hugging Face にアップロードする。
+
+`data/civitai.sqlite` は Git 管理対象外にする。ローカルでは作業用 DB として存在してよい。
+
 ## token を作り直す場合
 
 1. https://huggingface.co/settings/tokens を開く。

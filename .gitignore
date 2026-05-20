@@ -8,6 +8,7 @@ __pycache__/
 
 data/*.sqlite-wal
 data/*.sqlite-shm
+data/*.sqlite
 data/*.db-wal
 data/*.db-shm
 

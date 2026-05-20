@@ -44,6 +44,29 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Hugging Face CLI
+        run: |
+          python -m pip install --upgrade huggingface_hub
+
+      - name: Restore SQLite snapshot from Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_DATASET_REPO: Shiba-2-shiba/civitai-model-version-trends
+        run: |
+          if [ -z "$HF_TOKEN" ]; then
+            echo "HF_TOKEN is not set; starting without a restored SQLite snapshot."
+            exit 0
+          fi
+          mkdir -p data hf-restore
+          if hf download "$HF_DATASET_REPO" snapshots/civitai.sqlite.gz \
+            --repo-type dataset \
+            --token "$HF_TOKEN" \
+            --local-dir hf-restore; then
+            gzip -dc hf-restore/snapshots/civitai.sqlite.gz > data/civitai.sqlite
+          else
+            echo "No Hugging Face SQLite snapshot found; collector will initialize a new database."
+          fi
+
       - name: Collect daily data
         env:
           EVENT_SCHEDULE: ${{ github.event.schedule || '' }}
@@ -116,7 +139,6 @@ jobs:
             echo "HF_TOKEN is not set; skipping Hugging Face upload."
             exit 0
           fi
-          python -m pip install --upgrade huggingface_hub
           mkdir -p hf-upload/daily_counts hf-upload/exports hf-upload/snapshots
           cp data/daily_counts.csv hf-upload/daily_counts/daily_counts.csv
           cp data/exports/*.csv hf-upload/exports/

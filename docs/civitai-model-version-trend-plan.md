@@ -288,7 +288,7 @@ Workflow requirements:
 - 日次クロール停止条件: `known_version_stop=200`
 - グラフは `collection_runs.coverage_started_at` / `coverage_finished_at` を使い、成功したカバレッジ窓がない日付を partial として注記する。
 - `active_total`: その日の観測済みbaseModelを対象にbest-effortで取得する。現在のAPIが `metadata.totalItems` を返さない場合は空欄。`--skip-active-totals` で無効化できる。
-- SQLite: `data/civitai.sqlite` をGit管理対象にする。WAL/SHMだけ `.gitignore` で除外する。
+- SQLite: `data/civitai.sqlite` はローカル作業用DBとして使い、Git管理対象にはしない。workflow は Hugging Face Dataset repo の `snapshots/civitai.sqlite.gz` から復元し、収集後に新しいsnapshotをアップロードする。
 - 初回実行日は観測開始ベースラインとして扱う。初回に見えた既存versionも `first_seen_at` は初回日になるため、初日グラフは「測定開始時に初めて観測されたもの」として解釈する。
 
 ## Recommended First Implementation Slice

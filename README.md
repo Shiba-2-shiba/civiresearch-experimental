@@ -36,6 +36,8 @@ data/exports/monthly_counts.csv
 data/exports/trends.svg
 ```
 
+`data/civitai.sqlite` is a local working database restored from and uploaded to the Hugging Face Dataset repository. It is intentionally not tracked by Git.
+
 `base_model_raw` is preserved exactly as returned by Civitai. Use `config/base_model_groups.yaml` to group values such as Flux, Illustrious, Z-Image, and Anima at export or plot time.
 
 Audit observed baseModel values against the grouping file:
@@ -57,4 +59,4 @@ A weekly deeper recrawl runs at `15:25 UTC` on Sundays, which is `00:25 JST` on 
 
 The workflow runs the collector with `--fail-on-errors`, so partial API failures stop the job before updated data is committed.
 
-The workflow also uploads `daily_counts`, aggregate exports, the SVG plot, and a compressed SQLite snapshot to the Hugging Face Dataset repository. For setup details, see `docs/huggingface-dataset-setup.md`.
+The workflow restores the SQLite snapshot from Hugging Face before collection, then uploads `daily_counts`, aggregate exports, the SVG plot, and a compressed SQLite snapshot back to the Hugging Face Dataset repository. For setup details, see `docs/huggingface-dataset-setup.md`.
