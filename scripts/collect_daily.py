@@ -16,7 +16,7 @@ import sys
 import time
 import uuid
 from dataclasses import dataclass
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, time as datetime_time, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
@@ -113,7 +113,10 @@ def init_db(conn: sqlite3.Connection) -> None:
             started_at text not null,
             finished_at text,
             observed_date text not null,
+            coverage_started_at text,
+            coverage_finished_at text,
             status text not null,
+            known_version_stop integer,
             pages_fetched integer default 0,
             models_seen integer default 0,
             versions_seen integer default 0,
@@ -139,6 +142,9 @@ def init_db(conn: sqlite3.Connection) -> None:
     ensure_column(conn, "models", "first_seen_date", "text")
     ensure_column(conn, "models", "initial_base_model_raw", "text")
     ensure_column(conn, "model_versions", "first_seen_date", "text")
+    ensure_column(conn, "collection_runs", "coverage_started_at", "text")
+    ensure_column(conn, "collection_runs", "coverage_finished_at", "text")
+    ensure_column(conn, "collection_runs", "known_version_stop", "integer")
     conn.commit()
 
 
@@ -371,6 +377,19 @@ def parse_extra_params(values: list[str]) -> dict[str, str]:
         key, val = value.split("=", 1)
         params[key] = val
     return params
+
+
+def coverage_bounds(
+    start_date: str,
+    end_date: str,
+    tz: timezone,
+) -> tuple[str, str]:
+    start = datetime.combine(date.fromisoformat(start_date), datetime_time.min, tzinfo=tz)
+    end = datetime.combine(date.fromisoformat(end_date), datetime_time.max, tzinfo=tz)
+    return (
+        start.astimezone(timezone.utc).replace(microsecond=0).isoformat(),
+        end.astimezone(timezone.utc).replace(microsecond=0).isoformat(),
+    )
 
 
 def collect_model_type(
@@ -625,14 +644,31 @@ def export_daily_counts(conn: sqlite3.Connection, path: Path) -> None:
             writer.writerow({key: row[key] for key in fieldnames})
 
 
-def write_run_start(conn: sqlite3.Connection, run_id: str, observed_at: str, observed_date: str) -> None:
+def write_run_start(
+    conn: sqlite3.Connection,
+    run_id: str,
+    observed_at: str,
+    observed_date: str,
+    coverage_started_at: str,
+    coverage_finished_at: str,
+    known_version_stop: int,
+) -> None:
     conn.execute(
         """
         insert into collection_runs (
-            run_id, started_at, observed_date, status
-        ) values (?, ?, ?, ?)
+            run_id, started_at, observed_date, coverage_started_at,
+            coverage_finished_at, status, known_version_stop
+        ) values (?, ?, ?, ?, ?, ?, ?)
         """,
-        (run_id, observed_at, observed_date, "running"),
+        (
+            run_id,
+            observed_at,
+            observed_date,
+            coverage_started_at,
+            coverage_finished_at,
+            "running",
+            known_version_stop,
+        ),
     )
     conn.commit()
 
@@ -689,6 +725,14 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--timezone-offset", default="+09:00")
     parser.add_argument("--observed-date", help="Override observed date, YYYY-MM-DD")
     parser.add_argument(
+        "--coverage-start-date",
+        help="First local date this run is intended to cover, YYYY-MM-DD. Defaults to observed date.",
+    )
+    parser.add_argument(
+        "--coverage-end-date",
+        help="Last local date this run is intended to cover, YYYY-MM-DD. Defaults to observed date.",
+    )
+    parser.add_argument(
         "--extra-param",
         action="append",
         default=[],
@@ -712,13 +756,28 @@ def main(argv: list[str] | None = None) -> int:
     tz = parse_timezone_offset(args.timezone_offset)
     now = utc_now()
     observed_date = args.observed_date or now.astimezone(tz).date().isoformat()
+    coverage_start_date = args.coverage_start_date or observed_date
+    coverage_end_date = args.coverage_end_date or observed_date
+    coverage_started_at, coverage_finished_at = coverage_bounds(
+        coverage_start_date,
+        coverage_end_date,
+        tz,
+    )
     observed_at = now.isoformat()
     extra_params = parse_extra_params(args.extra_param)
 
     conn = connect_db(args.db)
     init_db(conn)
     run_id = str(uuid.uuid4())
-    write_run_start(conn, run_id, observed_at, observed_date)
+    write_run_start(
+        conn,
+        run_id,
+        observed_at,
+        observed_date,
+        coverage_started_at,
+        coverage_finished_at,
+        args.known_version_stop,
+    )
 
     pages_fetched = 0
     models_seen = 0
@@ -785,6 +844,8 @@ def main(argv: list[str] | None = None) -> int:
         json.dumps(
             {
                 "observed_date": observed_date,
+                "coverage_started_at": coverage_started_at,
+                "coverage_finished_at": coverage_finished_at,
                 "pages_fetched": pages_fetched,
                 "models_seen": models_seen,
                 "versions_seen": versions_seen,

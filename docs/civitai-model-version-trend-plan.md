@@ -129,7 +129,11 @@ primary key(observed_date, model_type, base_model_raw)
 run_id text primary key
 started_at text not null
 finished_at text
+observed_date text not null
+coverage_started_at text
+coverage_finished_at text
 status text not null
+known_version_stop integer
 pages_fetched integer default 0
 models_seen integer default 0
 versions_seen integer default 0
@@ -163,6 +167,7 @@ GitHub Actionsの `schedule` はUTC基準なので、JST 23:55に実行する場
 on:
   schedule:
     - cron: "55 14 * * *"
+    - cron: "25 15 * * 0"
   workflow_dispatch:
 ```
 
@@ -279,7 +284,9 @@ Workflow requirements:
 
 - 日次実行時刻: JST 23:55 (`14:55 UTC`)
 - スケジュール実行では `--observed-date` をUTC日付に固定する。JST 23:55時点ではUTC日付とJST日付が一致するため、GitHub Actionsの数分遅延で観測日が翌JST日にずれることを避けられる。
+- 週次深掘り実行: 月曜 JST 00:25 (`日曜 15:25 UTC`)。`max_pages=80`、`known_version_stop=1000`、カバレッジ期間は観測日を含む直近7日間。
 - 日次クロール停止条件: `known_version_stop=200`
+- グラフは `collection_runs.coverage_started_at` / `coverage_finished_at` を使い、成功したカバレッジ窓がない日付を partial として注記する。
 - `active_total`: その日の観測済みbaseModelを対象にbest-effortで取得する。現在のAPIが `metadata.totalItems` を返さない場合は空欄。`--skip-active-totals` で無効化できる。
 - SQLite: `data/civitai.sqlite` をGit管理対象にする。WAL/SHMだけ `.gitignore` で除外する。
 - 初回実行日は観測開始ベースラインとして扱う。初回に見えた既存versionも `first_seen_at` は初回日になるため、初日グラフは「測定開始時に初めて観測されたもの」として解釈する。

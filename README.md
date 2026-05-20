@@ -53,4 +53,8 @@ Use `--all --output data/exports/base_model_audit.csv` to write a full grouped/u
 The scheduled time is UTC. The default cron uses `14:55 UTC`, which is `23:55 JST`.
 Scheduled runs pin `--observed-date` to the UTC date, which is the same calendar date as JST at 23:55. This keeps the current JST date close to complete and prevents small GitHub Actions delays from rolling the collection into the next JST date.
 
+A weekly deeper recrawl runs at `15:25 UTC` on Sundays, which is `00:25 JST` on Mondays. It uses a larger page budget and records a seven-day coverage window to catch recent API or scheduling gaps. Trend plots mark dates without a successful coverage window as partial.
+
 The workflow runs the collector with `--fail-on-errors`, so partial API failures stop the job before updated data is committed.
+
+The workflow also uploads `daily_counts`, aggregate exports, the SVG plot, and a compressed SQLite snapshot to the Hugging Face Dataset repository. For setup details, see `docs/huggingface-dataset-setup.md`.

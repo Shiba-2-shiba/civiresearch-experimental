@@ -3,14 +3,27 @@ name: collect-civitai
 on:
   schedule:
     - cron: "55 14 * * *"
+    - cron: "25 15 * * 0"
   workflow_dispatch:
     inputs:
       max_pages:
         description: "Maximum pages per model type"
         required: false
-        default: "20"
+        default: ""
+      known_version_stop:
+        description: "Stop after this many consecutive known versions. Defaults depend on daily vs weekly run."
+        required: false
+        default: ""
       observed_date:
         description: "Observed date in JST, YYYY-MM-DD. Defaults to the UTC date for scheduled runs."
+        required: false
+        default: ""
+      coverage_start_date:
+        description: "First JST date covered by this run, YYYY-MM-DD. Defaults to observed date, or observed date - 6 days for weekly recrawls."
+        required: false
+        default: ""
+      coverage_end_date:
+        description: "Last JST date covered by this run, YYYY-MM-DD. Defaults to observed date."
         required: false
         default: ""
       skip_active_totals:
@@ -33,25 +46,86 @@ jobs:
 
       - name: Collect daily data
         env:
-          MAX_PAGES: ${{ github.event.inputs.max_pages || '20' }}
+          EVENT_SCHEDULE: ${{ github.event.schedule || '' }}
+          MAX_PAGES: ${{ github.event.inputs.max_pages || '' }}
+          KNOWN_VERSION_STOP: ${{ github.event.inputs.known_version_stop || '' }}
           OBSERVED_DATE: ${{ github.event.inputs.observed_date || '' }}
+          COVERAGE_START_DATE: ${{ github.event.inputs.coverage_start_date || '' }}
+          COVERAGE_END_DATE: ${{ github.event.inputs.coverage_end_date || '' }}
           SKIP_ACTIVE_TOTALS: ${{ github.event.inputs.skip_active_totals || 'true' }}
         run: |
+          is_weekly="false"
+          if [ "$EVENT_SCHEDULE" = "25 15 * * 0" ]; then
+            is_weekly="true"
+          fi
           target_date="$OBSERVED_DATE"
           if [ -z "$target_date" ]; then
             target_date="$(date -u +%F)"
+          fi
+          if [ -z "$MAX_PAGES" ]; then
+            if [ "$is_weekly" = "true" ]; then
+              MAX_PAGES="80"
+            else
+              MAX_PAGES="20"
+            fi
+          fi
+          if [ -z "$KNOWN_VERSION_STOP" ]; then
+            if [ "$is_weekly" = "true" ]; then
+              KNOWN_VERSION_STOP="1000"
+            else
+              KNOWN_VERSION_STOP="200"
+            fi
+          fi
+          coverage_start_date="$COVERAGE_START_DATE"
+          if [ -z "$coverage_start_date" ]; then
+            if [ "$is_weekly" = "true" ]; then
+              coverage_start_date="$(date -u -d "$target_date - 6 days" +%F)"
+            else
+              coverage_start_date="$target_date"
+            fi
+          fi
+          coverage_end_date="$COVERAGE_END_DATE"
+          if [ -z "$coverage_end_date" ]; then
+            coverage_end_date="$target_date"
           fi
           args=(--max-pages "$MAX_PAGES")
           if [ "$SKIP_ACTIVE_TOTALS" = "true" ]; then
             args+=(--skip-active-totals)
           fi
-          python scripts/collect_daily.py --fail-on-errors --timezone-offset "+09:00" --observed-date "$target_date" "${args[@]}"
+          python scripts/collect_daily.py \
+            --fail-on-errors \
+            --timezone-offset "+09:00" \
+            --observed-date "$target_date" \
+            --coverage-start-date "$coverage_start_date" \
+            --coverage-end-date "$coverage_end_date" \
+            --known-version-stop "$KNOWN_VERSION_STOP" \
+            "${args[@]}"
 
       - name: Export aggregate counts
         run: |
           python scripts/export_counts.py
           python scripts/audit_base_models.py --all --output data/exports/base_model_audit.csv
           python scripts/plot_trends.py
+
+      - name: Upload dataset snapshot to Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_DATASET_REPO: Shiba-2-shiba/civitai-model-version-trends
+        run: |
+          if [ -z "$HF_TOKEN" ]; then
+            echo "HF_TOKEN is not set; skipping Hugging Face upload."
+            exit 0
+          fi
+          python -m pip install --upgrade huggingface_hub
+          mkdir -p hf-upload/daily_counts hf-upload/exports hf-upload/snapshots
+          cp data/daily_counts.csv hf-upload/daily_counts/daily_counts.csv
+          cp data/exports/*.csv hf-upload/exports/
+          cp data/exports/*.svg hf-upload/exports/
+          gzip -c data/civitai.sqlite > hf-upload/snapshots/civitai.sqlite.gz
+          hf upload "$HF_DATASET_REPO" hf-upload . \
+            --repo-type dataset \
+            --token "$HF_TOKEN" \
+            --commit-message "Update Civitai trend dataset"
 
       - name: Commit data
         run: |

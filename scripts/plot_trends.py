@@ -84,6 +84,43 @@ def observed_date_range(db_path: Path) -> tuple[str | None, str | None]:
     return row[0], row[1]
 
 
+def table_columns(conn: sqlite3.Connection, table: str) -> set[str]:
+    return {row[1] for row in conn.execute(f"pragma table_info({table})")}
+
+
+def complete_observed_dates(db_path: Path, dates: list[str], tz: timezone) -> set[str]:
+    if not dates:
+        return set()
+    with sqlite3.connect(db_path) as conn:
+        columns = table_columns(conn, "collection_runs")
+        required = {"coverage_started_at", "coverage_finished_at"}
+        if not required.issubset(columns):
+            return set()
+        rows = conn.execute(
+            """
+            select coverage_started_at, coverage_finished_at
+            from collection_runs
+            where status = 'success'
+            """
+        ).fetchall()
+
+    complete: set[str] = set()
+    for day in dates:
+        start = datetime.combine(date.fromisoformat(day), datetime.min.time(), tzinfo=tz)
+        end = datetime.combine(date.fromisoformat(day), datetime.max.time(), tzinfo=tz)
+        start_utc = start.astimezone(timezone.utc)
+        end_utc = end.astimezone(timezone.utc).replace(microsecond=0)
+        for coverage_started_at, coverage_finished_at in rows:
+            if not coverage_started_at or not coverage_finished_at:
+                continue
+            covered_start = datetime.fromisoformat(coverage_started_at)
+            covered_end = datetime.fromisoformat(coverage_finished_at)
+            if covered_start <= start_utc and covered_end >= end_utc:
+                complete.add(day)
+                break
+    return complete
+
+
 def grouped_base_model(raw_value: str | None, group_map: dict[str, str]) -> str:
     raw = raw_value or ""
     return group_map.get(raw, raw or "Unknown")
@@ -150,7 +187,9 @@ def read_publication_series(
     return complete_date_range(publication_days), series
 
 
-def render_svg(dates: list[str], series: MetricSeries) -> str:
+def render_svg(dates: list[str], series: MetricSeries, complete_dates: set[str] | None = None) -> str:
+    complete_dates = complete_dates or set()
+    incomplete_dates = [day for day in dates if day not in complete_dates]
     width, height = 1260, 1280
     left, right, top, bottom = 90, 350, 86, 78
     gap = 56
@@ -179,6 +218,9 @@ def render_svg(dates: list[str], series: MetricSeries) -> str:
         f'<text x="{left}" y="30" font-family="Arial" font-size="20" font-weight="700">Civitai daily publication trends by architecture</text>',
         f'<text x="{left}" y="50" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt converted to the selected local date; architecture uses grouped baseModel.</text>',
     ]
+    if incomplete_dates:
+        note = "Partial coverage: " + ", ".join(incomplete_dates)
+        lines.append(f'<text x="{left}" y="68" font-family="Arial" font-size="12" fill="#b45309">{html.escape(note)}</text>')
 
     for panel_index, (model_type, metric_key, metric_label) in enumerate(panels):
         panel_top = top + panel_index * (plot_h + gap)
@@ -229,7 +271,9 @@ def render_svg(dates: list[str], series: MetricSeries) -> str:
     label_y = height - 34
     for index, day in enumerate(dates):
         x = x_pos(index)
-        lines.append(f'<text x="{x:.1f}" y="{label_y}" text-anchor="middle" font-family="Arial" font-size="12">{html.escape(day)}</text>')
+        fill = "#b45309" if day in incomplete_dates else "#111827"
+        suffix = " *" if day in incomplete_dates else ""
+        lines.append(f'<text x="{x:.1f}" y="{label_y}" text-anchor="middle" font-family="Arial" font-size="12" fill="{fill}">{html.escape(day + suffix)}</text>')
     lines.append("</svg>")
     return "\n".join(lines)
 
@@ -253,8 +297,13 @@ def main() -> int:
         args.start_date,
         args.end_date,
     )
+    complete_dates = complete_observed_dates(
+        args.db,
+        dates,
+        parse_timezone_offset(args.timezone_offset),
+    )
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(render_svg(dates, series), encoding="utf-8")
+    args.output.write_text(render_svg(dates, series, complete_dates), encoding="utf-8")
     return 0
 
 

@@ -13,3 +13,5 @@ data/*.db-shm
 
 plots/
 .verify/
+
+User permissions (*).txt

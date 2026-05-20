@@ -12,7 +12,7 @@ sys.path.insert(0, str(SCRIPTS))
 
 from audit_base_models import audit_rows  # noqa: E402
 from export_counts import aggregate, parse_group_file  # noqa: E402
-from plot_trends import parse_timezone_offset, read_publication_series  # noqa: E402
+from plot_trends import complete_observed_dates, parse_timezone_offset, read_publication_series  # noqa: E402
 
 
 class TrendScriptTests(unittest.TestCase):
@@ -161,6 +161,45 @@ Legacy:
         self.assertEqual(series["Checkpoint"]["new_versions"]["Illustrious"]["2026-05-20"], 1)
         self.assertEqual(series["Checkpoint"]["new_models"]["Illustrious"]["2026-05-19"], 1)
         self.assertEqual(series["Checkpoint"]["new_models"]["Illustrious"].get("2026-05-20", 0), 0)
+
+    def test_complete_observed_dates_uses_successful_coverage_window(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            db = Path(tmp) / "civitai.sqlite"
+            import collect_daily  # noqa: PLC0415
+
+            conn = collect_daily.connect_db(db)
+            try:
+                collect_daily.init_db(conn)
+                conn.execute(
+                    """
+                    insert into collection_runs (
+                        run_id, started_at, finished_at, observed_date,
+                        coverage_started_at, coverage_finished_at, status,
+                        known_version_stop
+                    ) values (?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        "run-1",
+                        "2026-05-20T14:55:00+00:00",
+                        "2026-05-20T14:56:00+00:00",
+                        "2026-05-20",
+                        "2026-05-19T15:00:00+00:00",
+                        "2026-05-20T14:59:59+00:00",
+                        "success",
+                        200,
+                    ),
+                )
+                conn.commit()
+            finally:
+                conn.close()
+
+            result = complete_observed_dates(
+                db,
+                ["2026-05-19", "2026-05-20"],
+                parse_timezone_offset("+09:00"),
+            )
+
+        self.assertEqual(result, {"2026-05-20"})
 
 
 if __name__ == "__main__":

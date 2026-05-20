@@ -182,6 +182,24 @@ class CollectDailyTests(unittest.TestCase):
         self.assertEqual(row["new_model_count"], 1)
         self.assertIsNone(row["active_total"])
 
+    def test_collection_runs_schema_tracks_coverage_and_stop_threshold(self) -> None:
+        columns = {
+            row["name"]
+            for row in self.conn.execute("pragma table_info(collection_runs)").fetchall()
+        }
+
+        self.assertIn("coverage_started_at", columns)
+        self.assertIn("coverage_finished_at", columns)
+        self.assertIn("known_version_stop", columns)
+        self.assertEqual(
+            collect_daily.coverage_bounds(
+                "2026-05-20",
+                "2026-05-20",
+                collect_daily.parse_timezone_offset("+09:00"),
+            ),
+            ("2026-05-19T15:00:00+00:00", "2026-05-20T14:59:59+00:00"),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
