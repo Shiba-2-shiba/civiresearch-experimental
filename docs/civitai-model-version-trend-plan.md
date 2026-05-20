@@ -157,12 +157,12 @@ Weekly reconciliation:
 
 ## GitHub Actions Plan
 
-GitHub Actionsの `schedule` はUTC基準なので、JST 00:00に実行する場合は前日15:00 UTCを指定する。
+GitHub Actionsの `schedule` はUTC基準なので、JST 23:55に実行する場合は14:55 UTCを指定する。
 
 ```yaml
 on:
   schedule:
-    - cron: "0 15 * * *"
+    - cron: "55 14 * * *"
   workflow_dispatch:
 ```
 
@@ -277,7 +277,8 @@ Workflow requirements:
 
 ## Current Defaults
 
-- 日次実行時刻: JST 00:00 (`15:00 UTC`)
+- 日次実行時刻: JST 23:55 (`14:55 UTC`)
+- スケジュール実行では `--observed-date` をUTC日付に固定する。JST 23:55時点ではUTC日付とJST日付が一致するため、GitHub Actionsの数分遅延で観測日が翌JST日にずれることを避けられる。
 - 日次クロール停止条件: `known_version_stop=200`
 - `active_total`: その日の観測済みbaseModelを対象にbest-effortで取得する。現在のAPIが `metadata.totalItems` を返さない場合は空欄。`--skip-active-totals` で無効化できる。
 - SQLite: `data/civitai.sqlite` をGit管理対象にする。WAL/SHMだけ `.gitignore` で除外する。

@@ -12,6 +12,7 @@ sys.path.insert(0, str(SCRIPTS))
 
 from audit_base_models import audit_rows  # noqa: E402
 from export_counts import aggregate, parse_group_file  # noqa: E402
+from plot_trends import parse_timezone_offset, read_publication_series  # noqa: E402
 
 
 class TrendScriptTests(unittest.TestCase):
@@ -111,6 +112,55 @@ Legacy:
                 }
             ],
         )
+
+    def test_publication_series_uses_version_published_at_dates(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            db = Path(tmp) / "civitai.sqlite"
+            import collect_daily  # noqa: PLC0415
+
+            conn = collect_daily.connect_db(db)
+            try:
+                collect_daily.init_db(conn)
+                observed_at = "2026-05-20T00:00:00+00:00"
+                model = {
+                    "id": 1,
+                    "name": "model-1",
+                    "type": "Checkpoint",
+                    "creator": {"username": "tester"},
+                    "modelVersions": [
+                        {
+                            "id": 101,
+                            "name": "v1",
+                            "publishedAt": "2026-05-18T16:30:00.000Z",
+                            "baseModel": "Illustrious",
+                        },
+                        {
+                            "id": 102,
+                            "name": "v2",
+                            "publishedAt": "2026-05-20T02:00:00.000Z",
+                            "baseModel": "Illustrious",
+                        },
+                    ],
+                }
+                collect_daily.upsert_model(conn, model, "Checkpoint", observed_at, "2026-05-20")
+                for version in model["modelVersions"]:
+                    collect_daily.upsert_version(conn, 1, "Checkpoint", version, observed_at, "2026-05-20")
+                conn.commit()
+            finally:
+                conn.close()
+
+            dates, series = read_publication_series(
+                db,
+                {"Illustrious": "Illustrious"},
+                parse_timezone_offset("+09:00"),
+                "Checkpoint",
+            )
+
+        self.assertEqual(dates, ["2026-05-19", "2026-05-20"])
+        self.assertEqual(series["Checkpoint"]["new_versions"]["Illustrious"]["2026-05-19"], 1)
+        self.assertEqual(series["Checkpoint"]["new_versions"]["Illustrious"]["2026-05-20"], 1)
+        self.assertEqual(series["Checkpoint"]["new_models"]["Illustrious"]["2026-05-19"], 1)
+        self.assertEqual(series["Checkpoint"]["new_models"]["Illustrious"].get("2026-05-20", 0), 0)
 
 
 if __name__ == "__main__":

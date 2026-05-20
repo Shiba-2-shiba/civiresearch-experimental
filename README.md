@@ -50,6 +50,7 @@ Use `--all --output data/exports/base_model_audit.csv` to write a full grouped/u
 
 `.github/workflows/collect-civitai.yml` runs the collector daily and commits updated data files. It also supports manual execution through `workflow_dispatch`.
 
-The scheduled time is UTC. The default cron uses `15:00 UTC`, which is `00:00 JST`.
+The scheduled time is UTC. The default cron uses `14:55 UTC`, which is `23:55 JST`.
+Scheduled runs pin `--observed-date` to the UTC date, which is the same calendar date as JST at 23:55. This keeps the current JST date close to complete and prevents small GitHub Actions delays from rolling the collection into the next JST date.
 
 The workflow runs the collector with `--fail-on-errors`, so partial API failures stop the job before updated data is committed.

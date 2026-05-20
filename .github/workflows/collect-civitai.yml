@@ -2,13 +2,17 @@ name: collect-civitai
 
 on:
   schedule:
-    - cron: "0 15 * * *"
+    - cron: "55 14 * * *"
   workflow_dispatch:
     inputs:
       max_pages:
         description: "Maximum pages per model type"
         required: false
         default: "20"
+      observed_date:
+        description: "Observed date in JST, YYYY-MM-DD. Defaults to the UTC date for scheduled runs."
+        required: false
+        default: ""
       skip_active_totals:
         description: "Skip active_total calls"
         required: false
@@ -30,13 +34,18 @@ jobs:
       - name: Collect daily data
         env:
           MAX_PAGES: ${{ github.event.inputs.max_pages || '20' }}
+          OBSERVED_DATE: ${{ github.event.inputs.observed_date || '' }}
           SKIP_ACTIVE_TOTALS: ${{ github.event.inputs.skip_active_totals || 'true' }}
         run: |
+          target_date="$OBSERVED_DATE"
+          if [ -z "$target_date" ]; then
+            target_date="$(date -u +%F)"
+          fi
           args=(--max-pages "$MAX_PAGES")
           if [ "$SKIP_ACTIVE_TOTALS" = "true" ]; then
             args+=(--skip-active-totals)
           fi
-          python scripts/collect_daily.py --fail-on-errors "${args[@]}"
+          python scripts/collect_daily.py --fail-on-errors --timezone-offset "+09:00" --observed-date "$target_date" "${args[@]}"
 
       - name: Export aggregate counts
         run: |
