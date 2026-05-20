@@ -2,7 +2,7 @@
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="90" y="30" font-family="Arial" font-size="20" font-weight="700">Civitai daily publication trends by architecture</text>
 <text x="90" y="50" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt converted to the selected local date; architecture uses grouped baseModel.</text>
-<text x="90" y="68" font-family="Arial" font-size="12" fill="#b45309">Partial coverage: 2026-05-18, 2026-05-19, 2026-05-20</text>
+<text x="90" y="68" font-family="Arial" font-size="12" fill="#b45309">Partial coverage: 2026-05-18, 2026-05-19</text>
 <text x="90" y="72.0" font-family="Arial" font-size="15" font-weight="700">Checkpoint - Version releases</text>
 <line x1="90" y1="323.0" x2="910" y2="323.0" stroke="#111827"/>
 <line x1="90" y1="86.0" x2="90" y2="323.0" stroke="#111827"/>
@@ -20,10 +20,10 @@
 <circle cx="90.0" cy="268.3" r="3" fill="#2563eb"/>
 <circle cx="500.0" cy="86.0" r="3" fill="#2563eb"/>
 <circle cx="910.0" cy="231.8" r="3" fill="#2563eb"/>
-<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="90.0,140.7 500.0,231.8 910.0,286.5"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="90.0,140.7 500.0,231.8 910.0,268.3"/>
 <circle cx="90.0" cy="140.7" r="3" fill="#dc2626"/>
 <circle cx="500.0" cy="231.8" r="3" fill="#dc2626"/>
-<circle cx="910.0" cy="286.5" r="3" fill="#dc2626"/>
+<circle cx="910.0" cy="268.3" r="3" fill="#dc2626"/>
 <polyline fill="none" stroke="#16a34a" stroke-width="2.4" points="90.0,250.1 500.0,213.6 910.0,268.3"/>
 <circle cx="90.0" cy="250.1" r="3" fill="#16a34a"/>
 <circle cx="500.0" cy="213.6" r="3" fill="#16a34a"/>
@@ -32,14 +32,14 @@
 <circle cx="90.0" cy="323.0" r="3" fill="#9333ea"/>
 <circle cx="500.0" cy="268.3" r="3" fill="#9333ea"/>
 <circle cx="910.0" cy="323.0" r="3" fill="#9333ea"/>
-<polyline fill="none" stroke="#ea580c" stroke-width="2.4" points="90.0,323.0 500.0,304.8 910.0,304.8"/>
-<circle cx="90.0" cy="323.0" r="3" fill="#ea580c"/>
-<circle cx="500.0" cy="304.8" r="3" fill="#ea580c"/>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.4" points="90.0,304.8 500.0,323.0 910.0,304.8"/>
+<circle cx="90.0" cy="304.8" r="3" fill="#ea580c"/>
+<circle cx="500.0" cy="323.0" r="3" fill="#ea580c"/>
 <circle cx="910.0" cy="304.8" r="3" fill="#ea580c"/>
-<polyline fill="none" stroke="#0891b2" stroke-width="2.4" points="90.0,304.8 500.0,323.0 910.0,323.0"/>
-<circle cx="90.0" cy="304.8" r="3" fill="#0891b2"/>
-<circle cx="500.0" cy="323.0" r="3" fill="#0891b2"/>
-<circle cx="910.0" cy="323.0" r="3" fill="#0891b2"/>
+<polyline fill="none" stroke="#0891b2" stroke-width="2.4" points="90.0,323.0 500.0,304.8 910.0,304.8"/>
+<circle cx="90.0" cy="323.0" r="3" fill="#0891b2"/>
+<circle cx="500.0" cy="304.8" r="3" fill="#0891b2"/>
+<circle cx="910.0" cy="304.8" r="3" fill="#0891b2"/>
 <polyline fill="none" stroke="#4f46e5" stroke-width="2.4" points="90.0,304.8 500.0,323.0 910.0,323.0"/>
 <circle cx="90.0" cy="304.8" r="3" fill="#4f46e5"/>
 <circle cx="500.0" cy="323.0" r="3" fill="#4f46e5"/>
@@ -55,15 +55,15 @@
 <line x1="940" y1="104.0" x2="962" y2="104.0" stroke="#2563eb" stroke-width="3"/>
 <text x="972" y="108.0" font-family="Arial" font-size="11">Illustrious (21)</text>
 <line x1="940" y1="119.0" x2="962" y2="119.0" stroke="#dc2626" stroke-width="3"/>
-<text x="972" y="123.0" font-family="Arial" font-size="11">Anima (17)</text>
+<text x="972" y="123.0" font-family="Arial" font-size="11">Anima (18)</text>
 <line x1="940" y1="134.0" x2="962" y2="134.0" stroke="#16a34a" stroke-width="3"/>
 <text x="972" y="138.0" font-family="Arial" font-size="11">SDXL (13)</text>
 <line x1="940" y1="149.0" x2="962" y2="149.0" stroke="#9333ea" stroke-width="3"/>
 <text x="972" y="153.0" font-family="Arial" font-size="11">Pony (3)</text>
 <line x1="940" y1="164.0" x2="962" y2="164.0" stroke="#ea580c" stroke-width="3"/>
-<text x="972" y="168.0" font-family="Arial" font-size="11">Flux (2)</text>
+<text x="972" y="168.0" font-family="Arial" font-size="11">Ernie (2)</text>
 <line x1="940" y1="179.0" x2="962" y2="179.0" stroke="#0891b2" stroke-width="3"/>
-<text x="972" y="183.0" font-family="Arial" font-size="11">Ernie (1)</text>
+<text x="972" y="183.0" font-family="Arial" font-size="11">Flux (2)</text>
 <line x1="940" y1="194.0" x2="962" y2="194.0" stroke="#4f46e5" stroke-width="3"/>
 <text x="972" y="198.0" font-family="Arial" font-size="11">FLUX2 Klein 9B (1)</text>
 <line x1="940" y1="209.0" x2="962" y2="209.0" stroke="#be123c" stroke-width="3"/>
@@ -87,10 +87,10 @@
 <circle cx="90.0" cy="497.5" r="3" fill="#2563eb"/>
 <circle cx="500.0" cy="458.0" r="3" fill="#2563eb"/>
 <circle cx="910.0" cy="497.5" r="3" fill="#2563eb"/>
-<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="90.0,458.0 500.0,537.0 910.0,576.5"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="90.0,458.0 500.0,537.0 910.0,537.0"/>
 <circle cx="90.0" cy="458.0" r="3" fill="#dc2626"/>
 <circle cx="500.0" cy="537.0" r="3" fill="#dc2626"/>
-<circle cx="910.0" cy="576.5" r="3" fill="#dc2626"/>
+<circle cx="910.0" cy="537.0" r="3" fill="#dc2626"/>
 <polyline fill="none" stroke="#16a34a" stroke-width="2.4" points="90.0,576.5 500.0,379.0 910.0,616.0"/>
 <circle cx="90.0" cy="576.5" r="3" fill="#16a34a"/>
 <circle cx="500.0" cy="379.0" r="3" fill="#16a34a"/>
@@ -99,14 +99,20 @@
 <circle cx="90.0" cy="616.0" r="3" fill="#9333ea"/>
 <circle cx="500.0" cy="576.5" r="3" fill="#9333ea"/>
 <circle cx="910.0" cy="616.0" r="3" fill="#9333ea"/>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.4" points="90.0,616.0 500.0,616.0 910.0,576.5"/>
+<circle cx="90.0" cy="616.0" r="3" fill="#ea580c"/>
+<circle cx="500.0" cy="616.0" r="3" fill="#ea580c"/>
+<circle cx="910.0" cy="576.5" r="3" fill="#ea580c"/>
 <line x1="940" y1="397.0" x2="962" y2="397.0" stroke="#2563eb" stroke-width="3"/>
 <text x="972" y="401.0" font-family="Arial" font-size="11">SDXL (10)</text>
 <line x1="940" y1="412.0" x2="962" y2="412.0" stroke="#dc2626" stroke-width="3"/>
-<text x="972" y="416.0" font-family="Arial" font-size="11">Anima (7)</text>
+<text x="972" y="416.0" font-family="Arial" font-size="11">Anima (8)</text>
 <line x1="940" y1="427.0" x2="962" y2="427.0" stroke="#16a34a" stroke-width="3"/>
 <text x="972" y="431.0" font-family="Arial" font-size="11">Illustrious (7)</text>
 <line x1="940" y1="442.0" x2="962" y2="442.0" stroke="#9333ea" stroke-width="3"/>
 <text x="972" y="446.0" font-family="Arial" font-size="11">Flux (1)</text>
+<line x1="940" y1="457.0" x2="962" y2="457.0" stroke="#ea580c" stroke-width="3"/>
+<text x="972" y="461.0" font-family="Arial" font-size="11">Ernie (1)</text>
 <text x="90" y="658.0" font-family="Arial" font-size="15" font-weight="700">LORA - Version releases</text>
 <line x1="90" y1="909.0" x2="910" y2="909.0" stroke="#111827"/>
 <line x1="90" y1="672.0" x2="90" y2="909.0" stroke="#111827"/>
@@ -120,14 +126,14 @@
 <text x="78" y="735.2" text-anchor="end" font-family="Arial" font-size="12">183</text>
 <line x1="90" y1="672.0" x2="910" y2="672.0" stroke="#e5e7eb"/>
 <text x="78" y="676.0" text-anchor="end" font-family="Arial" font-size="12">244</text>
-<polyline fill="none" stroke="#2563eb" stroke-width="2.4" points="90.0,721.5 500.0,672.0 910.0,806.0"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.4" points="90.0,721.5 500.0,672.0 910.0,801.2"/>
 <circle cx="90.0" cy="721.5" r="3" fill="#2563eb"/>
 <circle cx="500.0" cy="672.0" r="3" fill="#2563eb"/>
-<circle cx="910.0" cy="806.0" r="3" fill="#2563eb"/>
-<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="90.0,813.8 500.0,813.8 910.0,862.4"/>
+<circle cx="910.0" cy="801.2" r="3" fill="#2563eb"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="90.0,813.8 500.0,813.8 910.0,858.5"/>
 <circle cx="90.0" cy="813.8" r="3" fill="#dc2626"/>
 <circle cx="500.0" cy="813.8" r="3" fill="#dc2626"/>
-<circle cx="910.0" cy="862.4" r="3" fill="#dc2626"/>
+<circle cx="910.0" cy="858.5" r="3" fill="#dc2626"/>
 <polyline fill="none" stroke="#16a34a" stroke-width="2.4" points="90.0,880.8 500.0,889.6 910.0,897.3"/>
 <circle cx="90.0" cy="880.8" r="3" fill="#16a34a"/>
 <circle cx="500.0" cy="889.6" r="3" fill="#16a34a"/>
@@ -148,14 +154,14 @@
 <circle cx="90.0" cy="899.3" r="3" fill="#4f46e5"/>
 <circle cx="500.0" cy="901.2" r="3" fill="#4f46e5"/>
 <circle cx="910.0" cy="904.1" r="3" fill="#4f46e5"/>
-<polyline fill="none" stroke="#be123c" stroke-width="2.4" points="90.0,895.4 500.0,906.1 910.0,906.1"/>
+<polyline fill="none" stroke="#be123c" stroke-width="2.4" points="90.0,895.4 500.0,906.1 910.0,905.1"/>
 <circle cx="90.0" cy="895.4" r="3" fill="#be123c"/>
 <circle cx="500.0" cy="906.1" r="3" fill="#be123c"/>
-<circle cx="910.0" cy="906.1" r="3" fill="#be123c"/>
-<polyline fill="none" stroke="#0f766e" stroke-width="2.4" points="90.0,900.3 500.0,903.2 910.0,907.1"/>
+<circle cx="910.0" cy="905.1" r="3" fill="#be123c"/>
+<polyline fill="none" stroke="#0f766e" stroke-width="2.4" points="90.0,900.3 500.0,903.2 910.0,906.1"/>
 <circle cx="90.0" cy="900.3" r="3" fill="#0f766e"/>
 <circle cx="500.0" cy="903.2" r="3" fill="#0f766e"/>
-<circle cx="910.0" cy="907.1" r="3" fill="#0f766e"/>
+<circle cx="910.0" cy="906.1" r="3" fill="#0f766e"/>
 <polyline fill="none" stroke="#a16207" stroke-width="2.4" points="90.0,907.1 500.0,902.2 910.0,908.0"/>
 <circle cx="90.0" cy="907.1" r="3" fill="#a16207"/>
 <circle cx="500.0" cy="902.2" r="3" fill="#a16207"/>
@@ -181,9 +187,9 @@
 <circle cx="500.0" cy="907.1" r="3" fill="#475569"/>
 <circle cx="910.0" cy="909.0" r="3" fill="#475569"/>
 <line x1="940" y1="690.0" x2="962" y2="690.0" stroke="#2563eb" stroke-width="3"/>
-<text x="972" y="694.0" font-family="Arial" font-size="11">Illustrious (543)</text>
+<text x="972" y="694.0" font-family="Arial" font-size="11">Illustrious (548)</text>
 <line x1="940" y1="705.0" x2="962" y2="705.0" stroke="#dc2626" stroke-width="3"/>
-<text x="972" y="709.0" font-family="Arial" font-size="11">Anima (244)</text>
+<text x="972" y="709.0" font-family="Arial" font-size="11">Anima (248)</text>
 <line x1="940" y1="720.0" x2="962" y2="720.0" stroke="#16a34a" stroke-width="3"/>
 <text x="972" y="724.0" font-family="Arial" font-size="11">Z-Image (61)</text>
 <line x1="940" y1="735.0" x2="962" y2="735.0" stroke="#9333ea" stroke-width="3"/>
@@ -195,9 +201,9 @@
 <line x1="940" y1="780.0" x2="962" y2="780.0" stroke="#4f46e5" stroke-width="3"/>
 <text x="972" y="784.0" font-family="Arial" font-size="11">Flux (23)</text>
 <line x1="940" y1="795.0" x2="962" y2="795.0" stroke="#be123c" stroke-width="3"/>
-<text x="972" y="799.0" font-family="Arial" font-size="11">FLUX2 Klein 9B (20)</text>
+<text x="972" y="799.0" font-family="Arial" font-size="11">FLUX2 Klein 9B (21)</text>
 <line x1="940" y1="810.0" x2="962" y2="810.0" stroke="#0f766e" stroke-width="3"/>
-<text x="972" y="814.0" font-family="Arial" font-size="11">SD 1.5 (17)</text>
+<text x="972" y="814.0" font-family="Arial" font-size="11">SD 1.5 (18)</text>
 <line x1="940" y1="825.0" x2="962" y2="825.0" stroke="#a16207" stroke-width="3"/>
 <text x="972" y="829.0" font-family="Arial" font-size="11">Ernie (10)</text>
 <line x1="940" y1="840.0" x2="962" y2="840.0" stroke="#7c2d12" stroke-width="3"/>
@@ -223,14 +229,14 @@
 <text x="78" y="1028.2" text-anchor="end" font-family="Arial" font-size="12">147</text>
 <line x1="90" y1="965.0" x2="910" y2="965.0" stroke="#e5e7eb"/>
 <text x="78" y="969.0" text-anchor="end" font-family="Arial" font-size="12">196</text>
-<polyline fill="none" stroke="#2563eb" stroke-width="2.4" points="90.0,1003.7 500.0,965.0 910.0,1100.4"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.4" points="90.0,1003.7 500.0,965.0 910.0,1095.6"/>
 <circle cx="90.0" cy="1003.7" r="3" fill="#2563eb"/>
 <circle cx="500.0" cy="965.0" r="3" fill="#2563eb"/>
-<circle cx="910.0" cy="1100.4" r="3" fill="#2563eb"/>
-<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="90.0,1147.6 500.0,1159.7 910.0,1180.2"/>
+<circle cx="910.0" cy="1095.6" r="3" fill="#2563eb"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="90.0,1147.6 500.0,1159.7 910.0,1176.6"/>
 <circle cx="90.0" cy="1147.6" r="3" fill="#dc2626"/>
 <circle cx="500.0" cy="1159.7" r="3" fill="#dc2626"/>
-<circle cx="910.0" cy="1180.2" r="3" fill="#dc2626"/>
+<circle cx="910.0" cy="1176.6" r="3" fill="#dc2626"/>
 <polyline fill="none" stroke="#16a34a" stroke-width="2.4" points="90.0,1185.1 500.0,1187.5 910.0,1196.0"/>
 <circle cx="90.0" cy="1185.1" r="3" fill="#16a34a"/>
 <circle cx="500.0" cy="1187.5" r="3" fill="#16a34a"/>
@@ -255,10 +261,10 @@
 <circle cx="90.0" cy="1189.9" r="3" fill="#be123c"/>
 <circle cx="500.0" cy="1199.6" r="3" fill="#be123c"/>
 <circle cx="910.0" cy="1199.6" r="3" fill="#be123c"/>
-<polyline fill="none" stroke="#0f766e" stroke-width="2.4" points="90.0,1193.5 500.0,1197.2 910.0,1200.8"/>
+<polyline fill="none" stroke="#0f766e" stroke-width="2.4" points="90.0,1193.5 500.0,1197.2 910.0,1199.6"/>
 <circle cx="90.0" cy="1193.5" r="3" fill="#0f766e"/>
 <circle cx="500.0" cy="1197.2" r="3" fill="#0f766e"/>
-<circle cx="910.0" cy="1200.8" r="3" fill="#0f766e"/>
+<circle cx="910.0" cy="1199.6" r="3" fill="#0f766e"/>
 <polyline fill="none" stroke="#a16207" stroke-width="2.4" points="90.0,1199.6 500.0,1200.8 910.0,1199.6"/>
 <circle cx="90.0" cy="1199.6" r="3" fill="#a16207"/>
 <circle cx="500.0" cy="1200.8" r="3" fill="#a16207"/>
@@ -280,9 +286,9 @@
 <circle cx="500.0" cy="1200.8" r="3" fill="#c026d3"/>
 <circle cx="910.0" cy="1202.0" r="3" fill="#c026d3"/>
 <line x1="940" y1="983.0" x2="962" y2="983.0" stroke="#2563eb" stroke-width="3"/>
-<text x="972" y="987.0" font-family="Arial" font-size="11">Illustrious (444)</text>
+<text x="972" y="987.0" font-family="Arial" font-size="11">Illustrious (448)</text>
 <line x1="940" y1="998.0" x2="962" y2="998.0" stroke="#dc2626" stroke-width="3"/>
-<text x="972" y="1002.0" font-family="Arial" font-size="11">Anima (98)</text>
+<text x="972" y="1002.0" font-family="Arial" font-size="11">Anima (101)</text>
 <line x1="940" y1="1013.0" x2="962" y2="1013.0" stroke="#16a34a" stroke-width="3"/>
 <text x="972" y="1017.0" font-family="Arial" font-size="11">SDXL (31)</text>
 <line x1="940" y1="1028.0" x2="962" y2="1028.0" stroke="#9333ea" stroke-width="3"/>
@@ -296,7 +302,7 @@
 <line x1="940" y1="1088.0" x2="962" y2="1088.0" stroke="#be123c" stroke-width="3"/>
 <text x="972" y="1092.0" font-family="Arial" font-size="11">FLUX2 Klein 9B (14)</text>
 <line x1="940" y1="1103.0" x2="962" y2="1103.0" stroke="#0f766e" stroke-width="3"/>
-<text x="972" y="1107.0" font-family="Arial" font-size="11">SD 1.5 (12)</text>
+<text x="972" y="1107.0" font-family="Arial" font-size="11">SD 1.5 (13)</text>
 <line x1="940" y1="1118.0" x2="962" y2="1118.0" stroke="#a16207" stroke-width="3"/>
 <text x="972" y="1122.0" font-family="Arial" font-size="11">Legacy (5)</text>
 <line x1="940" y1="1133.0" x2="962" y2="1133.0" stroke="#7c2d12" stroke-width="3"/>
@@ -309,5 +315,5 @@
 <text x="972" y="1182.0" font-family="Arial" font-size="11">Hi-Dream O1 (1)</text>
 <text x="90.0" y="1246" text-anchor="middle" font-family="Arial" font-size="12" fill="#b45309">2026-05-18 *</text>
 <text x="500.0" y="1246" text-anchor="middle" font-family="Arial" font-size="12" fill="#b45309">2026-05-19 *</text>
-<text x="910.0" y="1246" text-anchor="middle" font-family="Arial" font-size="12" fill="#b45309">2026-05-20 *</text>
+<text x="910.0" y="1246" text-anchor="middle" font-family="Arial" font-size="12" fill="#111827">2026-05-20</text>
 </svg>
