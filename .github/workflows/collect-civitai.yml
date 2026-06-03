@@ -144,10 +144,19 @@ jobs:
           cp data/exports/*.csv hf-upload/exports/
           cp data/exports/*.svg hf-upload/exports/
           gzip -c data/civitai.sqlite > hf-upload/snapshots/civitai.sqlite.gz
-          hf upload "$HF_DATASET_REPO" hf-upload . \
-            --repo-type dataset \
-            --token "$HF_TOKEN" \
-            --commit-message "Update Civitai trend dataset"
+          python - <<'PY'
+          import os
+
+          from huggingface_hub import HfApi
+
+          HfApi().upload_folder(
+              repo_id=os.environ["HF_DATASET_REPO"],
+              folder_path="hf-upload",
+              repo_type="dataset",
+              token=os.environ["HF_TOKEN"],
+              commit_message="Update Civitai trend dataset",
+          )
+          PY
 
       - name: Commit data
         run: |
