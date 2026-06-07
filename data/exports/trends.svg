@@ -2,7 +2,6 @@
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="90" y="30" font-family="Arial" font-size="20" font-weight="700">Civitai daily publication trends by architecture</text>
 <text x="90" y="50" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt converted to the selected local date; architecture uses grouped baseModel.</text>
-<text x="90" y="68" font-family="Arial" font-size="12" fill="#b45309">Partial coverage: 2026-06-02</text>
 <text x="90" y="72.0" font-family="Arial" font-size="15" font-weight="700">Checkpoint - Version releases</text>
 <line x1="90" y1="323.0" x2="910" y2="323.0" stroke="#111827"/>
 <line x1="90" y1="86.0" x2="90" y2="323.0" stroke="#111827"/>
@@ -762,7 +761,7 @@
 <text x="78" y="735.5" text-anchor="end" font-family="Arial" font-size="12">191</text>
 <line x1="90" y1="672.0" x2="910" y2="672.0" stroke="#e5e7eb"/>
 <text x="78" y="676.0" text-anchor="end" font-family="Arial" font-size="12">255</text>
-<polyline fill="none" stroke="#2563eb" stroke-width="2.4" points="90.0,731.5 131.0,690.6 172.0,744.5 213.0,728.7 254.0,750.1 295.0,722.2 336.0,672.0 377.0,719.4 418.0,718.5 459.0,761.2 500.0,758.4 541.0,758.4 582.0,763.1 623.0,754.7 664.0,793.8 705.0,790.0 746.0,818.8 787.0,756.6 828.0,791.9 869.0,788.2 910.0,783.5"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.4" points="90.0,731.5 131.0,690.6 172.0,744.5 213.0,728.7 254.0,750.1 295.0,722.2 336.0,672.0 377.0,719.4 418.0,718.5 459.0,761.2 500.0,758.4 541.0,758.4 582.0,763.1 623.0,754.7 664.0,793.8 705.0,790.0 746.0,818.8 787.0,756.6 828.0,791.9 869.0,788.2 910.0,780.7"/>
 <circle cx="90.0" cy="731.5" r="3" fill="#2563eb"/>
 <circle cx="131.0" cy="690.6" r="3" fill="#2563eb"/>
 <circle cx="172.0" cy="744.5" r="3" fill="#2563eb"/>
@@ -783,8 +782,8 @@
 <circle cx="787.0" cy="756.6" r="3" fill="#2563eb"/>
 <circle cx="828.0" cy="791.9" r="3" fill="#2563eb"/>
 <circle cx="869.0" cy="788.2" r="3" fill="#2563eb"/>
-<circle cx="910.0" cy="783.5" r="3" fill="#2563eb"/>
-<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="90.0,815.1 131.0,817.0 172.0,802.1 213.0,804.0 254.0,832.8 295.0,822.6 336.0,803.0 377.0,784.5 418.0,774.2 459.0,801.2 500.0,802.1 541.0,773.3 582.0,785.4 623.0,820.7 664.0,791.0 705.0,797.5 746.0,845.8 787.0,784.5 828.0,782.6 869.0,783.5 910.0,747.3"/>
+<circle cx="910.0" cy="780.7" r="3" fill="#2563eb"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="90.0,815.1 131.0,817.0 172.0,802.1 213.0,804.0 254.0,832.8 295.0,822.6 336.0,803.0 377.0,784.5 418.0,774.2 459.0,801.2 500.0,802.1 541.0,773.3 582.0,785.4 623.0,820.7 664.0,791.0 705.0,797.5 746.0,845.8 787.0,784.5 828.0,782.6 869.0,783.5 910.0,746.4"/>
 <circle cx="90.0" cy="815.1" r="3" fill="#dc2626"/>
 <circle cx="131.0" cy="817.0" r="3" fill="#dc2626"/>
 <circle cx="172.0" cy="802.1" r="3" fill="#dc2626"/>
@@ -805,7 +804,7 @@
 <circle cx="787.0" cy="784.5" r="3" fill="#dc2626"/>
 <circle cx="828.0" cy="782.6" r="3" fill="#dc2626"/>
 <circle cx="869.0" cy="783.5" r="3" fill="#dc2626"/>
-<circle cx="910.0" cy="747.3" r="3" fill="#dc2626"/>
+<circle cx="910.0" cy="746.4" r="3" fill="#dc2626"/>
 <polyline fill="none" stroke="#16a34a" stroke-width="2.4" points="90.0,886.7 131.0,892.3 172.0,894.1 213.0,888.6 254.0,889.5 295.0,882.0 336.0,893.2 377.0,896.9 418.0,892.3 459.0,898.8 500.0,889.5 541.0,887.6 582.0,897.8 623.0,892.3 664.0,896.0 705.0,889.5 746.0,898.8 787.0,885.8 828.0,892.3 869.0,880.2 910.0,896.0"/>
 <circle cx="90.0" cy="886.7" r="3" fill="#16a34a"/>
 <circle cx="131.0" cy="892.3" r="3" fill="#16a34a"/>
@@ -1159,9 +1158,9 @@
 <circle cx="869.0" cy="909.0" r="3" fill="#dc2626"/>
 <circle cx="910.0" cy="909.0" r="3" fill="#dc2626"/>
 <line x1="940" y1="690.0" x2="962" y2="690.0" stroke="#2563eb" stroke-width="3"/>
-<text x="972" y="694.0" font-family="Arial" font-size="11">Illustrious (3543)</text>
+<text x="972" y="694.0" font-family="Arial" font-size="11">Illustrious (3546)</text>
 <line x1="940" y1="705.0" x2="962" y2="705.0" stroke="#dc2626" stroke-width="3"/>
-<text x="972" y="709.0" font-family="Arial" font-size="11">Anima (2495)</text>
+<text x="972" y="709.0" font-family="Arial" font-size="11">Anima (2496)</text>
 <line x1="940" y1="720.0" x2="962" y2="720.0" stroke="#16a34a" stroke-width="3"/>
 <text x="972" y="724.0" font-family="Arial" font-size="11">Z-Image (397)</text>
 <line x1="940" y1="735.0" x2="962" y2="735.0" stroke="#9333ea" stroke-width="3"/>
@@ -1207,7 +1206,7 @@
 <text x="78" y="1028.5" text-anchor="end" font-family="Arial" font-size="12">155</text>
 <line x1="90" y1="965.0" x2="910" y2="965.0" stroke="#e5e7eb"/>
 <text x="78" y="969.0" text-anchor="end" font-family="Arial" font-size="12">207</text>
-<polyline fill="none" stroke="#2563eb" stroke-width="2.4" points="90.0,1016.5 131.0,985.6 172.0,1038.3 213.0,1023.4 254.0,1038.3 295.0,1029.1 336.0,965.0 377.0,1011.9 418.0,1024.5 459.0,1064.6 500.0,1057.7 541.0,1072.6 582.0,1066.9 623.0,1056.6 664.0,1096.7 705.0,1085.2 746.0,1116.1 787.0,1060.0 828.0,1085.2 869.0,1097.8 910.0,1088.7"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.4" points="90.0,1016.5 131.0,985.6 172.0,1038.3 213.0,1023.4 254.0,1038.3 295.0,1029.1 336.0,965.0 377.0,1011.9 418.0,1024.5 459.0,1064.6 500.0,1057.7 541.0,1072.6 582.0,1066.9 623.0,1056.6 664.0,1096.7 705.0,1085.2 746.0,1116.1 787.0,1060.0 828.0,1085.2 869.0,1097.8 910.0,1086.4"/>
 <circle cx="90.0" cy="1016.5" r="3" fill="#2563eb"/>
 <circle cx="131.0" cy="985.6" r="3" fill="#2563eb"/>
 <circle cx="172.0" cy="1038.3" r="3" fill="#2563eb"/>
@@ -1228,8 +1227,8 @@
 <circle cx="787.0" cy="1060.0" r="3" fill="#2563eb"/>
 <circle cx="828.0" cy="1085.2" r="3" fill="#2563eb"/>
 <circle cx="869.0" cy="1097.8" r="3" fill="#2563eb"/>
-<circle cx="910.0" cy="1088.7" r="3" fill="#2563eb"/>
-<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="90.0,1149.3 131.0,1160.8 172.0,1141.3 213.0,1142.5 254.0,1152.8 295.0,1150.5 336.0,1129.9 377.0,1127.6 418.0,1103.5 459.0,1144.8 500.0,1128.7 541.0,1085.2 582.0,1105.8 623.0,1132.2 664.0,1126.4 705.0,1123.0 746.0,1151.6 787.0,1101.2 828.0,1094.4 869.0,1100.1 910.0,1073.8"/>
+<circle cx="910.0" cy="1086.4" r="3" fill="#2563eb"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="90.0,1149.3 131.0,1160.8 172.0,1141.3 213.0,1142.5 254.0,1152.8 295.0,1150.5 336.0,1129.9 377.0,1127.6 418.0,1103.5 459.0,1144.8 500.0,1128.7 541.0,1085.2 582.0,1105.8 623.0,1132.2 664.0,1126.4 705.0,1123.0 746.0,1151.6 787.0,1101.2 828.0,1094.4 869.0,1100.1 910.0,1072.6"/>
 <circle cx="90.0" cy="1149.3" r="3" fill="#dc2626"/>
 <circle cx="131.0" cy="1160.8" r="3" fill="#dc2626"/>
 <circle cx="172.0" cy="1141.3" r="3" fill="#dc2626"/>
@@ -1250,7 +1249,7 @@
 <circle cx="787.0" cy="1101.2" r="3" fill="#dc2626"/>
 <circle cx="828.0" cy="1094.4" r="3" fill="#dc2626"/>
 <circle cx="869.0" cy="1100.1" r="3" fill="#dc2626"/>
-<circle cx="910.0" cy="1073.8" r="3" fill="#dc2626"/>
+<circle cx="910.0" cy="1072.6" r="3" fill="#dc2626"/>
 <polyline fill="none" stroke="#16a34a" stroke-width="2.4" points="90.0,1184.8 131.0,1187.1 172.0,1192.8 213.0,1189.4 254.0,1191.7 295.0,1179.1 336.0,1186.0 377.0,1189.4 418.0,1182.5 459.0,1192.8 500.0,1189.4 541.0,1196.3 582.0,1175.7 623.0,1172.2 664.0,1189.4 705.0,1192.8 746.0,1198.6 787.0,1194.0 828.0,1187.1 869.0,1190.6 910.0,1195.1"/>
 <circle cx="90.0" cy="1184.8" r="3" fill="#16a34a"/>
 <circle cx="131.0" cy="1187.1" r="3" fill="#16a34a"/>
@@ -1604,9 +1603,9 @@
 <circle cx="869.0" cy="1200.9" r="3" fill="#dc2626"/>
 <circle cx="910.0" cy="1202.0" r="3" fill="#dc2626"/>
 <line x1="940" y1="983.0" x2="962" y2="983.0" stroke="#2563eb" stroke-width="3"/>
-<text x="972" y="987.0" font-family="Arial" font-size="11">Illustrious (2761)</text>
+<text x="972" y="987.0" font-family="Arial" font-size="11">Illustrious (2763)</text>
 <line x1="940" y1="998.0" x2="962" y2="998.0" stroke="#dc2626" stroke-width="3"/>
-<text x="972" y="1002.0" font-family="Arial" font-size="11">Anima (1412)</text>
+<text x="972" y="1002.0" font-family="Arial" font-size="11">Anima (1413)</text>
 <line x1="940" y1="1013.0" x2="962" y2="1013.0" stroke="#16a34a" stroke-width="3"/>
 <text x="972" y="1017.0" font-family="Arial" font-size="11">SDXL (249)</text>
 <line x1="940" y1="1028.0" x2="962" y2="1028.0" stroke="#9333ea" stroke-width="3"/>
@@ -1654,7 +1653,7 @@
 <text x="582.0" y="1246" text-anchor="middle" font-family="Arial" font-size="12" fill="#111827">2026-05-30</text>
 <text x="623.0" y="1246" text-anchor="middle" font-family="Arial" font-size="12" fill="#111827">2026-05-31</text>
 <text x="664.0" y="1246" text-anchor="middle" font-family="Arial" font-size="12" fill="#111827">2026-06-01</text>
-<text x="705.0" y="1246" text-anchor="middle" font-family="Arial" font-size="12" fill="#b45309">2026-06-02 *</text>
+<text x="705.0" y="1246" text-anchor="middle" font-family="Arial" font-size="12" fill="#111827">2026-06-02</text>
 <text x="746.0" y="1246" text-anchor="middle" font-family="Arial" font-size="12" fill="#111827">2026-06-03</text>
 <text x="787.0" y="1246" text-anchor="middle" font-family="Arial" font-size="12" fill="#111827">2026-06-04</text>
 <text x="828.0" y="1246" text-anchor="middle" font-family="Arial" font-size="12" fill="#111827">2026-06-05</text>

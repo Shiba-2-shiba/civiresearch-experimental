@@ -5,7 +5,7 @@ grouped,Checkpoint,SDXL 1.0,SDXL,3226,1250
 grouped,Checkpoint,Pony,Pony,2209,874
 grouped,Checkpoint,Flux.1 D,Flux,1090,372
 grouped,Checkpoint,NoobAI,NoobAI,650,226
-grouped,Checkpoint,ZImageTurbo,Z-Image,300,90
+grouped,Checkpoint,ZImageTurbo,Z-Image,301,90
 grouped,Checkpoint,Anima,Anima,249,103
 grouped,Checkpoint,SDXL Lightning,Legacy,236,71
 grouped,Checkpoint,Flux.1 S,Flux,205,54
@@ -76,16 +76,16 @@ ungrouped,Checkpoint,Wan Video 2.5 I2V,,1,0
 ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 grouped,Checkpoint,,Legacy,0,10
-grouped,LORA,Illustrious,Illustrious,9644,6612
-grouped,LORA,Anima,Anima,3790,3040
-grouped,LORA,Pony,Pony,1135,389
-grouped,LORA,ZImageTurbo,Z-Image,955,514
-grouped,LORA,SDXL 1.0,SDXL,702,438
-grouped,LORA,Flux.1 D,Flux,663,304
-grouped,LORA,NoobAI,NoobAI,464,298
+grouped,LORA,Illustrious,Illustrious,9656,6621
+grouped,LORA,Anima,Anima,3800,3048
+grouped,LORA,Pony,Pony,1137,389
+grouped,LORA,ZImageTurbo,Z-Image,956,514
+grouped,LORA,SDXL 1.0,SDXL,703,439
+grouped,LORA,Flux.1 D,Flux,664,304
+grouped,LORA,NoobAI,NoobAI,465,298
 grouped,LORA,SD 1.5,SD 1.5,463,152
 grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,262,144
-grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,195,128
+grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,196,129
 grouped,LORA,ZImageBase,Z-Image,144,68
 ungrouped,LORA,ANIMA,,119,119
 grouped,LORA,Ernie,Ernie,112,65
