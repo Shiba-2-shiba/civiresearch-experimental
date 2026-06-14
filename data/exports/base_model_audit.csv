@@ -1,7 +1,7 @@
 status,model_type,base_model_raw,base_model_group,new_version_count,new_model_count
-grouped,Checkpoint,SD 1.5,SD 1.5,6993,2768
-grouped,Checkpoint,Illustrious,Illustrious,4606,1793
-grouped,Checkpoint,SDXL 1.0,SDXL,3232,1255
+grouped,Checkpoint,SD 1.5,SD 1.5,6994,2769
+grouped,Checkpoint,Illustrious,Illustrious,4610,1794
+grouped,Checkpoint,SDXL 1.0,SDXL,3239,1256
 grouped,Checkpoint,Pony,Pony,2210,874
 grouped,Checkpoint,Flux.1 D,Flux,1090,372
 grouped,Checkpoint,NoobAI,NoobAI,652,226
@@ -11,11 +11,11 @@ grouped,Checkpoint,SDXL Lightning,Legacy,236,71
 grouped,Checkpoint,Flux.1 S,Flux,205,54
 grouped,Checkpoint,Other,Legacy,205,63
 grouped,Checkpoint,Qwen,Qwen,184,51
-grouped,Checkpoint,ZImageBase,Z-Image,89,23
+grouped,Checkpoint,ZImageBase,Z-Image,90,24
 grouped,Checkpoint,SD 1.5 LCM,Legacy,86,37
 grouped,Checkpoint,HiDream,Hi-Dream O1,68,14
 ungrouped,Checkpoint,PixArt E,,68,16
-grouped,Checkpoint,Flux.2 Klein 9B,FLUX2 Klein 9B,66,13
+grouped,Checkpoint,Flux.2 Klein 9B,FLUX2 Klein 9B,67,14
 grouped,Checkpoint,SDXL Hyper,Legacy,62,21
 grouped,Checkpoint,Wan Video 2.2 I2V-A14B,Wanvideo2.2,60,14
 ungrouped,Checkpoint,Stable Cascade,,52,16
@@ -76,16 +76,16 @@ ungrouped,Checkpoint,Wan Video 2.5 I2V,,1,0
 ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 grouped,Checkpoint,,Legacy,0,12
-grouped,LORA,Illustrious,Illustrious,11068,7416
-grouped,LORA,Anima,Anima,5030,4092
-grouped,LORA,Pony,Pony,1340,426
+grouped,LORA,Illustrious,Illustrious,11072,7418
+grouped,LORA,Anima,Anima,5039,4098
+grouped,LORA,Pony,Pony,1341,426
 grouped,LORA,ZImageTurbo,Z-Image,1101,584
-grouped,LORA,SDXL 1.0,SDXL,797,487
-grouped,LORA,Flux.1 D,Flux,770,345
+grouped,LORA,SDXL 1.0,SDXL,798,488
+grouped,LORA,Flux.1 D,Flux,771,345
 grouped,LORA,SD 1.5,SD 1.5,549,163
-grouped,LORA,NoobAI,NoobAI,535,339
+grouped,LORA,NoobAI,NoobAI,536,339
 grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,290,159
-grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,216,141
+grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,217,142
 grouped,LORA,ZImageBase,Z-Image,169,76
 ungrouped,LORA,ANIMA,,119,119
 grouped,LORA,Ernie,Ernie,117,67
