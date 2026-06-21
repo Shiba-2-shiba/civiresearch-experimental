@@ -5,7 +5,7 @@ grouped,Checkpoint,SDXL 1.0,SDXL,3243,1257
 grouped,Checkpoint,Pony,Pony,2218,876
 grouped,Checkpoint,Flux.1 D,Flux,1090,372
 grouped,Checkpoint,NoobAI,NoobAI,654,226
-grouped,Checkpoint,Anima,Anima,353,134
+grouped,Checkpoint,Anima,Anima,355,135
 grouped,Checkpoint,ZImageTurbo,Z-Image,325,96
 grouped,Checkpoint,SDXL Lightning,Legacy,236,71
 grouped,Checkpoint,Flux.1 S,Flux,205,54
@@ -77,10 +77,10 @@ ungrouped,Checkpoint,Wan Video 2.5 I2V,,1,0
 ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 grouped,Checkpoint,,Legacy,0,12
-grouped,LORA,Illustrious,Illustrious,12412,8209
-grouped,LORA,Anima,Anima,6061,4927
-grouped,LORA,Pony,Pony,1540,483
-grouped,LORA,ZImageTurbo,Z-Image,1230,656
+grouped,LORA,Illustrious,Illustrious,12423,8219
+grouped,LORA,Anima,Anima,6063,4929
+grouped,LORA,Pony,Pony,1542,484
+grouped,LORA,ZImageTurbo,Z-Image,1231,656
 grouped,LORA,SDXL 1.0,SDXL,931,575
 grouped,LORA,Flux.1 D,Flux,898,422
 grouped,LORA,NoobAI,NoobAI,614,382
