@@ -3,6 +3,7 @@ from __future__ import annotations
 import sys
 import tempfile
 import unittest
+from datetime import date, timedelta
 from pathlib import Path
 
 
@@ -12,7 +13,12 @@ sys.path.insert(0, str(SCRIPTS))
 
 from audit_base_models import audit_rows  # noqa: E402
 from export_counts import aggregate, parse_group_file  # noqa: E402
-from plot_trends import complete_observed_dates, parse_timezone_offset, read_publication_series  # noqa: E402
+from plot_trends import (  # noqa: E402
+    complete_observed_dates,
+    parse_timezone_offset,
+    read_publication_series,
+    render_svg,
+)
 
 
 class TrendScriptTests(unittest.TestCase):
@@ -200,6 +206,36 @@ Legacy:
             )
 
         self.assertEqual(result, {"2026-05-20"})
+
+    def test_render_svg_limits_series_and_uses_weekly_date_labels(self) -> None:
+        dates = [(date(2026, 5, 18) + timedelta(days=offset)).isoformat() for offset in range(10)]
+        series = {
+            "Checkpoint": {
+                "new_versions": {
+                    "Top": {day: 10 for day in dates},
+                    "Second": {day: 5 for day in dates},
+                    "Hidden": {day: 1 for day in dates},
+                },
+                "new_models": {},
+            }
+        }
+
+        svg = render_svg(
+            dates,
+            series,
+            set(dates),
+            max_series_per_panel=2,
+            date_label_interval_days=7,
+        )
+
+        self.assertIn("Top (100)", svg)
+        self.assertIn("Second (50)", svg)
+        self.assertNotIn("Hidden (10)", svg)
+        self.assertIn("1 hidden series (10 total)", svg)
+        self.assertIn(">2026-05-18</text>", svg)
+        self.assertIn(">2026-05-25</text>", svg)
+        self.assertIn(">2026-05-27</text>", svg)
+        self.assertNotIn(">2026-05-19</text>", svg)
 
 
 if __name__ == "__main__":

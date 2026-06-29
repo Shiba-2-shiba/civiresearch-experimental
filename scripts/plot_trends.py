@@ -187,7 +187,13 @@ def read_publication_series(
     return complete_date_range(publication_days), series
 
 
-def render_svg(dates: list[str], series: MetricSeries, complete_dates: set[str] | None = None) -> str:
+def render_svg(
+    dates: list[str],
+    series: MetricSeries,
+    complete_dates: set[str] | None = None,
+    max_series_per_panel: int = 8,
+    date_label_interval_days: int = 7,
+) -> str:
     complete_dates = complete_dates or set()
     incomplete_dates = [day for day in dates if day not in complete_dates]
     width, height = 1260, 1280
@@ -212,11 +218,19 @@ def render_svg(dates: list[str], series: MetricSeries, complete_dates: set[str] 
     def y_pos(value: int, panel_top: float, panel_max: int) -> float:
         return panel_top + plot_h - (plot_h * value / panel_max)
 
+    def show_date_label(index: int, day: str) -> bool:
+        if date_label_interval_days <= 1:
+            return True
+        if index == 0 or index == len(dates) - 1:
+            return True
+        offset = (date.fromisoformat(day) - date.fromisoformat(dates[0])).days
+        return offset % date_label_interval_days == 0
+
     lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
         '<rect width="100%" height="100%" fill="#ffffff"/>',
         f'<text x="{left}" y="30" font-family="Arial" font-size="20" font-weight="700">Civitai daily publication trends by architecture</text>',
-        f'<text x="{left}" y="50" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt converted to the selected local date; architecture uses grouped baseModel.</text>',
+        f'<text x="{left}" y="50" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt converted to the selected local date; architecture uses grouped baseModel. Each panel shows the top {max_series_per_panel} series.</text>',
     ]
     if incomplete_dates:
         note = "Partial coverage: " + ", ".join(incomplete_dates)
@@ -231,11 +245,13 @@ def render_svg(dates: list[str], series: MetricSeries, complete_dates: set[str] 
             key=lambda item: sum(item[1].values()),
             reverse=True,
         )
+        visible_ranked = ranked[:max_series_per_panel] if max_series_per_panel > 0 else ranked
+        hidden_ranked = ranked[len(visible_ranked):]
         panel_max = max(
             [1]
             + [
                 max(values.get(day, 0) for day in dates)
-                for _, values in ranked
+                for _, values in visible_ranked
             ]
         )
         panel_title = f"{model_type} - {metric_label}"
@@ -248,7 +264,7 @@ def render_svg(dates: list[str], series: MetricSeries, complete_dates: set[str] 
             lines.append(f'<line x1="{left}" y1="{y:.1f}" x2="{left + plot_w}" y2="{y:.1f}" stroke="#e5e7eb"/>')
             lines.append(f'<text x="{left - 12}" y="{y + 4:.1f}" text-anchor="end" font-family="Arial" font-size="12">{value}</text>')
 
-        for idx, (arch, values) in enumerate(ranked):
+        for idx, (arch, values) in enumerate(visible_ranked):
             color = PALETTE[idx % len(PALETTE)]
             points = " ".join(
                 f"{x_pos(i):.1f},{y_pos(values.get(day, 0), panel_top, panel_max):.1f}"
@@ -261,15 +277,21 @@ def render_svg(dates: list[str], series: MetricSeries, complete_dates: set[str] 
                 lines.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="{color}"/>')
 
         legend_x = left + plot_w + 30
-        for idx, (arch, values) in enumerate(ranked):
+        for idx, (arch, values) in enumerate(visible_ranked):
             color = PALETTE[idx % len(PALETTE)]
             legend_y = panel_top + 18 + idx * 15
             total = sum(values.get(day, 0) for day in dates)
             lines.append(f'<line x1="{legend_x}" y1="{legend_y:.1f}" x2="{legend_x + 22}" y2="{legend_y:.1f}" stroke="{color}" stroke-width="3"/>')
             lines.append(f'<text x="{legend_x + 32}" y="{legend_y + 4:.1f}" font-family="Arial" font-size="11">{html.escape(arch)} ({total})</text>')
+        if hidden_ranked:
+            hidden_total = sum(sum(values.get(day, 0) for day in dates) for _, values in hidden_ranked)
+            hidden_y = panel_top + 18 + len(visible_ranked) * 15
+            lines.append(f'<text x="{legend_x}" y="{hidden_y + 4:.1f}" font-family="Arial" font-size="11" fill="#6b7280">{len(hidden_ranked)} hidden series ({hidden_total} total)</text>')
 
     label_y = height - 34
     for index, day in enumerate(dates):
+        if not show_date_label(index, day):
+            continue
         x = x_pos(index)
         fill = "#b45309" if day in incomplete_dates else "#111827"
         suffix = " *" if day in incomplete_dates else ""
@@ -287,6 +309,18 @@ def main() -> int:
     parser.add_argument("--start-date")
     parser.add_argument("--end-date")
     parser.add_argument("--timezone-offset", default="+09:00")
+    parser.add_argument(
+        "--max-series-per-panel",
+        type=int,
+        default=8,
+        help="Maximum architecture series to draw per panel. Use 0 to show all.",
+    )
+    parser.add_argument(
+        "--date-label-interval-days",
+        type=int,
+        default=7,
+        help="Show x-axis date labels every N days, while always keeping the first and last label.",
+    )
     args = parser.parse_args()
 
     dates, series = read_publication_series(
@@ -303,7 +337,16 @@ def main() -> int:
         parse_timezone_offset(args.timezone_offset),
     )
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(render_svg(dates, series, complete_dates), encoding="utf-8")
+    args.output.write_text(
+        render_svg(
+            dates,
+            series,
+            complete_dates,
+            max_series_per_panel=args.max_series_per_panel,
+            date_label_interval_days=args.date_label_interval_days,
+        ),
+        encoding="utf-8",
+    )
     return 0
 
 
