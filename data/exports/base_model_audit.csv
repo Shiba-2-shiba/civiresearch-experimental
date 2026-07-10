@@ -1,24 +1,24 @@
 status,model_type,base_model_raw,base_model_group,new_version_count,new_model_count
 grouped,Checkpoint,SD 1.5,SD 1.5,7001,2772
-grouped,Checkpoint,Illustrious,Illustrious,4699,1819
+grouped,Checkpoint,Illustrious,Illustrious,4704,1823
 grouped,Checkpoint,SDXL 1.0,SDXL,3255,1259
 grouped,Checkpoint,Pony,Pony,2220,876
 grouped,Checkpoint,Flux.1 D,Flux,1091,373
 grouped,Checkpoint,NoobAI,NoobAI,656,228
-grouped,Checkpoint,Anima,Anima,491,177
+grouped,Checkpoint,Anima,Anima,498,179
 grouped,Checkpoint,ZImageTurbo,Z-Image,357,101
 grouped,Checkpoint,SDXL Lightning,Legacy,236,71
 grouped,Checkpoint,Other,Legacy,207,64
 grouped,Checkpoint,Flux.1 S,Flux,205,54
 grouped,Checkpoint,Qwen,Qwen,185,51
-grouped,Checkpoint,ZImageBase,Z-Image,104,26
+grouped,Checkpoint,ZImageBase,Z-Image,105,26
 grouped,Checkpoint,SD 1.5 LCM,Legacy,86,37
 grouped,Checkpoint,Flux.2 Klein 9B,FLUX2 Klein 9B,72,16
 grouped,Checkpoint,HiDream,Hi-Dream O1,68,14
 ungrouped,Checkpoint,PixArt E,,68,16
 grouped,Checkpoint,SDXL Hyper,Legacy,63,21
 grouped,Checkpoint,Wan Video 2.2 I2V-A14B,Wanvideo2.2,60,14
-ungrouped,Checkpoint,Krea 2,,57,22
+ungrouped,Checkpoint,Krea 2,,59,22
 ungrouped,Checkpoint,Stable Cascade,,52,16
 grouped,Checkpoint,LTXV 2.3,LTXV2.3,49,8
 grouped,Checkpoint,Chroma,Legacy,48,14
@@ -79,35 +79,35 @@ ungrouped,Checkpoint,Wan Video 2.5 I2V,,1,0
 ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 grouped,Checkpoint,,Legacy,0,15
-grouped,LORA,Illustrious,Illustrious,15327,9932
-grouped,LORA,Anima,Anima,8807,7238
-grouped,LORA,Pony,Pony,2061,575
-grouped,LORA,ZImageTurbo,Z-Image,1711,855
-grouped,LORA,SDXL 1.0,SDXL,1240,756
-grouped,LORA,Flux.1 D,Flux,1225,546
-grouped,LORA,NoobAI,NoobAI,748,435
-grouped,LORA,SD 1.5,SD 1.5,734,200
-ungrouped,LORA,Krea 2,,527,340
-grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,436,198
-grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,331,196
-grouped,LORA,ZImageBase,Z-Image,236,98
-grouped,LORA,Qwen,Qwen,184,35
-grouped,LORA,Flux.1 Krea,Flux,150,42
+grouped,LORA,Illustrious,Illustrious,15474,10019
+grouped,LORA,Anima,Anima,8983,7390
+grouped,LORA,Pony,Pony,2087,577
+grouped,LORA,ZImageTurbo,Z-Image,1736,867
+grouped,LORA,SDXL 1.0,SDXL,1255,762
+grouped,LORA,Flux.1 D,Flux,1239,549
+grouped,LORA,NoobAI,NoobAI,759,436
+grouped,LORA,SD 1.5,SD 1.5,751,201
+ungrouped,LORA,Krea 2,,569,364
+grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,437,198
+grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,335,197
+grouped,LORA,ZImageBase,Z-Image,245,99
+grouped,LORA,Qwen,Qwen,190,35
+grouped,LORA,Flux.1 Krea,Flux,152,43
 grouped,LORA,ACE Audio,Legacy,146,8
 grouped,LORA,Ernie,Ernie,145,79
 ungrouped,LORA,ANIMA,,119,119
-grouped,LORA,LTXV 2.3,LTXV2.3,86,47
-grouped,LORA,Chroma,Legacy,85,32
-grouped,LORA,Other,Legacy,79,16
-grouped,LORA,Flux.2 Klein 4B,Legacy,58,12
+grouped,LORA,LTXV 2.3,LTXV2.3,87,48
+grouped,LORA,Chroma,Legacy,86,32
+grouped,LORA,Other,Legacy,80,16
+grouped,LORA,Flux.2 Klein 4B,Legacy,59,12
 grouped,LORA,HiDream-O1,Hi-Dream O1,57,22
 grouped,LORA,Flux.2 Klein 4B-base,Legacy,52,27
 grouped,LORA,Wan Video 2.2 T2V-A14B,Wanvideo2.2,45,12
-ungrouped,LORA,Ideogram 4.0,,28,16
+ungrouped,LORA,Ideogram 4.0,,29,17
+grouped,LORA,Wan Video 2.2 I2V-A14B,Wanvideo2.2,29,7
 grouped,LORA,Pony V7,Legacy,27,10
-grouped,LORA,Wan Video 2.2 I2V-A14B,Wanvideo2.2,25,6
-grouped,LORA,Flux.2 D,Legacy,22,10
-grouped,LORA,Wan Video 14B t2v,Legacy,22,1
+grouped,LORA,Wan Video 14B t2v,Legacy,24,1
+grouped,LORA,Flux.2 D,Legacy,23,11
 ungrouped,LORA,Boogu,,16,7
 grouped,LORA,Hunyuan Video,Legacy,16,3
 ungrouped,LORA,Flux.1 Kontext,,12,1
@@ -117,9 +117,9 @@ ungrouped,LORA,Lens,,8,1
 grouped,LORA,Qwen 2,Qwen,7,5
 grouped,LORA,HiDream,Hi-Dream O1,6,1
 grouped,LORA,SDXL Lightning,Legacy,5,1
-grouped,LORA,Wan Video 1.3B t2v,Legacy,4,0
+grouped,LORA,Wan Video 1.3B t2v,Legacy,5,0
+grouped,LORA,Wan Video 2.2 TI2V-5B,Wanvideo2.2,4,1
 grouped,LORA,Illustrious 0.1,Illustrious,3,1
-grouped,LORA,Wan Video 2.2 TI2V-5B,Wanvideo2.2,3,1
 grouped,LORA,SDXL Hyper,Legacy,2,2
 grouped,LORA,Kolors,Legacy,1,1
 ungrouped,LORA,Lumina,,1,0
