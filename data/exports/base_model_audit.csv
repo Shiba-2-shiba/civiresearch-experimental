@@ -79,15 +79,15 @@ ungrouped,Checkpoint,Wan Video 2.5 I2V,,1,0
 ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 grouped,Checkpoint,,Legacy,0,15
-grouped,LORA,Illustrious,Illustrious,15845,10210
-grouped,LORA,Anima,Anima,9315,7673
+grouped,LORA,Illustrious,Illustrious,15850,10214
+grouped,LORA,Anima,Anima,9321,7679
 grouped,LORA,Pony,Pony,2148,586
-grouped,LORA,ZImageTurbo,Z-Image,1782,886
+grouped,LORA,ZImageTurbo,Z-Image,1783,887
 grouped,LORA,SDXL 1.0,SDXL,1297,781
 grouped,LORA,Flux.1 D,Flux,1266,558
 grouped,LORA,NoobAI,NoobAI,797,442
-grouped,LORA,SD 1.5,SD 1.5,780,209
-ungrouped,LORA,Krea 2,,691,436
+grouped,LORA,SD 1.5,SD 1.5,781,210
+ungrouped,LORA,Krea 2,,696,440
 grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,445,198
 grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,341,200
 grouped,LORA,ZImageBase,Z-Image,254,99
