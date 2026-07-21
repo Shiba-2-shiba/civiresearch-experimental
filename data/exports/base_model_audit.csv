@@ -1,17 +1,17 @@
 status,model_type,base_model_raw,base_model_group,new_version_count,new_model_count
 grouped,Checkpoint,SD 1.5,SD 1.5,7002,2772
-grouped,Checkpoint,Illustrious,Illustrious,4739,1839
+grouped,Checkpoint,Illustrious,Illustrious,4744,1839
 grouped,Checkpoint,SDXL 1.0,SDXL,3270,1260
 grouped,Checkpoint,Pony,Pony,2221,877
 grouped,Checkpoint,Flux.1 D,Flux,1092,374
 grouped,Checkpoint,NoobAI,NoobAI,656,228
-grouped,Checkpoint,Anima,Anima,578,203
-grouped,Checkpoint,ZImageTurbo,Z-Image,364,101
+grouped,Checkpoint,Anima,Anima,583,204
+grouped,Checkpoint,ZImageTurbo,Z-Image,365,102
 grouped,Checkpoint,SDXL Lightning,Legacy,239,71
 grouped,Checkpoint,Other,Legacy,207,64
 grouped,Checkpoint,Flux.1 S,Flux,205,54
 grouped,Checkpoint,Qwen,Qwen,185,51
-ungrouped,Checkpoint,Krea 2,,116,40
+ungrouped,Checkpoint,Krea 2,,122,41
 grouped,Checkpoint,ZImageBase,Z-Image,106,26
 grouped,Checkpoint,SD 1.5 LCM,Legacy,86,37
 grouped,Checkpoint,Flux.2 Klein 9B,FLUX2 Klein 9B,72,16
@@ -41,8 +41,8 @@ ungrouped,Checkpoint,Wan Video 14B i2v 720p,,16,4
 ungrouped,Checkpoint,SD 1.5 Hyper,,15,10
 ungrouped,Checkpoint,Wan Video,,14,5
 ungrouped,Checkpoint,Wan Video 14B i2v 480p,,13,3
+ungrouped,Checkpoint,Boogu,,11,6
 grouped,Checkpoint,HiDream-O1,Hi-Dream O1,11,2
-ungrouped,Checkpoint,Boogu,,10,6
 ungrouped,Checkpoint,Playground v2,,10,6
 grouped,Checkpoint,Flux.2 Klein 9B-base,FLUX2 Klein 9B,9,7
 grouped,Checkpoint,Wan Video 1.3B t2v,Legacy,9,2
@@ -79,40 +79,40 @@ ungrouped,Checkpoint,Wan Video 2.5 I2V,,1,0
 ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 grouped,Checkpoint,,Legacy,0,19
-grouped,LORA,Illustrious,Illustrious,17265,11035
-grouped,LORA,Anima,Anima,10628,8770
-grouped,LORA,Pony,Pony,2360,630
-grouped,LORA,ZImageTurbo,Z-Image,1924,940
-grouped,LORA,SDXL 1.0,SDXL,1424,852
-grouped,LORA,Flux.1 D,Flux,1399,589
-ungrouped,LORA,Krea 2,,1148,719
-grouped,LORA,NoobAI,NoobAI,905,481
-grouped,LORA,SD 1.5,SD 1.5,835,226
-grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,466,205
-grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,352,203
-grouped,LORA,ZImageBase,Z-Image,282,112
-grouped,LORA,Qwen,Qwen,207,36
-grouped,LORA,Flux.1 Krea,Flux,177,49
-grouped,LORA,Ernie,Ernie,149,80
+grouped,LORA,Illustrious,Illustrious,17443,11130
+grouped,LORA,Anima,Anima,10861,8966
+grouped,LORA,Pony,Pony,2409,638
+grouped,LORA,ZImageTurbo,Z-Image,1949,947
+grouped,LORA,SDXL 1.0,SDXL,1456,868
+grouped,LORA,Flux.1 D,Flux,1420,598
+ungrouped,LORA,Krea 2,,1204,763
+grouped,LORA,NoobAI,NoobAI,913,483
+grouped,LORA,SD 1.5,SD 1.5,849,228
+grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,470,208
+grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,356,204
+grouped,LORA,ZImageBase,Z-Image,285,113
+grouped,LORA,Qwen,Qwen,211,36
+grouped,LORA,Flux.1 Krea,Flux,179,49
+grouped,LORA,Ernie,Ernie,150,81
 grouped,LORA,ACE Audio,Legacy,147,9
 ungrouped,LORA,ANIMA,,119,119
-grouped,LORA,LTXV 2.3,LTXV2.3,102,58
+grouped,LORA,LTXV 2.3,LTXV2.3,103,58
 grouped,LORA,Chroma,Legacy,98,34
-grouped,LORA,Other,Legacy,85,17
-grouped,LORA,Flux.2 Klein 4B,Legacy,64,12
+grouped,LORA,Other,Legacy,86,17
+grouped,LORA,Flux.2 Klein 4B,Legacy,65,12
 grouped,LORA,Flux.2 Klein 4B-base,Legacy,57,31
 grouped,LORA,HiDream-O1,Hi-Dream O1,57,22
 grouped,LORA,Wan Video 2.2 T2V-A14B,Wanvideo2.2,48,13
 ungrouped,LORA,Ideogram 4.0,,31,18
 grouped,LORA,Wan Video 2.2 I2V-A14B,Wanvideo2.2,30,8
+grouped,LORA,Wan Video 14B t2v,Legacy,28,1
 grouped,LORA,Flux.2 D,Legacy,27,11
 grouped,LORA,Pony V7,Legacy,27,10
-grouped,LORA,Wan Video 14B t2v,Legacy,27,1
-ungrouped,LORA,Boogu,,23,11
+ungrouped,LORA,Boogu,,24,11
 grouped,LORA,Hunyuan Video,Legacy,19,4
 ungrouped,LORA,Flux.1 Kontext,,12,1
 grouped,LORA,Flux.1 S,Flux,12,5
-grouped,LORA,LTXV2,Legacy,11,2
+grouped,LORA,LTXV2,Legacy,12,2
 ungrouped,LORA,Lens,,8,1
 grouped,LORA,Qwen 2,Qwen,8,5
 grouped,LORA,HiDream,Hi-Dream O1,6,1
@@ -130,4 +130,4 @@ ungrouped,LORA,Wan Image 2.7,,1,1
 ungrouped,LORA,Wan Video,,1,0
 ungrouped,LORA,Wan Video 14B i2v 720p,,1,0
 ungrouped,LORA,Wan Video 2.5 I2V,,1,1
-grouped,LORA,,Legacy,0,122
+grouped,LORA,,Legacy,0,123
