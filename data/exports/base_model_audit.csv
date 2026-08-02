@@ -1,16 +1,16 @@
 status,model_type,base_model_raw,base_model_group,new_version_count,new_model_count
 grouped,Checkpoint,SD 1.5,SD 1.5,7065,2815
-grouped,Checkpoint,Illustrious,Illustrious,4834,1877
-grouped,Checkpoint,SDXL 1.0,SDXL,3320,1287
+grouped,Checkpoint,Illustrious,Illustrious,4838,1879
+grouped,Checkpoint,SDXL 1.0,SDXL,3321,1287
 grouped,Checkpoint,Pony,Pony,2273,893
 grouped,Checkpoint,Flux.1 D,Flux,1110,382
+grouped,Checkpoint,Anima,Anima,673,238
 grouped,Checkpoint,NoobAI,NoobAI,664,232
-grouped,Checkpoint,Anima,Anima,663,236
 grouped,Checkpoint,ZImageTurbo,Z-Image,371,103
 grouped,Checkpoint,SDXL Lightning,Legacy,242,73
 grouped,Checkpoint,Flux.1 S,Flux,215,56
 grouped,Checkpoint,Other,Legacy,209,66
-ungrouped,Checkpoint,Krea 2,,186,61
+ungrouped,Checkpoint,Krea 2,,192,63
 grouped,Checkpoint,Qwen,Qwen,185,51
 grouped,Checkpoint,ZImageBase,Z-Image,108,27
 grouped,Checkpoint,SD 1.5 LCM,Legacy,86,37
@@ -79,22 +79,22 @@ ungrouped,Checkpoint,Wan Image 2.7,,1,1
 ungrouped,Checkpoint,Wan Video 2.5 I2V,,1,0
 ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
-grouped,Checkpoint,,Legacy,0,20
-grouped,LORA,Illustrious,Illustrious,19447,12247
-grouped,LORA,Anima,Anima,12387,10183
-grouped,LORA,Pony,Pony,2720,707
-ungrouped,LORA,Krea 2,,2114,1427
-grouped,LORA,ZImageTurbo,Z-Image,2108,1000
-grouped,LORA,SDXL 1.0,SDXL,1599,924
-grouped,LORA,Flux.1 D,Flux,1582,648
-grouped,LORA,NoobAI,NoobAI,1005,512
-grouped,LORA,SD 1.5,SD 1.5,970,243
+grouped,Checkpoint,,Legacy,0,21
+grouped,LORA,Illustrious,Illustrious,19649,12346
+grouped,LORA,Anima,Anima,12535,10298
+grouped,LORA,Pony,Pony,2753,712
+ungrouped,LORA,Krea 2,,2214,1501
+grouped,LORA,ZImageTurbo,Z-Image,2119,1006
+grouped,LORA,SDXL 1.0,SDXL,1612,928
+grouped,LORA,Flux.1 D,Flux,1591,650
+grouped,LORA,NoobAI,NoobAI,1017,514
+grouped,LORA,SD 1.5,SD 1.5,988,245
 grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,498,212
 grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,374,213
 grouped,LORA,ZImageBase,Z-Image,318,124
 grouped,LORA,Qwen,Qwen,224,36
-grouped,LORA,Flux.1 Krea,Flux,195,52
-grouped,LORA,Ernie,Ernie,152,82
+grouped,LORA,Flux.1 Krea,Flux,196,52
+grouped,LORA,Ernie,Ernie,154,83
 grouped,LORA,ACE Audio,Legacy,147,9
 ungrouped,LORA,ANIMA,,119,119
 grouped,LORA,LTXV 2.3,LTXV2.3,113,64
@@ -132,4 +132,4 @@ ungrouped,LORA,SD 2.1,,1,1
 ungrouped,LORA,Wan Image 2.7,,1,1
 ungrouped,LORA,Wan Video 14B i2v 720p,,1,0
 ungrouped,LORA,Wan Video 2.5 I2V,,1,1
-grouped,LORA,,Legacy,0,136
+grouped,LORA,,Legacy,0,139
