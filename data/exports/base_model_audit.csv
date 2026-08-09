@@ -1,10 +1,10 @@
 status,model_type,base_model_raw,base_model_group,new_version_count,new_model_count
 grouped,Checkpoint,SD 1.5,SD 1.5,7065,2815
-grouped,Checkpoint,Illustrious,Illustrious,4865,1886
+grouped,Checkpoint,Illustrious,Illustrious,4866,1886
 grouped,Checkpoint,SDXL 1.0,SDXL,3322,1287
 grouped,Checkpoint,Pony,Pony,2274,893
 grouped,Checkpoint,Flux.1 D,Flux,1111,383
-grouped,Checkpoint,Anima,Anima,704,245
+grouped,Checkpoint,Anima,Anima,705,245
 grouped,Checkpoint,NoobAI,NoobAI,666,232
 grouped,Checkpoint,ZImageTurbo,Z-Image,372,103
 ungrouped,Checkpoint,Krea 2,,258,80
@@ -81,14 +81,14 @@ ungrouped,Checkpoint,Wan Video 2.5 I2V,,1,0
 ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 grouped,Checkpoint,,Legacy,0,24
-grouped,LORA,Illustrious,Illustrious,20994,13015
-grouped,LORA,Anima,Anima,13722,11277
+grouped,LORA,Illustrious,Illustrious,20999,13019
+grouped,LORA,Anima,Anima,13731,11285
 grouped,LORA,Pony,Pony,2943,754
-ungrouped,LORA,Krea 2,,2836,1931
+ungrouped,LORA,Krea 2,,2838,1933
 grouped,LORA,ZImageTurbo,Z-Image,2201,1030
 grouped,LORA,SDXL 1.0,SDXL,1710,967
 grouped,LORA,Flux.1 D,Flux,1663,687
-grouped,LORA,NoobAI,NoobAI,1082,536
+grouped,LORA,NoobAI,NoobAI,1085,536
 grouped,LORA,SD 1.5,SD 1.5,1057,255
 grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,511,218
 grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,384,216
