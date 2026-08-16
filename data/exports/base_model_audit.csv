@@ -18,7 +18,7 @@ grouped,Checkpoint,Flux.2 Klein 9B,FLUX2 Klein 9B,78,21
 grouped,Checkpoint,HiDream,Hi-Dream O1,68,14
 ungrouped,Checkpoint,PixArt E,,68,16
 grouped,Checkpoint,SDXL Hyper,Legacy,65,21
-grouped,Checkpoint,LTXV 2.3,LTXV2.3,62,14
+grouped,Checkpoint,LTXV 2.3,LTXV2.3,64,16
 grouped,Checkpoint,Wan Video 2.2 I2V-A14B,Wanvideo2.2,60,14
 ungrouped,Checkpoint,Stable Cascade,,52,16
 grouped,Checkpoint,Chroma,Legacy,48,14
@@ -82,15 +82,15 @@ ungrouped,Checkpoint,Wan Video 2.5 I2V,,1,0
 ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 grouped,Checkpoint,,Legacy,0,26
-grouped,LORA,Illustrious,Illustrious,22219,13596
-grouped,LORA,Anima,Anima,15025,12327
-ungrouped,LORA,Krea 2,,3375,2330
-grouped,LORA,Pony,Pony,3093,791
-grouped,LORA,ZImageTurbo,Z-Image,2287,1054
-grouped,LORA,SDXL 1.0,SDXL,1829,1019
-grouped,LORA,Flux.1 D,Flux,1738,717
-grouped,LORA,NoobAI,NoobAI,1147,570
-grouped,LORA,SD 1.5,SD 1.5,1118,266
+grouped,LORA,Illustrious,Illustrious,22255,13618
+grouped,LORA,Anima,Anima,15053,12351
+ungrouped,LORA,Krea 2,,3401,2350
+grouped,LORA,Pony,Pony,3109,792
+grouped,LORA,ZImageTurbo,Z-Image,2288,1055
+grouped,LORA,SDXL 1.0,SDXL,1834,1023
+grouped,LORA,Flux.1 D,Flux,1739,718
+grouped,LORA,NoobAI,NoobAI,1156,572
+grouped,LORA,SD 1.5,SD 1.5,1119,266
 grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,528,221
 grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,393,218
 grouped,LORA,ZImageBase,Z-Image,351,137
@@ -98,7 +98,7 @@ grouped,LORA,Qwen,Qwen,234,36
 grouped,LORA,Flux.1 Krea,Flux,198,53
 grouped,LORA,Ernie,Ernie,161,84
 grouped,LORA,ACE Audio,Legacy,147,9
-grouped,LORA,LTXV 2.3,LTXV2.3,127,65
+grouped,LORA,LTXV 2.3,LTXV2.3,128,66
 ungrouped,LORA,ANIMA,,120,120
 grouped,LORA,Chroma,Legacy,116,34
 grouped,LORA,Other,Legacy,103,18
@@ -114,9 +114,9 @@ grouped,LORA,Pony V7,Legacy,29,12
 ungrouped,LORA,Boogu,,27,12
 grouped,LORA,Hunyuan Video,Legacy,23,5
 ungrouped,LORA,MiniMax H3,,20,12
+grouped,LORA,Flux.1 S,Flux,13,6
 grouped,LORA,LTXV2,Legacy,13,2
 ungrouped,LORA,Flux.1 Kontext,,12,1
-grouped,LORA,Flux.1 S,Flux,12,5
 grouped,LORA,Qwen 2,Qwen,11,6
 ungrouped,LORA,Lens,,8,1
 grouped,LORA,HiDream,Hi-Dream O1,7,1
