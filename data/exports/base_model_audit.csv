@@ -1,16 +1,16 @@
 status,model_type,base_model_raw,base_model_group,new_version_count,new_model_count
-grouped,Checkpoint,SD 1.5,SD 1.5,7066,2815
-grouped,Checkpoint,Illustrious,Illustrious,4888,1892
-grouped,Checkpoint,SDXL 1.0,SDXL,3323,1287
+grouped,Checkpoint,SD 1.5,SD 1.5,7069,2816
+grouped,Checkpoint,Illustrious,Illustrious,4889,1893
+grouped,Checkpoint,SDXL 1.0,SDXL,3324,1287
 grouped,Checkpoint,Pony,Pony,2276,895
 grouped,Checkpoint,Flux.1 D,Flux,1111,383
-grouped,Checkpoint,Anima,Anima,761,268
+grouped,Checkpoint,Anima,Anima,772,274
 grouped,Checkpoint,NoobAI,NoobAI,668,232
 grouped,Checkpoint,ZImageTurbo,Z-Image,375,104
-ungrouped,Checkpoint,Krea 2,,320,91
+ungrouped,Checkpoint,Krea 2,,329,93
 grouped,Checkpoint,SDXL Lightning,Legacy,242,73
+grouped,Checkpoint,Other,Legacy,218,69
 grouped,Checkpoint,Flux.1 S,Flux,217,58
-grouped,Checkpoint,Other,Legacy,217,68
 grouped,Checkpoint,Qwen,Qwen,185,51
 grouped,Checkpoint,ZImageBase,Z-Image,113,28
 grouped,Checkpoint,SD 1.5 LCM,Legacy,86,37
@@ -34,9 +34,9 @@ ungrouped,Checkpoint,Flux.1 Kontext,,25,10
 grouped,Checkpoint,Wan Video 14B t2v,Legacy,24,12
 grouped,Checkpoint,Flux.2 Klein 4B-base,Legacy,22,4
 grouped,Checkpoint,Wan Video 2.2 T2V-A14B,Wanvideo2.2,21,3
+ungrouped,Checkpoint,MiniMax H3,,20,9
 grouped,Checkpoint,Kolors,Legacy,19,10
 ungrouped,Checkpoint,Lumina,,19,10
-ungrouped,Checkpoint,MiniMax H3,,19,8
 ungrouped,Checkpoint,SD 1.5 Hyper,,16,10
 ungrouped,Checkpoint,SD 2.1,,16,12
 ungrouped,Checkpoint,Wan Video 14B i2v 720p,,16,4
@@ -81,27 +81,27 @@ ungrouped,Checkpoint,Wan Image 2.7,,1,1
 ungrouped,Checkpoint,Wan Video 2.5 I2V,,1,0
 ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
-grouped,Checkpoint,,Legacy,0,26
-grouped,LORA,Illustrious,Illustrious,23048,14044
-grouped,LORA,Anima,Anima,15824,12983
-ungrouped,LORA,Krea 2,,3801,2658
-grouped,LORA,Pony,Pony,3209,811
-grouped,LORA,ZImageTurbo,Z-Image,2343,1071
-grouped,LORA,SDXL 1.0,SDXL,2121,1280
-grouped,LORA,Flux.1 D,Flux,1780,739
-grouped,LORA,NoobAI,NoobAI,1187,586
-grouped,LORA,SD 1.5,SD 1.5,1153,274
+grouped,Checkpoint,,Legacy,0,28
+grouped,LORA,Illustrious,Illustrious,23242,14123
+grouped,LORA,Anima,Anima,16048,13165
+ungrouped,LORA,Krea 2,,3888,2724
+grouped,LORA,Pony,Pony,3234,819
+grouped,LORA,ZImageTurbo,Z-Image,2351,1071
+grouped,LORA,SDXL 1.0,SDXL,2221,1366
+grouped,LORA,Flux.1 D,Flux,1791,743
+grouped,LORA,NoobAI,NoobAI,1198,587
+grouped,LORA,SD 1.5,SD 1.5,1163,276
 grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,531,221
-grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,408,223
-grouped,LORA,ZImageBase,Z-Image,359,139
-grouped,LORA,Qwen,Qwen,238,36
+grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,411,224
+grouped,LORA,ZImageBase,Z-Image,360,139
+grouped,LORA,Qwen,Qwen,240,36
 grouped,LORA,Flux.1 Krea,Flux,199,53
 grouped,LORA,Ernie,Ernie,164,84
 grouped,LORA,ACE Audio,Legacy,148,9
 grouped,LORA,LTXV 2.3,LTXV2.3,131,66
 ungrouped,LORA,ANIMA,,120,120
-grouped,LORA,Chroma,Legacy,119,35
-grouped,LORA,Other,Legacy,116,19
+grouped,LORA,Chroma,Legacy,120,35
+grouped,LORA,Other,Legacy,117,19
 grouped,LORA,Flux.2 Klein 4B,Legacy,88,16
 grouped,LORA,Flux.2 Klein 4B-base,Legacy,65,35
 grouped,LORA,Wan Video 2.2 T2V-A14B,Wanvideo2.2,62,17
@@ -111,8 +111,8 @@ grouped,LORA,Wan Video 14B t2v,Legacy,36,3
 ungrouped,LORA,Ideogram 4.0,,34,19
 grouped,LORA,Pony V7,Legacy,31,14
 grouped,LORA,Flux.2 D,Legacy,30,11
+ungrouped,LORA,MiniMax H3,,29,14
 ungrouped,LORA,Boogu,,27,12
-ungrouped,LORA,MiniMax H3,,27,13
 grouped,LORA,Hunyuan Video,Legacy,23,5
 grouped,LORA,Flux.1 S,Flux,13,6
 grouped,LORA,LTXV2,Legacy,13,2
@@ -123,12 +123,12 @@ ungrouped,LORA,Lens,,8,1
 grouped,LORA,SDXL Lightning,Legacy,7,2
 grouped,LORA,Wan Video 1.3B t2v,Legacy,5,0
 ungrouped,LORA,Flux 1.0,,4,4
+ungrouped,LORA,MageFlow,,4,3
 ungrouped,LORA,Wan Video,,4,0
 grouped,LORA,Wan Video 2.2 TI2V-5B,Wanvideo2.2,4,1
 grouped,LORA,Illustrious 0.1,Illustrious,3,1
-ungrouped,LORA,LTXV 2.5,,2,2
+ungrouped,LORA,LTXV 2.5,,3,3
 ungrouped,LORA,Lumina,,2,0
-ungrouped,LORA,MageFlow,,2,2
 grouped,LORA,SDXL Hyper,Legacy,2,2
 grouped,LORA,Kolors,Legacy,1,1
 ungrouped,LORA,LTXV,,1,0
@@ -137,4 +137,4 @@ ungrouped,LORA,SD 2.1,,1,1
 ungrouped,LORA,Wan Image 2.7,,1,1
 ungrouped,LORA,Wan Video 14B i2v 720p,,1,0
 ungrouped,LORA,Wan Video 2.5 I2V,,1,1
-grouped,LORA,,Legacy,0,170
+grouped,LORA,,Legacy,0,172
