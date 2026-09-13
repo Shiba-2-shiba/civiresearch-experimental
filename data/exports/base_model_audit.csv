@@ -4,7 +4,7 @@ grouped,Checkpoint,Illustrious,Illustrious,4964,1925
 grouped,Checkpoint,SDXL 1.0,SDXL,3334,1295
 grouped,Checkpoint,Pony,Pony,2278,896
 grouped,Checkpoint,Flux.1 D,Flux,1113,383
-grouped,Checkpoint,Anima,Anima,954,352
+grouped,Checkpoint,Anima,Anima,954,353
 grouped,Checkpoint,NoobAI,NoobAI,671,234
 ungrouped,Checkpoint,Krea 2,,444,119
 grouped,Checkpoint,ZImageTurbo,Z-Image,382,106
@@ -25,9 +25,9 @@ grouped,Checkpoint,Chroma,Legacy,48,14
 grouped,Checkpoint,Ernie,Ernie,43,16
 grouped,Checkpoint,Hunyuan Video,Legacy,40,12
 grouped,Checkpoint,SDXL 1.0 LCM,Legacy,38,15
+ungrouped,Checkpoint,MiniMax H3,,34,12
 grouped,Checkpoint,Flux.2 D,Legacy,33,8
 grouped,Checkpoint,Flux.2 Klein 4B,Legacy,33,8
-ungrouped,Checkpoint,MiniMax H3,,32,12
 grouped,Checkpoint,Flux.1 Krea,Flux,29,22
 ungrouped,Checkpoint,LTXV,,29,3
 ungrouped,Checkpoint,SD 2.1 768,,28,11
@@ -83,12 +83,12 @@ ungrouped,Checkpoint,Wan Video 2.5 I2V,,1,0
 ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 grouped,Checkpoint,,Legacy,0,40
-grouped,LORA,Illustrious,Illustrious,27088,16306
-grouped,LORA,Anima,Anima,19478,16013
-ungrouped,LORA,Krea 2,,5641,4039
+grouped,LORA,Illustrious,Illustrious,27092,16309
+grouped,LORA,Anima,Anima,19487,16017
+ungrouped,LORA,Krea 2,,5643,4041
 grouped,LORA,Pony,Pony,3751,938
-grouped,LORA,SDXL 1.0,SDXL,2700,1723
-grouped,LORA,ZImageTurbo,Z-Image,2567,1128
+grouped,LORA,SDXL 1.0,SDXL,2701,1723
+grouped,LORA,ZImageTurbo,Z-Image,2568,1129
 grouped,LORA,Flux.1 D,Flux,2005,834
 grouped,LORA,SD 1.5,SD 1.5,1352,300
 grouped,LORA,NoobAI,NoobAI,1349,658
