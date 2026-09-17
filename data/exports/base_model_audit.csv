@@ -1,13 +1,13 @@
 status,model_type,base_model_raw,base_model_group,new_version_count,new_model_count
-grouped,Checkpoint,SD 1.5,SD 1.5,7078,2818
-grouped,Checkpoint,Illustrious,Illustrious,4974,1929
-grouped,Checkpoint,SDXL 1.0,SDXL,3334,1295
+grouped,Checkpoint,SD 1.5,SD 1.5,7080,2820
+grouped,Checkpoint,Illustrious,Illustrious,4978,1932
+grouped,Checkpoint,SDXL 1.0,SDXL,3335,1295
 grouped,Checkpoint,Pony,Pony,2279,897
 grouped,Checkpoint,Flux.1 D,Flux,1113,383
-grouped,Checkpoint,Anima,Anima,968,360
+grouped,Checkpoint,Anima,Anima,977,365
 grouped,Checkpoint,NoobAI,NoobAI,673,235
-ungrouped,Checkpoint,Krea 2,,464,121
-grouped,Checkpoint,ZImageTurbo,Z-Image,382,106
+ungrouped,Checkpoint,Krea 2,,465,121
+grouped,Checkpoint,ZImageTurbo,Z-Image,383,106
 grouped,Checkpoint,SDXL Lightning,Legacy,242,73
 grouped,Checkpoint,Other,Legacy,224,72
 grouped,Checkpoint,Flux.1 S,Flux,217,58
@@ -83,22 +83,22 @@ ungrouped,Checkpoint,Wan Video 2.5 I2V,,1,0
 ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 grouped,Checkpoint,,Legacy,0,41
-grouped,LORA,Illustrious,Illustrious,27641,16648
-grouped,LORA,Anima,Anima,20043,16428
-ungrouped,LORA,Krea 2,,5942,4269
-grouped,LORA,Pony,Pony,3816,961
-grouped,LORA,SDXL 1.0,SDXL,2734,1744
-grouped,LORA,ZImageTurbo,Z-Image,2590,1139
-grouped,LORA,Flux.1 D,Flux,2027,844
-grouped,LORA,SD 1.5,SD 1.5,1375,306
-grouped,LORA,NoobAI,NoobAI,1374,666
+grouped,LORA,Illustrious,Illustrious,27845,16763
+grouped,LORA,Anima,Anima,20229,16578
+ungrouped,LORA,Krea 2,,6026,4338
+grouped,LORA,Pony,Pony,3844,968
+grouped,LORA,SDXL 1.0,SDXL,2747,1750
+grouped,LORA,ZImageTurbo,Z-Image,2595,1140
+grouped,LORA,Flux.1 D,Flux,2032,849
+grouped,LORA,SD 1.5,SD 1.5,1390,307
+grouped,LORA,NoobAI,NoobAI,1382,670
 grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,587,240
 grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,461,248
 grouped,LORA,ZImageBase,Z-Image,419,154
 grouped,LORA,Qwen,Qwen,276,43
 grouped,LORA,Flux.1 Krea,Flux,202,55
 grouped,LORA,Ernie,Ernie,183,86
-ungrouped,LORA,MiniMax H3,,149,84
+ungrouped,LORA,MiniMax H3,,153,88
 grouped,LORA,ACE Audio,Legacy,148,9
 grouped,LORA,LTXV 2.3,LTXV2.3,146,67
 grouped,LORA,Chroma,Legacy,137,38
@@ -116,9 +116,9 @@ grouped,LORA,Pony V7,Legacy,31,14
 ungrouped,LORA,Boogu,,29,12
 grouped,LORA,Hunyuan Video,Legacy,23,5
 grouped,LORA,Flux.1 S,Flux,15,8
+grouped,LORA,Qwen 2,Qwen,14,7
 ungrouped,LORA,LTXV 2.5,,13,10
 grouped,LORA,LTXV2,Legacy,13,2
-grouped,LORA,Qwen 2,Qwen,13,7
 ungrouped,LORA,Flux.1 Kontext,,12,1
 grouped,LORA,HiDream,Hi-Dream O1,10,3
 ungrouped,LORA,Lens,,9,1
