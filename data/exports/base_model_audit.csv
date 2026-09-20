@@ -84,13 +84,13 @@ ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 ungrouped,Checkpoint,YuE2,,1,1
 grouped,Checkpoint,,Legacy,0,42
-grouped,LORA,Illustrious,Illustrious,28370,17065
-grouped,LORA,Anima,Anima,20812,17072
-ungrouped,LORA,Krea 2,,6361,4559
-grouped,LORA,Pony,Pony,3905,990
-grouped,LORA,SDXL 1.0,SDXL,2782,1765
-grouped,LORA,ZImageTurbo,Z-Image,2628,1151
-grouped,LORA,Flux.1 D,Flux,2064,864
+grouped,LORA,Illustrious,Illustrious,28383,17072
+grouped,LORA,Anima,Anima,20820,17077
+ungrouped,LORA,Krea 2,,6364,4562
+grouped,LORA,Pony,Pony,3906,990
+grouped,LORA,SDXL 1.0,SDXL,2783,1765
+grouped,LORA,ZImageTurbo,Z-Image,2629,1152
+grouped,LORA,Flux.1 D,Flux,2066,865
 grouped,LORA,SD 1.5,SD 1.5,1410,309
 grouped,LORA,NoobAI,NoobAI,1408,681
 grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,588,240
@@ -99,7 +99,7 @@ grouped,LORA,ZImageBase,Z-Image,429,156
 grouped,LORA,Qwen,Qwen,278,44
 grouped,LORA,Flux.1 Krea,Flux,202,55
 grouped,LORA,Ernie,Ernie,185,87
-ungrouped,LORA,MiniMax H3,,184,107
+ungrouped,LORA,MiniMax H3,,185,108
 grouped,LORA,ACE Audio,Legacy,148,9
 grouped,LORA,LTXV 2.3,LTXV2.3,146,67
 grouped,LORA,Chroma,Legacy,139,38
@@ -111,8 +111,8 @@ grouped,LORA,Wan Video 2.2 T2V-A14B,Wanvideo2.2,66,17
 grouped,LORA,HiDream-O1,Hi-Dream O1,59,23
 grouped,LORA,Wan Video 14B t2v,Legacy,42,3
 grouped,LORA,Wan Video 2.2 I2V-A14B,Wanvideo2.2,40,11
+grouped,LORA,Flux.2 D,Legacy,37,16
 ungrouped,LORA,Ideogram 4.0,,37,20
-grouped,LORA,Flux.2 D,Legacy,36,15
 grouped,LORA,Pony V7,Legacy,31,14
 ungrouped,LORA,Boogu,,29,12
 grouped,LORA,Hunyuan Video,Legacy,23,5
