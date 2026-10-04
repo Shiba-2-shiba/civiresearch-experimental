@@ -87,11 +87,11 @@ ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 ungrouped,Checkpoint,YuE2,,1,1
 grouped,Checkpoint,,Legacy,0,49
-grouped,LORA,Illustrious,Illustrious,31117,18686
-grouped,LORA,Anima,Anima,23308,19135
-ungrouped,LORA,Krea 2,,7851,5710
-grouped,LORA,Pony,Pony,4187,1073
-grouped,LORA,SDXL 1.0,SDXL,3001,1885
+grouped,LORA,Illustrious,Illustrious,31121,18688
+grouped,LORA,Anima,Anima,23309,19136
+ungrouped,LORA,Krea 2,,7854,5713
+grouped,LORA,Pony,Pony,4188,1073
+grouped,LORA,SDXL 1.0,SDXL,3002,1886
 grouped,LORA,ZImageTurbo,Z-Image,2743,1189
 grouped,LORA,Flux.1 D,Flux,2195,922
 grouped,LORA,SD 1.5,SD 1.5,1530,332
