@@ -1,12 +1,12 @@
 status,model_type,base_model_raw,base_model_group,new_version_count,new_model_count
 grouped,Checkpoint,SD 1.5,SD 1.5,7097,2830
-grouped,Checkpoint,Illustrious,Illustrious,5086,1991
-grouped,Checkpoint,SDXL 1.0,SDXL,3355,1310
+grouped,Checkpoint,Illustrious,Illustrious,5095,1999
+grouped,Checkpoint,SDXL 1.0,SDXL,3356,1311
 grouped,Checkpoint,Pony,Pony,2288,903
-grouped,Checkpoint,Anima,Anima,1195,431
+grouped,Checkpoint,Anima,Anima,1204,437
 grouped,Checkpoint,Flux.1 D,Flux,1113,383
 grouped,Checkpoint,NoobAI,NoobAI,686,237
-ungrouped,Checkpoint,Krea 2,,591,156
+ungrouped,Checkpoint,Krea 2,,593,156
 grouped,Checkpoint,ZImageTurbo,Z-Image,395,109
 grouped,Checkpoint,SDXL Lightning,Legacy,242,73
 grouped,Checkpoint,Other,Legacy,227,75
@@ -57,16 +57,18 @@ ungrouped,Checkpoint,AuraFlow,,7,3
 ungrouped,Checkpoint,Hunyuan 1,,7,7
 ungrouped,Checkpoint,SD 2.0 768,,7,3
 grouped,Checkpoint,Wan Video 2.2 TI2V-5B,Wanvideo2.2,6,2
+ungrouped,Checkpoint,Flux.3 Klein,,5,1
+ungrouped,Checkpoint,MOSS Image,,5,2
 ungrouped,Checkpoint,Mochi,,5,1
 ungrouped,Checkpoint,SD 1.4,,5,2
-ungrouped,Checkpoint,Flux.3 Klein,,4,0
 ungrouped,Checkpoint,Kling,,4,1
+ungrouped,Checkpoint,Krea 2 Turbo,,4,3
+ungrouped,Checkpoint,MOSS Image Base,,4,1
 ungrouped,Checkpoint,SD 2.0,,4,1
 ungrouped,Checkpoint,SDXL Distilled,,4,4
 ungrouped,Checkpoint,Seedream,,4,1
 ungrouped,Checkpoint,Veo 3,,4,1
 ungrouped,Checkpoint,Ideogram 4.0,,3,2
-ungrouped,Checkpoint,Krea 2 Turbo,,3,3
 ungrouped,Checkpoint,Nano Banana,,3,1
 ungrouped,Checkpoint,OpenAI,,3,2
 ungrouped,Checkpoint,PixArt a,,3,3
@@ -90,30 +92,30 @@ ungrouped,Checkpoint,Wan Video 2.5 T2V,,1,1
 ungrouped,Checkpoint,Wan Video 2.7,,1,1
 ungrouped,Checkpoint,YuE2,,1,1
 grouped,Checkpoint,,Legacy,0,51
-grouped,LORA,Illustrious,Illustrious,33479,20210
-grouped,LORA,Anima,Anima,25502,20940
-ungrouped,LORA,Krea 2,,9035,6619
-grouped,LORA,Pony,Pony,4458,1154
-grouped,LORA,SDXL 1.0,SDXL,3168,1962
-grouped,LORA,ZImageTurbo,Z-Image,2902,1267
-grouped,LORA,Flux.1 D,Flux,2308,971
-grouped,LORA,SD 1.5,SD 1.5,1614,352
-grouped,LORA,NoobAI,NoobAI,1564,740
+grouped,LORA,Illustrious,Illustrious,33640,20299
+grouped,LORA,Anima,Anima,25671,21079
+ungrouped,LORA,Krea 2,,9137,6686
+grouped,LORA,Pony,Pony,4501,1159
+grouped,LORA,SDXL 1.0,SDXL,3183,1971
+grouped,LORA,ZImageTurbo,Z-Image,2912,1269
+grouped,LORA,Flux.1 D,Flux,2320,971
+grouped,LORA,SD 1.5,SD 1.5,1624,353
+grouped,LORA,NoobAI,NoobAI,1576,745
 grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,614,247
-grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,515,275
+grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,522,279
 grouped,LORA,ZImageBase,Z-Image,502,199
-ungrouped,LORA,MiniMax H3,,445,252
+ungrouped,LORA,MiniMax H3,,455,256
 grouped,LORA,Qwen,Qwen,307,47
 grouped,LORA,Flux.1 Krea,Flux,203,56
 grouped,LORA,Ernie,Ernie,191,89
-grouped,LORA,Other,Legacy,159,24
+grouped,LORA,Other,Legacy,167,25
 grouped,LORA,Chroma,Legacy,152,38
 grouped,LORA,ACE Audio,Legacy,150,11
 grouped,LORA,LTXV 2.3,LTXV2.3,148,68
 ungrouped,LORA,ANIMA,,120,120
-ungrouped,LORA,Qwen 2.1,,114,59
+ungrouped,LORA,Qwen 2.1,,116,59
 grouped,LORA,Flux.2 Klein 4B,Legacy,113,17
-grouped,LORA,Flux.2 Klein 4B-base,Legacy,86,45
+grouped,LORA,Flux.2 Klein 4B-base,Legacy,88,45
 grouped,LORA,Wan Video 2.2 T2V-A14B,Wanvideo2.2,77,18
 grouped,LORA,HiDream-O1,Hi-Dream O1,59,23
 grouped,LORA,Flux.2 D,Legacy,47,25
@@ -131,15 +133,17 @@ grouped,LORA,LTXV2,Legacy,13,2
 grouped,LORA,HiDream,Hi-Dream O1,11,3
 grouped,LORA,SDXL Lightning,Legacy,10,2
 ungrouped,LORA,Lens,,9,1
-ungrouped,LORA,Flux.3 Klein,,6,1
+ungrouped,LORA,MOSS Image,,9,4
+ungrouped,LORA,MOSS Image Base,,9,4
+ungrouped,LORA,Flux.3 Klein,,8,2
+ungrouped,LORA,Krea 2 Turbo,,7,5
 ungrouped,LORA,MageFlow,,6,4
-ungrouped,LORA,Krea 2 Turbo,,5,3
+ungrouped,LORA,Flux.3 Klein-base,,5,3
 grouped,LORA,Wan Video 1.3B t2v,Legacy,5,0
 ungrouped,LORA,Wan Video 14B i2v 720p,,5,1
 ungrouped,LORA,Flux 1.0,,4,4
 ungrouped,LORA,Wan Video,,4,0
 grouped,LORA,Wan Video 2.2 TI2V-5B,Wanvideo2.2,4,1
-ungrouped,LORA,Flux.3 Klein-base,,3,2
 grouped,LORA,Illustrious 0.1,Illustrious,3,1
 grouped,LORA,SDXL Hyper,Legacy,3,3
 ungrouped,LORA,Flux.3,,2,1
