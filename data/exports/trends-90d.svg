@@ -2,7 +2,7 @@
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="90" y="30" font-family="Arial" font-size="20" font-weight="700">Civitai publication trends — 90d</text>
 <text x="90" y="51" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt; day buckets; pinned groups consume the series limit.</text>
-<text x="90" y="68" font-family="Arial" font-size="11" fill="#4b5563">measurement 2026-05-18 · anchor 2026-10-21 · generated 2026-10-21T10:33:56+00:00</text>
+<text x="90" y="68" font-family="Arial" font-size="11" fill="#4b5563">measurement 2026-05-18 · anchor 2026-10-21 · generated 2026-10-21T18:59:53+00:00</text>
 <text x="90" y="86" font-family="Arial" font-size="12" fill="#b45309">Coverage: 1 partial, 89 unknown bucket(s); unverified counts are lower bounds; gaps are not zeros.</text>
 <text x="90" y="121.0" font-family="Arial" font-size="15" font-weight="700">Checkpoint - Version publications</text>
 <rect data-quality="unknown" x="90.0" y="135.0" width="4.6" height="230" fill="#f3f4f6" opacity="0.55"/>
@@ -194,9 +194,9 @@
 <line x1="873.1" y1="301.1" x2="882.4" y2="237.2" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="237.2" x2="891.6" y2="313.9" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="891.6" y1="313.9" x2="900.8" y2="301.1" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="301.1" x2="910.0" y2="339.4" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="301.1" x2="910.0" y2="301.1" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="153" x2="962" y2="153" stroke="#2563eb" stroke-width="3"/>
-<text x="972" y="157" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (617)</tspan></text>
+<text x="972" y="157" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (620)</tspan></text>
 <path data-missing="true" d="M 741.2,362.0 L 747.2,368.0 M 741.2,368.0 L 747.2,362.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 805.7,362.0 L 811.7,368.0 M 805.7,368.0 L 811.7,362.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 814.9,362.0 L 820.9,368.0 M 814.9,368.0 L 820.9,362.0" stroke="#9ca3af"/>
@@ -800,10 +800,10 @@
 <line x1="873.1" y1="250.0" x2="882.4" y2="250.0" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="250.0" x2="891.6" y2="288.3" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="891.6" y1="288.3" x2="900.8" y2="301.1" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="301.1" x2="910.0" y2="352.2" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="301.1" x2="910.0" y2="339.4" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="265" x2="962" y2="265" stroke="#0891b2" stroke-width="3"/>
-<text x="972" y="269" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (30)</tspan></text>
-<text x="940" y="285" font-family="Arial" font-size="11" fill="#6b7280">21 hidden series (192 total)</text>
+<text x="972" y="269" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (31)</tspan></text>
+<text x="940" y="285" font-family="Arial" font-size="11" fill="#6b7280">21 hidden series (194 total)</text>
 <text x="90" y="407.0" font-family="Arial" font-size="15" font-weight="700">Checkpoint - Earliest observed version per model</text>
 <rect data-quality="unknown" x="90.0" y="421.0" width="4.6" height="230" fill="#f3f4f6" opacity="0.55"/>
 <rect data-quality="unknown" x="94.6" y="421.0" width="9.2" height="230" fill="#f3f4f6" opacity="0.55"/>
@@ -986,9 +986,9 @@
 <line x1="854.7" y1="574.3" x2="863.9" y2="631.8" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="863.9" y1="631.8" x2="873.1" y2="574.3" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="873.1" y1="574.3" x2="882.4" y2="536.0" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="612.7" x2="910.0" y2="631.8" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="612.7" x2="910.0" y2="612.7" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="439" x2="962" y2="439" stroke="#2563eb" stroke-width="3"/>
-<text x="972" y="443" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (217)</tspan></text>
+<text x="972" y="443" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (218)</tspan></text>
 <path data-missing="true" d="M 87.0,648.0 L 93.0,654.0 M 87.0,654.0 L 93.0,648.0" stroke="#9ca3af"/>
 <circle data-coverage="lower-bound" cx="99.2" cy="631.8" r="4" fill="#9333ea" stroke="#b45309" stroke-width="2" data-quality="unknown"/>
 <path data-missing="true" d="M 105.4,648.0 L 111.4,654.0 M 105.4,654.0 L 111.4,648.0" stroke="#9ca3af"/>
@@ -1506,9 +1506,9 @@
 <line x1="873.1" y1="593.5" x2="882.4" y2="536.0" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="536.0" x2="891.6" y2="574.3" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="891.6" y1="574.3" x2="900.8" y2="574.3" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="574.3" x2="910.0" y2="631.8" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="574.3" x2="910.0" y2="612.7" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="535" x2="962" y2="535" stroke="#0891b2" stroke-width="3"/>
-<text x="972" y="539" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (18)</tspan></text>
+<text x="972" y="539" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (19)</tspan></text>
 <path data-missing="true" d="M 87.0,648.0 L 93.0,654.0 M 87.0,654.0 L 93.0,648.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 96.2,648.0 L 102.2,654.0 M 96.2,654.0 L 102.2,648.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 105.4,648.0 L 111.4,654.0 M 105.4,654.0 L 111.4,648.0" stroke="#9ca3af"/>
@@ -1597,7 +1597,7 @@
 <line x1="578.3" y1="631.8" x2="587.5" y2="631.8" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="551" x2="962" y2="551" stroke="#0f766e" stroke-width="3"/>
 <text x="972" y="555" font-family="Arial" font-size="11"><tspan x="972" dy="0">MiniMax H3 (18)</tspan></text>
-<text x="940" y="571" font-family="Arial" font-size="11" fill="#6b7280">20 hidden series (92 total)</text>
+<text x="940" y="571" font-family="Arial" font-size="11" fill="#6b7280">20 hidden series (93 total)</text>
 <text x="90" y="693.0" font-family="Arial" font-size="15" font-weight="700">LORA - Version publications</text>
 <rect data-quality="unknown" x="90.0" y="707.0" width="4.6" height="230" fill="#f3f4f6" opacity="0.55"/>
 <rect data-quality="unknown" x="94.6" y="707.0" width="9.2" height="230" fill="#f3f4f6" opacity="0.55"/>
@@ -1729,8 +1729,8 @@
 <line x1="329.6" y1="778.4" x2="338.8" y2="809.4" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="338.8" y1="809.4" x2="348.0" y2="776.7" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="348.0" y1="776.7" x2="357.2" y2="760.7" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="357.2" y1="760.7" x2="366.4" y2="761.6" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="366.4" y1="761.6" x2="375.6" y2="833.8" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="357.2" y1="760.7" x2="366.4" y2="758.2" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="366.4" y1="758.2" x2="375.6" y2="833.8" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="375.6" y1="833.8" x2="384.8" y2="803.5" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="384.8" y1="803.5" x2="394.0" y2="797.7" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="394.0" y1="797.7" x2="403.3" y2="811.1" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
@@ -1779,18 +1779,18 @@
 <line x1="790.2" y1="765.8" x2="799.4" y2="779.2" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="799.4" y1="779.2" x2="808.7" y2="760.7" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="808.7" y1="760.7" x2="817.9" y2="746.5" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="817.9" y1="746.5" x2="827.1" y2="775.0" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="827.1" y1="775.0" x2="836.3" y2="790.1" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="836.3" y1="790.1" x2="845.5" y2="798.5" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="845.5" y1="798.5" x2="854.7" y2="790.9" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="817.9" y1="746.5" x2="827.1" y2="777.5" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="827.1" y1="777.5" x2="836.3" y2="790.1" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="836.3" y1="790.1" x2="845.5" y2="801.0" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="845.5" y1="801.0" x2="854.7" y2="790.9" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="854.7" y1="790.9" x2="863.9" y2="796.0" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="863.9" y1="796.0" x2="873.1" y2="789.3" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="873.1" y1="789.3" x2="882.4" y2="768.3" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="882.4" y1="768.3" x2="891.6" y2="796.0" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="891.6" y1="796.0" x2="900.8" y2="784.2" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="784.2" x2="910.0" y2="858.9" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="863.9" y1="796.0" x2="873.1" y2="790.1" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="873.1" y1="790.1" x2="882.4" y2="768.3" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="882.4" y1="768.3" x2="891.6" y2="798.5" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="891.6" y1="798.5" x2="900.8" y2="782.5" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="782.5" x2="910.0" y2="812.8" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="725" x2="962" y2="725" stroke="#2563eb" stroke-width="3"/>
-<text x="972" y="729" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (14994)</tspan></text>
+<text x="972" y="729" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (15045)</tspan></text>
 <line x1="90.0" y1="874.9" x2="99.2" y2="843.0" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="99.2" y1="843.0" x2="108.4" y2="823.7" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="108.4" y1="823.7" x2="117.6" y2="826.2" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
@@ -1878,10 +1878,10 @@
 <line x1="863.9" y1="799.3" x2="873.1" y2="851.4" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="873.1" y1="851.4" x2="882.4" y2="798.5" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="798.5" x2="891.6" y2="841.3" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="891.6" y1="841.3" x2="900.8" y2="821.2" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="821.2" x2="910.0" y2="867.3" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="891.6" y1="841.3" x2="900.8" y2="817.8" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="817.8" x2="910.0" y2="837.1" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="741" x2="962" y2="741" stroke="#9333ea" stroke-width="3"/>
-<text x="972" y="745" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (11423)</tspan></text>
+<text x="972" y="745" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (11463)</tspan></text>
 <line x1="90.0" y1="907.6" x2="99.2" y2="864.8" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="99.2" y1="864.8" x2="108.4" y2="879.9" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="108.4" y1="879.9" x2="117.6" y2="841.3" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
@@ -1966,13 +1966,13 @@
 <line x1="836.3" y1="851.4" x2="845.5" y2="838.8" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="845.5" y1="838.8" x2="854.7" y2="861.5" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="854.7" y1="861.5" x2="863.9" y2="857.3" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="863.9" y1="857.3" x2="873.1" y2="858.9" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="873.1" y1="858.9" x2="882.4" y2="827.9" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="882.4" y1="827.9" x2="891.6" y2="864.8" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="891.6" y1="864.8" x2="900.8" y2="871.5" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="871.5" x2="910.0" y2="898.4" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="863.9" y1="857.3" x2="873.1" y2="858.1" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="873.1" y1="858.1" x2="882.4" y2="825.4" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="882.4" y1="825.4" x2="891.6" y2="864.8" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="891.6" y1="864.8" x2="900.8" y2="870.7" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="870.7" x2="910.0" y2="880.8" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="757" x2="962" y2="757" stroke="#ea580c" stroke-width="3"/>
-<text x="972" y="761" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 (8165)</tspan></text>
+<text x="972" y="761" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 (8191)</tspan></text>
 <line x1="90.0" y1="933.6" x2="99.2" y2="926.9" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="99.2" y1="926.9" x2="108.4" y2="930.3" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="108.4" y1="930.3" x2="117.6" y2="930.3" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
@@ -2056,14 +2056,14 @@
 <line x1="827.1" y1="925.2" x2="836.3" y2="932.8" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="836.3" y1="932.8" x2="845.5" y2="928.6" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="845.5" y1="928.6" x2="854.7" y2="930.3" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="854.7" y1="930.3" x2="863.9" y2="932.0" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="863.9" y1="932.0" x2="873.1" y2="926.9" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="854.7" y1="930.3" x2="863.9" y2="932.8" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="863.9" y1="932.8" x2="873.1" y2="926.9" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="873.1" y1="926.9" x2="882.4" y2="932.0" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="932.0" x2="891.6" y2="920.2" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="891.6" y1="920.2" x2="900.8" y2="924.4" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="924.4" x2="910.0" y2="925.2" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="924.4" x2="910.0" y2="922.7" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="773" x2="962" y2="773" stroke="#dc2626" stroke-width="3"/>
-<text x="972" y="777" font-family="Arial" font-size="11"><tspan x="972" dy="0">SDXL (1354)</tspan></text>
+<text x="972" y="777" font-family="Arial" font-size="11"><tspan x="972" dy="0">SDXL (1356)</tspan></text>
 <line x1="90.0" y1="930.3" x2="99.2" y2="923.6" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="99.2" y1="923.6" x2="108.4" y2="925.2" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="108.4" y1="925.2" x2="117.6" y2="925.2" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
@@ -2152,9 +2152,9 @@
 <line x1="873.1" y1="927.8" x2="882.4" y2="927.8" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="927.8" x2="891.6" y2="925.2" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="891.6" y1="925.2" x2="900.8" y2="925.2" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="925.2" x2="910.0" y2="928.6" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="925.2" x2="910.0" y2="925.2" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="789" x2="962" y2="789" stroke="#16a34a" stroke-width="3"/>
-<text x="972" y="793" font-family="Arial" font-size="11"><tspan x="972" dy="0">Z-Image (788)</tspan></text>
+<text x="972" y="793" font-family="Arial" font-size="11"><tspan x="972" dy="0">Z-Image (792)</tspan></text>
 <line x1="90.0" y1="932.8" x2="99.2" y2="931.1" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="99.2" y1="931.1" x2="108.4" y2="926.9" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="108.4" y1="926.9" x2="117.6" y2="926.9" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
@@ -2242,10 +2242,10 @@
 <line x1="863.9" y1="928.6" x2="873.1" y2="927.8" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="873.1" y1="927.8" x2="882.4" y2="932.8" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="932.8" x2="891.6" y2="929.4" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="891.6" y1="929.4" x2="900.8" y2="928.6" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="928.6" x2="910.0" y2="932.0" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="891.6" y1="929.4" x2="900.8" y2="927.8" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="927.8" x2="910.0" y2="930.3" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="805" x2="962" y2="805" stroke="#db2777" stroke-width="3"/>
-<text x="972" y="809" font-family="Arial" font-size="11"><tspan x="972" dy="0">Pony (775)</tspan></text>
+<text x="972" y="809" font-family="Arial" font-size="11"><tspan x="972" dy="0">Pony (778)</tspan></text>
 <path data-missing="true" d="M 87.0,934.0 L 93.0,940.0 M 87.0,940.0 L 93.0,934.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 96.2,934.0 L 102.2,940.0 M 96.2,940.0 L 102.2,934.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 105.4,934.0 L 111.4,940.0 M 105.4,940.0 L 111.4,934.0" stroke="#9ca3af"/>
@@ -2331,9 +2331,9 @@
 <line x1="873.1" y1="928.6" x2="882.4" y2="934.5" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="934.5" x2="891.6" y2="934.5" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="891.6" y1="934.5" x2="900.8" y2="928.6" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="928.6" x2="910.0" y2="934.5" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="928.6" x2="910.0" y2="933.6" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="821" x2="962" y2="821" stroke="#0f766e" stroke-width="3"/>
-<text x="972" y="825" font-family="Arial" font-size="11"><tspan x="972" dy="0">MiniMax H3 (472)</tspan></text>
+<text x="972" y="825" font-family="Arial" font-size="11"><tspan x="972" dy="0">MiniMax H3 (473)</tspan></text>
 <path data-missing="true" d="M 87.0,934.0 L 93.0,940.0 M 87.0,940.0 L 93.0,934.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 96.2,934.0 L 102.2,940.0 M 96.2,940.0 L 102.2,934.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 105.4,934.0 L 111.4,940.0 M 105.4,940.0 L 111.4,934.0" stroke="#9ca3af"/>
@@ -2421,11 +2421,11 @@
 <path data-missing="true" d="M 860.9,934.0 L 866.9,940.0 M 860.9,940.0 L 866.9,934.0" stroke="#9ca3af"/>
 <line x1="873.1" y1="922.7" x2="882.4" y2="894.2" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="894.2" x2="891.6" y2="885.0" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="891.6" y1="885.0" x2="900.8" y2="888.3" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="888.3" x2="910.0" y2="890.0" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="891.6" y1="885.0" x2="900.8" y2="886.6" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="886.6" x2="910.0" y2="879.9" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="837" x2="962" y2="837" stroke="#0891b2" stroke-width="3"/>
-<text x="972" y="841" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (244)</tspan></text>
-<text x="940" y="857" font-family="Arial" font-size="11" fill="#6b7280">26 hidden series (1791 total)</text>
+<text x="972" y="841" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (258)</tspan></text>
+<text x="940" y="857" font-family="Arial" font-size="11" fill="#6b7280">26 hidden series (1803 total)</text>
 <text x="90" y="979.0" font-family="Arial" font-size="15" font-weight="700">LORA - Earliest observed version per model</text>
 <rect data-quality="unknown" x="90.0" y="993.0" width="4.6" height="230" fill="#f3f4f6" opacity="0.55"/>
 <rect data-quality="unknown" x="94.6" y="993.0" width="9.2" height="230" fill="#f3f4f6" opacity="0.55"/>
@@ -2557,8 +2557,8 @@
 <line x1="329.6" y1="1075.0" x2="338.8" y2="1120.2" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="338.8" y1="1120.2" x2="348.0" y2="1083.5" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="348.0" y1="1083.5" x2="357.2" y2="1111.7" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="357.2" y1="1111.7" x2="366.4" y2="1077.4" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="366.4" y1="1077.4" x2="375.6" y2="1144.7" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="357.2" y1="1111.7" x2="366.4" y2="1076.2" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="366.4" y1="1076.2" x2="375.6" y2="1144.7" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="375.6" y1="1144.7" x2="384.8" y2="1114.1" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="384.8" y1="1114.1" x2="394.0" y2="1120.2" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="394.0" y1="1120.2" x2="403.3" y2="1134.9" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
@@ -2607,18 +2607,18 @@
 <line x1="790.2" y1="1061.5" x2="799.4" y2="1071.3" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="799.4" y1="1071.3" x2="808.7" y2="1083.5" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="808.7" y1="1083.5" x2="817.9" y2="1026.0" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="817.9" y1="1026.0" x2="827.1" y2="1083.5" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="827.1" y1="1083.5" x2="836.3" y2="1086.0" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="836.3" y1="1086.0" x2="845.5" y2="1088.4" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="845.5" y1="1088.4" x2="854.7" y2="1082.3" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="817.9" y1="1026.0" x2="827.1" y2="1086.0" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="827.1" y1="1086.0" x2="836.3" y2="1086.0" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="836.3" y1="1086.0" x2="845.5" y2="1092.1" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="845.5" y1="1092.1" x2="854.7" y2="1082.3" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="854.7" y1="1082.3" x2="863.9" y2="1093.3" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="863.9" y1="1093.3" x2="873.1" y2="1105.6" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="873.1" y1="1105.6" x2="882.4" y2="1072.5" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="1072.5" x2="891.6" y2="1087.2" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="891.6" y1="1087.2" x2="900.8" y2="1086.0" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="1086.0" x2="910.0" y2="1142.3" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="891.6" y1="1087.2" x2="900.8" y2="1084.8" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="1084.8" x2="910.0" y2="1092.1" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="1011" x2="962" y2="1011" stroke="#2563eb" stroke-width="3"/>
-<text x="972" y="1015" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (8917)</tspan></text>
+<text x="972" y="1015" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (8955)</tspan></text>
 <line x1="90.0" y1="1156.9" x2="99.2" y2="1139.8" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="99.2" y1="1139.8" x2="108.4" y2="1092.1" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="108.4" y1="1092.1" x2="117.6" y2="1100.7" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
@@ -2706,10 +2706,10 @@
 <line x1="863.9" y1="1075.0" x2="873.1" y2="1121.5" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="873.1" y1="1121.5" x2="882.4" y2="1050.5" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="1050.5" x2="891.6" y2="1105.6" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="891.6" y1="1105.6" x2="900.8" y2="1089.6" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="1089.6" x2="910.0" y2="1134.9" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="891.6" y1="1105.6" x2="900.8" y2="1084.8" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="1084.8" x2="910.0" y2="1098.2" stroke="#9333ea" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="1027" x2="962" y2="1027" stroke="#9333ea" stroke-width="3"/>
-<text x="972" y="1031" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (8797)</tspan></text>
+<text x="972" y="1031" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (8831)</tspan></text>
 <line x1="90.0" y1="1204.6" x2="99.2" y2="1156.9" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="99.2" y1="1156.9" x2="108.4" y2="1170.4" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="108.4" y1="1170.4" x2="117.6" y2="1123.9" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
@@ -2794,13 +2794,13 @@
 <line x1="836.3" y1="1136.1" x2="845.5" y2="1150.8" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="845.5" y1="1150.8" x2="854.7" y2="1149.6" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="854.7" y1="1149.6" x2="863.9" y2="1153.3" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="863.9" y1="1153.3" x2="873.1" y2="1139.8" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="873.1" y1="1139.8" x2="882.4" y2="1127.6" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="863.9" y1="1153.3" x2="873.1" y2="1138.6" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="873.1" y1="1138.6" x2="882.4" y2="1127.6" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="1127.6" x2="891.6" y2="1156.9" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="891.6" y1="1156.9" x2="900.8" y2="1160.6" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="1160.6" x2="910.0" y2="1188.7" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="891.6" y1="1156.9" x2="900.8" y2="1159.4" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="1159.4" x2="910.0" y2="1167.9" stroke="#ea580c" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="1043" x2="962" y2="1043" stroke="#ea580c" stroke-width="3"/>
-<text x="972" y="1047" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 (5371)</tspan></text>
+<text x="972" y="1047" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 (5390)</tspan></text>
 <line x1="90.0" y1="1219.3" x2="99.2" y2="1210.8" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="99.2" y1="1210.8" x2="108.4" y2="1214.4" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="108.4" y1="1214.4" x2="117.6" y2="1214.4" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
@@ -2884,12 +2884,12 @@
 <line x1="827.1" y1="1210.8" x2="836.3" y2="1219.3" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="836.3" y1="1219.3" x2="845.5" y2="1215.7" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="845.5" y1="1215.7" x2="854.7" y2="1215.7" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="854.7" y1="1215.7" x2="863.9" y2="1218.1" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="863.9" y1="1218.1" x2="873.1" y2="1210.8" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="854.7" y1="1215.7" x2="863.9" y2="1219.3" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="863.9" y1="1219.3" x2="873.1" y2="1210.8" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="873.1" y1="1210.8" x2="882.4" y2="1216.9" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="1216.9" x2="891.6" y2="1209.5" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="891.6" y1="1209.5" x2="900.8" y2="1218.1" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="1218.1" x2="910.0" y2="1215.7" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="1218.1" x2="910.0" y2="1214.4" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="1059" x2="962" y2="1059" stroke="#dc2626" stroke-width="3"/>
 <text x="972" y="1063" font-family="Arial" font-size="11"><tspan x="972" dy="0">SDXL (1140)</tspan></text>
 <line x1="90.0" y1="1220.6" x2="99.2" y2="1216.9" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
@@ -2979,10 +2979,10 @@
 <line x1="863.9" y1="1216.9" x2="873.1" y2="1216.9" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="873.1" y1="1216.9" x2="882.4" y2="1219.3" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="1219.3" x2="891.6" y2="1214.4" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="891.6" y1="1214.4" x2="900.8" y2="1214.4" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="1214.4" x2="910.0" y2="1215.7" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="891.6" y1="1214.4" x2="900.8" y2="1213.2" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="1213.2" x2="910.0" y2="1215.7" stroke="#db2777" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="1075" x2="962" y2="1075" stroke="#db2777" stroke-width="3"/>
-<text x="972" y="1079" font-family="Arial" font-size="11"><tspan x="972" dy="0">Pony (538)</tspan></text>
+<text x="972" y="1079" font-family="Arial" font-size="11"><tspan x="972" dy="0">Pony (539)</tspan></text>
 <path data-missing="true" d="M 492.4,1220.0 L 498.4,1226.0 M 492.4,1226.0 L 498.4,1220.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 584.5,1220.0 L 590.5,1226.0 M 584.5,1226.0 L 590.5,1220.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 630.6,1220.0 L 636.6,1226.0 M 630.6,1226.0 L 636.6,1220.0" stroke="#9ca3af"/>
@@ -3068,9 +3068,9 @@
 <line x1="873.1" y1="1216.9" x2="882.4" y2="1216.9" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="1216.9" x2="891.6" y2="1216.9" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="891.6" y1="1216.9" x2="900.8" y2="1215.7" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="1215.7" x2="910.0" y2="1216.9" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="1215.7" x2="910.0" y2="1214.4" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="1091" x2="962" y2="1091" stroke="#16a34a" stroke-width="3"/>
-<text x="972" y="1095" font-family="Arial" font-size="11"><tspan x="972" dy="0">Z-Image (369)</tspan></text>
+<text x="972" y="1095" font-family="Arial" font-size="11"><tspan x="972" dy="0">Z-Image (371)</tspan></text>
 <path data-missing="true" d="M 87.0,1220.0 L 93.0,1226.0 M 87.0,1226.0 L 93.0,1220.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 409.5,1220.0 L 415.5,1226.0 M 409.5,1226.0 L 415.5,1220.0" stroke="#9ca3af"/>
 <line x1="99.2" y1="1216.9" x2="108.4" y2="1220.6" stroke="#a16207" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
@@ -3158,9 +3158,9 @@
 <line x1="873.1" y1="1221.8" x2="882.4" y2="1215.7" stroke="#a16207" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="1215.7" x2="891.6" y2="1218.1" stroke="#a16207" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="891.6" y1="1218.1" x2="900.8" y2="1214.4" stroke="#a16207" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="1214.4" x2="910.0" y2="1219.3" stroke="#a16207" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="1214.4" x2="910.0" y2="1214.4" stroke="#a16207" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="1107" x2="962" y2="1107" stroke="#a16207" stroke-width="3"/>
-<text x="972" y="1111" font-family="Arial" font-size="11"><tspan x="972" dy="0">Flux (357)</tspan></text>
+<text x="972" y="1111" font-family="Arial" font-size="11"><tspan x="972" dy="0">Flux (361)</tspan></text>
 <path data-missing="true" d="M 87.0,1220.0 L 93.0,1226.0 M 87.0,1226.0 L 93.0,1220.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 96.2,1220.0 L 102.2,1226.0 M 96.2,1226.0 L 102.2,1220.0" stroke="#9ca3af"/>
 <path data-missing="true" d="M 105.4,1220.0 L 111.4,1226.0 M 105.4,1226.0 L 111.4,1220.0" stroke="#9ca3af"/>
@@ -3249,10 +3249,10 @@
 <line x1="873.1" y1="1214.4" x2="882.4" y2="1197.3" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="882.4" y1="1197.3" x2="891.6" y2="1190.0" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="891.6" y1="1190.0" x2="900.8" y2="1197.3" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
-<line x1="900.8" y1="1197.3" x2="910.0" y2="1193.6" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
+<line x1="900.8" y1="1197.3" x2="910.0" y2="1187.5" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="5 4" data-coverage="partial"/>
 <line x1="940" y1="1123" x2="962" y2="1123" stroke="#0891b2" stroke-width="3"/>
-<text x="972" y="1127" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (100)</tspan></text>
-<text x="940" y="1143" font-family="Arial" font-size="11" fill="#6b7280">25 hidden series (924 total)</text>
+<text x="972" y="1127" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (105)</tspan></text>
+<text x="940" y="1143" font-family="Arial" font-size="11" fill="#6b7280">25 hidden series (927 total)</text>
 <text x="90.0" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-07-24 ?</text>
 <text x="172.9" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-08-02 ?</text>
 <text x="255.8" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-08-11 ?</text>
