@@ -1,87 +1,49 @@
 #!/usr/bin/env python3
-"""Generate a standalone SVG trend plot from Civitai publication dates."""
+"""Generate a standalone daily SVG trend plot from publication dates."""
 
 from __future__ import annotations
 
 import argparse
-import html
 import json
 import sqlite3
-from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from export_counts import parse_group_file
+from civitrends.storage import distinct_paths
 
-
-PALETTE = [
-    "#2563eb",
-    "#dc2626",
-    "#16a34a",
-    "#9333ea",
-    "#ea580c",
-    "#0891b2",
-    "#4f46e5",
-    "#be123c",
-    "#0f766e",
-    "#a16207",
-    "#7c2d12",
-    "#0369a1",
-    "#65a30d",
-    "#c026d3",
-    "#475569",
-    "#db2777",
-]
-
-
-MetricSeries = dict[str, dict[str, dict[str, dict[str, int]]]]
+from civitrends.grouping import grouped_name, load_group_map
+from civitrends.metrics import MetricSeries, inclusive_dates, publication_metrics
+from civitrends.rendering import PALETTE, render_svg
 
 
 def parse_timezone_offset(value: str) -> timezone:
     if value in ("Z", "UTC", "+00:00"):
         return timezone.utc
-    sign = 1
-    raw = value
-    if raw.startswith("-"):
-        sign = -1
-        raw = raw[1:]
-    elif raw.startswith("+"):
-        raw = raw[1:]
-    hours_raw, minutes_raw = raw.split(":", 1)
-    return timezone(sign * timedelta(hours=int(hours_raw), minutes=int(minutes_raw)))
+    sign = -1 if value.startswith("-") else 1
+    raw = value[1:] if value[:1] in "+-" else value
+    hours, minutes = raw.split(":", 1)
+    return timezone(sign * timedelta(hours=int(hours), minutes=int(minutes)))
 
 
 def local_day(value: str, tz: timezone) -> str:
-    parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
-    return parsed.astimezone(tz).date().isoformat()
+    return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(tz).date().isoformat()
 
 
 def complete_date_range(days: set[str]) -> list[str]:
-    if not days:
-        return []
-    current = date.fromisoformat(min(days))
-    end = date.fromisoformat(max(days))
-    result = []
-    while current <= end:
-        result.append(current.isoformat())
-        current += timedelta(days=1)
-    return result
+    return [] if not days else inclusive_dates(min(days), max(days))
 
 
 def date_range(start_date: str, end_date: str) -> list[str]:
-    current = date.fromisoformat(start_date)
-    end = date.fromisoformat(end_date)
-    result = []
-    while current <= end:
-        result.append(current.isoformat())
-        current += timedelta(days=1)
-    return result
+    return inclusive_dates(start_date, end_date)
 
 
 def observed_date_range(db_path: Path) -> tuple[str | None, str | None]:
-    with sqlite3.connect(db_path) as conn:
+    conn = sqlite3.connect(db_path)
+    try:
         row = conn.execute("select min(observed_date), max(observed_date) from daily_counts").fetchone()
-    return row[0], row[1]
+        return row[0], row[1]
+    finally:
+        conn.close()
 
 
 def table_columns(conn: sqlite3.Connection, table: str) -> set[str]:
@@ -91,39 +53,29 @@ def table_columns(conn: sqlite3.Connection, table: str) -> set[str]:
 def complete_observed_dates(db_path: Path, dates: list[str], tz: timezone) -> set[str]:
     if not dates:
         return set()
-    with sqlite3.connect(db_path) as conn:
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        if "execution_status" in table_columns(conn, "collection_runs") and table_columns(conn, "collection_run_types"):
+            from civitrends.coverage import daily_coverage
+            return {day for day, status in daily_coverage(conn, dates, tz).items() if status == "verified"}
         columns = table_columns(conn, "collection_runs")
-        required = {"coverage_started_at", "coverage_finished_at"}
-        if not required.issubset(columns):
+        if not {"coverage_started_at", "coverage_finished_at"}.issubset(columns):
             return set()
-        rows = conn.execute(
-            """
-            select coverage_started_at, coverage_finished_at
-            from collection_runs
-            where status = 'success'
-            """
-        ).fetchall()
-
+        rows = conn.execute("select coverage_started_at, coverage_finished_at from collection_runs where status='success'").fetchall()
+    finally:
+        conn.close()
     complete: set[str] = set()
     for day in dates:
-        start = datetime.combine(date.fromisoformat(day), datetime.min.time(), tzinfo=tz)
-        end = datetime.combine(date.fromisoformat(day), datetime.max.time(), tzinfo=tz)
-        start_utc = start.astimezone(timezone.utc)
-        end_utc = end.astimezone(timezone.utc).replace(microsecond=0)
-        for coverage_started_at, coverage_finished_at in rows:
-            if not coverage_started_at or not coverage_finished_at:
-                continue
-            covered_start = datetime.fromisoformat(coverage_started_at)
-            covered_end = datetime.fromisoformat(coverage_finished_at)
-            if covered_start <= start_utc and covered_end >= end_utc:
-                complete.add(day)
-                break
+        start = datetime.combine(date.fromisoformat(day), datetime.min.time(), tzinfo=tz).astimezone(timezone.utc)
+        end = datetime.combine(date.fromisoformat(day), datetime.max.time(), tzinfo=tz).astimezone(timezone.utc).replace(microsecond=0)
+        if any(raw_start and raw_end and datetime.fromisoformat(raw_start) <= start and datetime.fromisoformat(raw_end) >= end for raw_start, raw_end in rows):
+            complete.add(day)
     return complete
 
 
 def grouped_base_model(raw_value: str | None, group_map: dict[str, str]) -> str:
-    raw = raw_value or ""
-    return group_map.get(raw, raw or "Unknown")
+    return grouped_name(raw_value, group_map)
 
 
 def read_publication_series(
@@ -134,173 +86,34 @@ def read_publication_series(
     start_date: str | None = None,
     end_date: str | None = None,
 ) -> tuple[list[str], MetricSeries]:
-    observed_start, observed_end = observed_date_range(db_path)
-    start = start_date or observed_start
-    end = end_date or observed_end
-    series: MetricSeries = defaultdict(
-        lambda: {
-            "new_versions": defaultdict(lambda: defaultdict(int)),
-            "new_models": defaultdict(lambda: defaultdict(int)),
-        }
-    )
-    first_model_publication: dict[int, tuple[datetime, str, str]] = {}
-    publication_days: set[str] = set()
-
-    with sqlite3.connect(db_path) as conn:
-        conn.row_factory = sqlite3.Row
-        rows = conn.execute(
-            """
-            select version_id, model_id, model_type, raw_json
-            from model_versions
-            where raw_json is not null
-            """
-        ).fetchall()
-
-    for row in rows:
-        row_model_type = row["model_type"]
-        if model_type and row_model_type != model_type:
-            continue
-        data = json.loads(row["raw_json"])
-        published_at = data.get("publishedAt")
-        if not published_at:
-            continue
-
-        published_dt = datetime.fromisoformat(published_at.replace("Z", "+00:00")).astimezone(tz)
-        day = published_dt.date().isoformat()
-        arch = grouped_base_model(data.get("baseModel"), group_map)
-        publication_days.add(day)
-        if (start is None or day >= start) and (end is None or day <= end):
-            series[row_model_type]["new_versions"][arch][day] += 1
-
-        model_id = int(row["model_id"])
-        current = first_model_publication.get(model_id)
-        if current is None or published_dt < current[0]:
-            first_model_publication[model_id] = (published_dt, row_model_type, arch)
-
-    for published_dt, row_model_type, arch in first_model_publication.values():
-        day = published_dt.date().isoformat()
-        if (start is None or day >= start) and (end is None or day <= end):
-            series[row_model_type]["new_models"][arch][day] += 1
-
-    if start and end:
-        return date_range(start, end), series
-    return complete_date_range(publication_days), series
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        observed_start, observed_end = observed_date_range(db_path)
+        start, end = start_date or observed_start, end_date or observed_end
+        if not start or not end:
+            columns = table_columns(conn, "model_versions")
+            published_expr = "published_at" if "published_at" in columns else "null as published_at"
+            publication_days = []
+            for row in conn.execute(f"select {published_expr}, raw_json from model_versions"):
+                value = row["published_at"]
+                if not value:
+                    try:
+                        value = json.loads(row["raw_json"] or "{}").get("publishedAt")
+                    except (TypeError, json.JSONDecodeError):
+                        value = None
+                if value:
+                    publication_days.append(local_day(value, tz))
+            if not publication_days:
+                return [], {}
+            start, end = min(publication_days), max(publication_days)
+        metrics = publication_metrics(conn, group_map, tz, start, end, model_type, legacy_json_fallback=True)
+        return metrics.dates, metrics.series
+    finally:
+        conn.close()
 
 
-def render_svg(
-    dates: list[str],
-    series: MetricSeries,
-    complete_dates: set[str] | None = None,
-    max_series_per_panel: int = 8,
-    date_label_interval_days: int = 7,
-) -> str:
-    complete_dates = complete_dates or set()
-    incomplete_dates = [day for day in dates if day not in complete_dates]
-    width, height = 1260, 1280
-    left, right, top, bottom = 90, 350, 86, 78
-    gap = 56
-    panels = []
-    for model_type in [name for name in ("Checkpoint", "LORA") if name in series]:
-        panels.append((model_type, "new_versions", "Version releases"))
-        panels.append((model_type, "new_models", "Model publications"))
-    for model_type in sorted(name for name in series if name not in ("Checkpoint", "LORA")):
-        panels.append((model_type, "new_versions", "Version releases"))
-        panels.append((model_type, "new_models", "Model publications"))
-    panel_count = max(1, len(panels))
-    plot_w = width - left - right
-    plot_h = (height - top - bottom - gap * (panel_count - 1)) / panel_count
-
-    def x_pos(index: int) -> float:
-        if len(dates) <= 1:
-            return left + plot_w / 2
-        return left + plot_w * index / (len(dates) - 1)
-
-    def y_pos(value: int, panel_top: float, panel_max: int) -> float:
-        return panel_top + plot_h - (plot_h * value / panel_max)
-
-    def show_date_label(index: int, day: str) -> bool:
-        if date_label_interval_days <= 1:
-            return True
-        if index == 0 or index == len(dates) - 1:
-            return True
-        offset = (date.fromisoformat(day) - date.fromisoformat(dates[0])).days
-        return offset % date_label_interval_days == 0
-
-    lines = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
-        '<rect width="100%" height="100%" fill="#ffffff"/>',
-        f'<text x="{left}" y="30" font-family="Arial" font-size="20" font-weight="700">Civitai daily publication trends by architecture</text>',
-        f'<text x="{left}" y="50" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt converted to the selected local date; architecture uses grouped baseModel. Each panel shows the top {max_series_per_panel} series.</text>',
-    ]
-    if incomplete_dates:
-        note = "Partial coverage: " + ", ".join(incomplete_dates)
-        lines.append(f'<text x="{left}" y="68" font-family="Arial" font-size="12" fill="#b45309">{html.escape(note)}</text>')
-
-    for panel_index, (model_type, metric_key, metric_label) in enumerate(panels):
-        panel_top = top + panel_index * (plot_h + gap)
-        panel_bottom = panel_top + plot_h
-        panel_values = series[model_type][metric_key]
-        ranked = sorted(
-            panel_values.items(),
-            key=lambda item: sum(item[1].values()),
-            reverse=True,
-        )
-        visible_ranked = ranked[:max_series_per_panel] if max_series_per_panel > 0 else ranked
-        hidden_ranked = ranked[len(visible_ranked):]
-        panel_max = max(
-            [1]
-            + [
-                max(values.get(day, 0) for day in dates)
-                for _, values in visible_ranked
-            ]
-        )
-        panel_title = f"{model_type} - {metric_label}"
-        lines.append(f'<text x="{left}" y="{panel_top - 14:.1f}" font-family="Arial" font-size="15" font-weight="700">{html.escape(panel_title)}</text>')
-        lines.append(f'<line x1="{left}" y1="{panel_bottom:.1f}" x2="{left + plot_w}" y2="{panel_bottom:.1f}" stroke="#111827"/>')
-        lines.append(f'<line x1="{left}" y1="{panel_top:.1f}" x2="{left}" y2="{panel_bottom:.1f}" stroke="#111827"/>')
-        for tick in range(5):
-            value = round(panel_max * tick / 4)
-            y = y_pos(value, panel_top, panel_max)
-            lines.append(f'<line x1="{left}" y1="{y:.1f}" x2="{left + plot_w}" y2="{y:.1f}" stroke="#e5e7eb"/>')
-            lines.append(f'<text x="{left - 12}" y="{y + 4:.1f}" text-anchor="end" font-family="Arial" font-size="12">{value}</text>')
-
-        for idx, (arch, values) in enumerate(visible_ranked):
-            color = PALETTE[idx % len(PALETTE)]
-            points = " ".join(
-                f"{x_pos(i):.1f},{y_pos(values.get(day, 0), panel_top, panel_max):.1f}"
-                for i, day in enumerate(dates)
-            )
-            lines.append(f'<polyline fill="none" stroke="{color}" stroke-width="2.4" points="{points}"/>')
-            for day_index, day in enumerate(dates):
-                x = x_pos(day_index)
-                y = y_pos(values.get(day, 0), panel_top, panel_max)
-                lines.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="{color}"/>')
-
-        legend_x = left + plot_w + 30
-        for idx, (arch, values) in enumerate(visible_ranked):
-            color = PALETTE[idx % len(PALETTE)]
-            legend_y = panel_top + 18 + idx * 15
-            total = sum(values.get(day, 0) for day in dates)
-            lines.append(f'<line x1="{legend_x}" y1="{legend_y:.1f}" x2="{legend_x + 22}" y2="{legend_y:.1f}" stroke="{color}" stroke-width="3"/>')
-            lines.append(f'<text x="{legend_x + 32}" y="{legend_y + 4:.1f}" font-family="Arial" font-size="11">{html.escape(arch)} ({total})</text>')
-        if hidden_ranked:
-            hidden_total = sum(sum(values.get(day, 0) for day in dates) for _, values in hidden_ranked)
-            hidden_y = panel_top + 18 + len(visible_ranked) * 15
-            lines.append(f'<text x="{legend_x}" y="{hidden_y + 4:.1f}" font-family="Arial" font-size="11" fill="#6b7280">{len(hidden_ranked)} hidden series ({hidden_total} total)</text>')
-
-    label_y = height - 34
-    for index, day in enumerate(dates):
-        if not show_date_label(index, day):
-            continue
-        x = x_pos(index)
-        fill = "#b45309" if day in incomplete_dates else "#111827"
-        suffix = " *" if day in incomplete_dates else ""
-        lines.append(f'<text x="{x:.1f}" y="{label_y}" text-anchor="middle" font-family="Arial" font-size="12" fill="{fill}">{html.escape(day + suffix)}</text>')
-    lines.append("</svg>")
-    return "\n".join(lines)
-
-
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", type=Path, default=Path("data/civitai.sqlite"))
     parser.add_argument("--groups", type=Path, default=Path("config/base_model_groups.yaml"))
@@ -309,44 +122,19 @@ def main() -> int:
     parser.add_argument("--start-date")
     parser.add_argument("--end-date")
     parser.add_argument("--timezone-offset", default="+09:00")
-    parser.add_argument(
-        "--max-series-per-panel",
-        type=int,
-        default=8,
-        help="Maximum architecture series to draw per panel. Use 0 to show all.",
-    )
-    parser.add_argument(
-        "--date-label-interval-days",
-        type=int,
-        default=7,
-        help="Show x-axis date labels every N days, while always keeping the first and last label.",
-    )
-    args = parser.parse_args()
-
-    dates, series = read_publication_series(
-        args.db,
-        parse_group_file(args.groups),
-        parse_timezone_offset(args.timezone_offset),
-        args.model_type,
-        args.start_date,
-        args.end_date,
-    )
-    complete_dates = complete_observed_dates(
-        args.db,
-        dates,
-        parse_timezone_offset(args.timezone_offset),
-    )
+    parser.add_argument("--max-series-per-panel", type=int, default=8)
+    parser.add_argument("--date-label-interval-days", type=int, default=7)
+    args = parser.parse_args(argv)
+    distinct_paths({"database": args.db, "groups": args.groups, "SVG": args.output})
+    if bool(args.start_date) != bool(args.end_date):
+        parser.error("--start-date and --end-date must be supplied together")
+    if args.max_series_per_panel < 0 or args.date_label_interval_days <= 0:
+        parser.error("series limit must be non-negative and label interval positive")
+    tz = parse_timezone_offset(args.timezone_offset)
+    dates, series = read_publication_series(args.db, load_group_map(args.groups), tz, args.model_type, args.start_date, args.end_date)
+    complete = complete_observed_dates(args.db, dates, tz)
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(
-        render_svg(
-            dates,
-            series,
-            complete_dates,
-            max_series_per_panel=args.max_series_per_panel,
-            date_label_interval_days=args.date_label_interval_days,
-        ),
-        encoding="utf-8",
-    )
+    args.output.write_text(render_svg(dates, series, complete, args.max_series_per_panel, args.date_label_interval_days), encoding="utf-8", newline="\n")
     return 0
 
 

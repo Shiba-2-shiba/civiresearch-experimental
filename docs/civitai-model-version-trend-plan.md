@@ -1,5 +1,7 @@
 # Civitai Model Version Trend Collection Plan
 
+> 現行の改修仕様・受け入れ条件は[2026-10-21リファクタリング計画](refactoring-plan-2026-10-21.md)を参照。本書は初期設計の記録として残す。以下の未完了チェックは現行実装の状態を表さない。
+
 ## Goal
 
 Civitaiに公開されているモデル更新活動を、測定開始後から継続的に蓄積し、baseModel別・モデル種別別の流行変化を分析できる状態にする。

@@ -1,0 +1,265 @@
+{
+  "anchor_date": "2026-10-21",
+  "files": {
+    "base_model_audit.csv": "782e4cb1d2c73d3f67c482931b58d7573294745c3bd71c49b3051735fa8c189c",
+    "coverage_daily.csv": "f44c6b4b508c646add44f6ebc644f81473c14d4fa749c0f749cbadff5b56fea0",
+    "daily_counts.csv": "f7edaa1f918e484a1926dc542270b9a411cd029e1aaee463d1e6e56269c2e334",
+    "monthly_counts.csv": "5c9d3f084a4d76414c4b237d11d1903058ab89980c03f47e8a1ccb482e8eb50a",
+    "publication_daily_counts.csv": "5dcd3affd96132da60f3836ba4eebf4cda390633ccc7d4a679eab2ec6289d7f7",
+    "series_diagnostics.csv": "3c8cfebba81b27ea70fe746d5433bbcb7fd41f826cc1934e892570dbd31f9927",
+    "trends-14d.svg": "5fa6174b646397fade967310310aced35b278a8fecb377181db46d40d68f7292",
+    "trends-30d.svg": "ccee4c6f47bad13f01ad5eb365454c0b8e1bdb1aec44a297d80cc5b8bd88c543",
+    "trends-90d.svg": "e0e83931511ee4c2fadd2bf603cdc5dfd17f8d611aec38b1a8fbd7d197c28005",
+    "trends-all.svg": "e0e03ca78e4db2cd4a615dc44953e0282e7bc9b6ff25e7b2906c83fea16e4444",
+    "trends.svg": "e0e03ca78e4db2cd4a615dc44953e0282e7bc9b6ff25e7b2906c83fea16e4444",
+    "weekly_counts.csv": "32617fb209ddab1b563b2aac99f9a74809f0dab0442359890826999df62f332a"
+  },
+  "generated_at": "2026-10-21T10:33:56+00:00",
+  "grouping_hash": "035ac17b8df19a03b40fcd8319e7af8db9e5d02e597dfa670d79a5c120bce78f",
+  "measurement_start": "2026-05-18",
+  "snapshot_id": "5a2ac2ea5ade0ad491631b33c99dffa4304767895217f7bae5a42b2affa1ad2a",
+  "timezone": "+09:00",
+  "view_config_hash": "f2e81bf046be92c089b40adb091bbedc4057ee1291945bcc8ac4439b7fda73b7",
+  "views": {
+    "14d": {
+      "bucket": "day",
+      "end_date": "2026-10-21",
+      "max_series": 8,
+      "pinned_groups": [
+        "MOSS Image"
+      ],
+      "quality": {
+        "partial": 1,
+        "unknown": 13,
+        "verified": 0
+      },
+      "selected_series": {
+        "Checkpoint": {
+          "new_models": [
+            "Illustrious",
+            "Anima",
+            "MOSS Image",
+            "Krea 2 Turbo",
+            "Krea 2",
+            "Qwen 2.1",
+            "SDXL",
+            "Pony"
+          ],
+          "new_versions": [
+            "Anima",
+            "Illustrious",
+            "MOSS Image",
+            "Krea 2",
+            "Qwen 2.1",
+            "Krea 2 Turbo",
+            "SDXL",
+            "NoobAI"
+          ]
+        },
+        "LORA": {
+          "new_models": [
+            "Illustrious",
+            "Anima",
+            "Krea 2",
+            "MOSS Image",
+            "Z-Image",
+            "SDXL",
+            "Pony",
+            "Flux"
+          ],
+          "new_versions": [
+            "Anima",
+            "Illustrious",
+            "Krea 2",
+            "MOSS Image",
+            "Z-Image",
+            "SDXL",
+            "Pony",
+            "MiniMax H3"
+          ]
+        }
+      },
+      "start_date": "2026-10-08"
+    },
+    "30d": {
+      "bucket": "day",
+      "end_date": "2026-10-21",
+      "max_series": 8,
+      "pinned_groups": [
+        "MOSS Image"
+      ],
+      "quality": {
+        "partial": 1,
+        "unknown": 29,
+        "verified": 0
+      },
+      "selected_series": {
+        "Checkpoint": {
+          "new_models": [
+            "Illustrious",
+            "Anima",
+            "Krea 2 Turbo",
+            "SDXL",
+            "Krea 2",
+            "MOSS Image",
+            "Qwen 2.1",
+            "SD 1.5"
+          ],
+          "new_versions": [
+            "Anima",
+            "Illustrious",
+            "Krea 2",
+            "Krea 2 Turbo",
+            "Qwen 2.1",
+            "MOSS Image",
+            "SDXL",
+            "SD 1.5"
+          ]
+        },
+        "LORA": {
+          "new_models": [
+            "Illustrious",
+            "Anima",
+            "Krea 2",
+            "SDXL",
+            "Pony",
+            "Z-Image",
+            "MiniMax H3",
+            "MOSS Image"
+          ],
+          "new_versions": [
+            "Anima",
+            "Illustrious",
+            "Krea 2",
+            "SDXL",
+            "Z-Image",
+            "MiniMax H3",
+            "Pony",
+            "MOSS Image"
+          ]
+        }
+      },
+      "start_date": "2026-09-22"
+    },
+    "90d": {
+      "bucket": "day",
+      "end_date": "2026-10-21",
+      "max_series": 8,
+      "pinned_groups": [
+        "MOSS Image"
+      ],
+      "quality": {
+        "partial": 1,
+        "unknown": 89,
+        "verified": 0
+      },
+      "selected_series": {
+        "Checkpoint": {
+          "new_models": [
+            "Anima",
+            "Illustrious",
+            "Krea 2",
+            "SDXL",
+            "Krea 2 Turbo",
+            "SD 1.5",
+            "MOSS Image",
+            "MiniMax H3"
+          ],
+          "new_versions": [
+            "Anima",
+            "Krea 2",
+            "Illustrious",
+            "Krea 2 Turbo",
+            "MiniMax H3",
+            "Z-Image",
+            "SDXL",
+            "MOSS Image"
+          ]
+        },
+        "LORA": {
+          "new_models": [
+            "Anima",
+            "Illustrious",
+            "Krea 2",
+            "SDXL",
+            "Pony",
+            "Z-Image",
+            "Flux",
+            "MOSS Image"
+          ],
+          "new_versions": [
+            "Anima",
+            "Illustrious",
+            "Krea 2",
+            "SDXL",
+            "Z-Image",
+            "Pony",
+            "MiniMax H3",
+            "MOSS Image"
+          ]
+        }
+      },
+      "start_date": "2026-07-24"
+    },
+    "all": {
+      "bucket": "week",
+      "end_date": "2026-10-21",
+      "max_series": 8,
+      "pinned_groups": [
+        "MOSS Image"
+      ],
+      "quality": {
+        "partial": 1,
+        "unknown": 156,
+        "verified": 0
+      },
+      "selected_series": {
+        "Checkpoint": {
+          "new_models": [
+            "Anima",
+            "Illustrious",
+            "Krea 2",
+            "SDXL",
+            "Z-Image",
+            "SD 1.5",
+            "Krea 2 Turbo",
+            "MOSS Image"
+          ],
+          "new_versions": [
+            "Anima",
+            "Illustrious",
+            "Krea 2",
+            "Z-Image",
+            "SDXL",
+            "Krea 2 Turbo",
+            "SD 1.5",
+            "MOSS Image"
+          ]
+        },
+        "LORA": {
+          "new_models": [
+            "Illustrious",
+            "Anima",
+            "Krea 2",
+            "SDXL",
+            "Pony",
+            "Z-Image",
+            "Flux",
+            "MOSS Image"
+          ],
+          "new_versions": [
+            "Anima",
+            "Illustrious",
+            "Krea 2",
+            "SDXL",
+            "Z-Image",
+            "Pony",
+            "Flux",
+            "MOSS Image"
+          ]
+        }
+      },
+      "start_date": "2026-05-18"
+    }
+  }
+}

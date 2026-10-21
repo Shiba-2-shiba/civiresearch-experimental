@@ -1,0 +1,2 @@
+# Optional: dataset synchronization only. Collection and export use the standard library.
+huggingface-hub==2.2.0

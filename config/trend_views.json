@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "timezone": "+09:00",
+  "max_series": 8,
+  "pinned_groups": ["MOSS Image"],
+  "colors": {
+    "MOSS Image": "#0891b2",
+    "Anima": "#2563eb",
+    "Illustrious": "#9333ea",
+    "Krea 2": "#ea580c",
+    "Krea 2 Turbo": "#ca8a04",
+    "Qwen 2.1": "#65a30d",
+    "Z-Image": "#16a34a",
+    "SDXL": "#dc2626",
+    "Pony": "#db2777",
+    "Flux": "#a16207",
+    "NoobAI": "#475569",
+    "SD 1.5": "#4f46e5",
+    "MiniMax H3": "#0f766e"
+  },
+  "views": [
+    {"name": "all", "days": null, "bucket": "week", "label_interval": null},
+    {"name": "90d", "days": 90, "bucket": "day", "label_interval": null},
+    {"name": "30d", "days": 30, "bucket": "day", "label_interval": null},
+    {"name": "14d", "days": 14, "bucket": "day", "label_interval": null}
+  ]
+}

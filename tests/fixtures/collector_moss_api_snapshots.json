@@ -1,0 +1,67 @@
+{
+  "snapshots": [
+    {
+      "observed_at": "2026-05-18T00:00:00+00:00",
+      "observed_date": "2026-05-18",
+      "items": [
+        {
+          "id": 1,
+          "name": "moss-checkpoint",
+          "type": "Checkpoint",
+          "creator": {"username": "fixture"},
+          "modelVersions": [
+            {
+              "id": 101,
+              "name": "initial",
+              "createdAt": "2026-05-16T12:00:00Z",
+              "publishedAt": "2026-05-16T12:00:00Z",
+              "baseModel": "M.O.S.S"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "observed_at": "2026-05-20T00:00:00+00:00",
+      "observed_date": "2026-05-20",
+      "items": [
+        {
+          "id": 1,
+          "name": "moss-checkpoint",
+          "type": "Checkpoint",
+          "creator": {"username": "fixture"},
+          "modelVersions": [
+            {
+              "id": 101,
+              "name": "initial",
+              "createdAt": "2026-05-16T12:00:00Z",
+              "publishedAt": "2026-05-16T12:00:00Z",
+              "baseModel": "M.O.S.S"
+            },
+            {
+              "id": 102,
+              "name": "new-on-existing-model",
+              "createdAt": "2026-05-19T08:00:00Z",
+              "publishedAt": "2026-05-19T08:00:00Z",
+              "baseModel": "MOSS"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "moss-lora-missing-publication",
+          "type": "LORA",
+          "creator": {"username": "fixture"},
+          "modelVersions": [
+            {
+              "id": 201,
+              "name": "missing-published-at",
+              "createdAt": "2026-05-20T00:00:00Z",
+              "baseModel": "MOSS"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

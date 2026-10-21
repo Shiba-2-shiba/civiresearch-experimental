@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
-from audit_base_models import audit_rows  # noqa: E402
+from audit_base_models import audit_rows, read_base_model_totals  # noqa: E402
 from export_counts import aggregate, parse_group_file  # noqa: E402
 from plot_trends import (  # noqa: E402
     complete_observed_dates,
@@ -51,7 +51,7 @@ Legacy:
                 },
             )
 
-    def test_aggregate_applies_groups_and_periods(self) -> None:
+    def test_aggregate_applies_groups_and_does_not_invent_group_active_total(self) -> None:
         rows = [
             {
                 "observed_date": "2026-05-18",
@@ -82,7 +82,7 @@ Legacy:
                     "base_model_group": "Flux",
                     "new_version_count": 5,
                     "new_model_count": 1,
-                    "active_total_last": 42,
+                    "active_total_last": None,
                 }
             ],
         )
@@ -118,6 +118,20 @@ Legacy:
                 }
             ],
         )
+
+    def test_audit_reads_raw_versions_absent_from_daily_counts(self) -> None:
+        import sqlite3
+
+        conn = sqlite3.connect(":memory:")
+        conn.row_factory = sqlite3.Row
+        conn.executescript(
+            "create table daily_counts(observed_date text, model_type text, base_model_raw text, new_version_count integer, new_model_count integer);"
+            "create table model_versions(model_type text, base_model_raw text);"
+        )
+        conn.execute("insert into model_versions values ('LORA', 'MOSS Image Base')")
+        rows = read_base_model_totals(conn)
+        conn.close()
+        self.assertEqual([(row["model_type"], row["base_model_raw"], row["new_version_count"]) for row in rows], [("LORA", "MOSS Image Base", 1)])
 
     def test_publication_series_uses_version_published_at_dates(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -168,7 +182,7 @@ Legacy:
         self.assertEqual(series["Checkpoint"]["new_models"]["Illustrious"]["2026-05-19"], 1)
         self.assertEqual(series["Checkpoint"]["new_models"]["Illustrious"].get("2026-05-20", 0), 0)
 
-    def test_complete_observed_dates_uses_successful_coverage_window(self) -> None:
+    def test_legacy_success_does_not_claim_verified_coverage(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             db = Path(tmp) / "civitai.sqlite"
             import collect_daily  # noqa: PLC0415
@@ -205,7 +219,7 @@ Legacy:
                 parse_timezone_offset("+09:00"),
             )
 
-        self.assertEqual(result, {"2026-05-20"})
+        self.assertEqual(result, set())
 
     def test_render_svg_limits_series_and_uses_weekly_date_labels(self) -> None:
         dates = [(date(2026, 5, 18) + timedelta(days=offset)).isoformat() for offset in range(10)]

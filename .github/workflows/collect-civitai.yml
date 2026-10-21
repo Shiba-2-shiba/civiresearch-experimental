@@ -7,66 +7,67 @@ on:
   workflow_dispatch:
     inputs:
       max_pages:
-        description: "Maximum pages per model type"
+        description: "Maximum pages per model type (daily 20 / weekly 80)"
         required: false
         default: ""
       known_version_stop:
-        description: "Stop after this many consecutive known versions. Defaults depend on daily vs weekly run."
+        description: "Consecutive known versions before stopping (daily 200 / weekly 1000)"
         required: false
         default: ""
       observed_date:
-        description: "Observed date in JST, YYYY-MM-DD. Defaults to the UTC date for scheduled runs."
+        description: "Observed date YYYY-MM-DD (default: UTC date)"
         required: false
         default: ""
       coverage_start_date:
-        description: "First JST date covered by this run, YYYY-MM-DD. Defaults to observed date, or observed date - 6 days for weekly recrawls."
+        description: "Requested coverage start, YYYY-MM-DD"
         required: false
         default: ""
       coverage_end_date:
-        description: "Last JST date covered by this run, YYYY-MM-DD. Defaults to observed date."
+        description: "Requested coverage end, YYYY-MM-DD"
         required: false
         default: ""
       skip_active_totals:
-        description: "Skip active_total calls"
-        required: false
-        default: "true"
+        description: "Skip optional active inventory requests"
+        type: boolean
+        default: true
+      bootstrap:
+        description: "Initialize only a dataset with no existing history"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
 
+concurrency:
+  group: civitai-dataset-writer
+  cancel-in-progress: false
+
 jobs:
   collect:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      HF_DATASET_REPO: Shiba-2-shiba/civitai-model-version-trends
+      PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - uses: actions/checkout@v6
-
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-
-      - name: Install Hugging Face CLI
-        run: |
-          python -m pip install --upgrade huggingface_hub
-
-      - name: Restore SQLite snapshot from Hugging Face
+          cache: pip
+          cache-dependency-path: requirements-sync.txt
+      - name: Install pinned dataset synchronization dependency
+        run: python -m pip install -r requirements-sync.txt
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Restore validated SQLite snapshot
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_DATASET_REPO: Shiba-2-shiba/civitai-model-version-trends
+          BOOTSTRAP: ${{ github.event.inputs.bootstrap || 'false' }}
         run: |
-          if [ -z "$HF_TOKEN" ]; then
-            echo "HF_TOKEN is not set; starting without a restored SQLite snapshot."
-            exit 0
-          fi
-          mkdir -p data hf-restore
-          if hf download "$HF_DATASET_REPO" snapshots/civitai.sqlite.gz \
-            --repo-type dataset \
-            --token "$HF_TOKEN" \
-            --local-dir hf-restore; then
-            gzip -dc hf-restore/snapshots/civitai.sqlite.gz > data/civitai.sqlite
-          else
-            echo "No Hugging Face SQLite snapshot found; collector will initialize a new database."
-          fi
-
+          args=()
+          if [ "$BOOTSTRAP" = "true" ]; then args+=(--bootstrap); fi
+          python scripts/sync_dataset.py restore "${args[@]}"
       - name: Collect daily data
         env:
           EVENT_SCHEDULE: ${{ github.event.schedule || '' }}
@@ -76,96 +77,47 @@ jobs:
           COVERAGE_START_DATE: ${{ github.event.inputs.coverage_start_date || '' }}
           COVERAGE_END_DATE: ${{ github.event.inputs.coverage_end_date || '' }}
           SKIP_ACTIVE_TOTALS: ${{ github.event.inputs.skip_active_totals || 'true' }}
+        run: python scripts/run_scheduled.py
+      - name: Build and validate all export views
         run: |
-          is_weekly="false"
-          if [ "$EVENT_SCHEDULE" = "25 15 * * 0" ]; then
-            is_weekly="true"
-          fi
-          target_date="$OBSERVED_DATE"
-          if [ -z "$target_date" ]; then
-            target_date="$(date -u +%F)"
-          fi
-          if [ -z "$MAX_PAGES" ]; then
-            if [ "$is_weekly" = "true" ]; then
-              MAX_PAGES="80"
-            else
-              MAX_PAGES="20"
-            fi
-          fi
-          if [ -z "$KNOWN_VERSION_STOP" ]; then
-            if [ "$is_weekly" = "true" ]; then
-              KNOWN_VERSION_STOP="1000"
-            else
-              KNOWN_VERSION_STOP="200"
-            fi
-          fi
-          coverage_start_date="$COVERAGE_START_DATE"
-          if [ -z "$coverage_start_date" ]; then
-            if [ "$is_weekly" = "true" ]; then
-              coverage_start_date="$(date -u -d "$target_date - 6 days" +%F)"
-            else
-              coverage_start_date="$target_date"
-            fi
-          fi
-          coverage_end_date="$COVERAGE_END_DATE"
-          if [ -z "$coverage_end_date" ]; then
-            coverage_end_date="$target_date"
-          fi
-          args=(--max-pages "$MAX_PAGES")
-          if [ "$SKIP_ACTIVE_TOTALS" = "true" ]; then
-            args+=(--skip-active-totals)
-          fi
-          python scripts/collect_daily.py \
-            --fail-on-errors \
-            --timezone-offset "+09:00" \
-            --observed-date "$target_date" \
-            --coverage-start-date "$coverage_start_date" \
-            --coverage-end-date "$coverage_end_date" \
-            --known-version-stop "$KNOWN_VERSION_STOP" \
-            "${args[@]}"
-
-      - name: Export aggregate counts
-        run: |
-          python scripts/export_counts.py
-          python scripts/audit_base_models.py --all --output data/exports/base_model_audit.csv
-          python scripts/plot_trends.py
-
-      - name: Upload dataset snapshot to Hugging Face
+          python scripts/build_exports.py
+          cp data/exports/daily_counts.csv data/daily_counts.csv
+      - name: Preserve immutable export batch for publication retry
+        run: python scripts/sync_dataset.py prepare
+      - name: Archive complete batch before external publication
+        uses: actions/upload-artifact@v4
+        with:
+          name: civitai-export-batch-${{ github.run_id }}
+          include-hidden-files: true
+          retention-days: 7
+          path: |
+            data/exports/
+            .verify/dataset_revision.json
+            .verify/hf-upload/
+      - name: Publish conditional dataset commit
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_DATASET_REPO: Shiba-2-shiba/civitai-model-version-trends
-        run: |
-          if [ -z "$HF_TOKEN" ]; then
-            echo "HF_TOKEN is not set; skipping Hugging Face upload."
-            exit 0
-          fi
-          mkdir -p hf-upload/daily_counts hf-upload/exports hf-upload/snapshots
-          cp data/daily_counts.csv hf-upload/daily_counts/daily_counts.csv
-          cp data/exports/*.csv hf-upload/exports/
-          cp data/exports/*.svg hf-upload/exports/
-          gzip -c data/civitai.sqlite > hf-upload/snapshots/civitai.sqlite.gz
-          python - <<'PY'
-          import os
-
-          from huggingface_hub import HfApi
-
-          HfApi().upload_folder(
-              repo_id=os.environ["HF_DATASET_REPO"],
-              folder_path="hf-upload",
-              repo_type="dataset",
-              token=os.environ["HF_TOKEN"],
-              commit_message="Update Civitai trend dataset",
-          )
-          PY
-
-      - name: Commit data
+        run: python scripts/sync_dataset.py retry
+      - name: Commit the same export batch to GitHub
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ config/base_model_groups.yaml
-          git commit -m "Preserve daily Civitai trend observations" \
-            -m "The automated collector stores observed model/version IDs, aggregate exports, and baseModel grouping audit output so trend data remains reviewable after each scheduled run." \
-            -m "Confidence: medium" \
-            -m "Scope-risk: narrow" \
-            -m "Tested: GitHub Actions collection, export, audit, and plot commands" || exit 0
+          git add -A -- data/daily_counts.csv data/exports/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Update Civitai publication and observation trends"
           git push
+      - name: Preserve diagnostics and publication receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: civitai-diagnostics-${{ github.run_id }}
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: ignore
+          path: |
+            data/errors.csv
+            data/exports/export_manifest.json
+            data/exports/coverage_daily.csv
+            data/exports/series_diagnostics.csv
+            .verify/dataset_revision.json
+            .verify/hf-upload/publication_receipt.json
