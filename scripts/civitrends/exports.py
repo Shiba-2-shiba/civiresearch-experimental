@@ -486,7 +486,7 @@ def build_exports(
                 generated_at=generated.isoformat(),
                 partial_period_note=partial_note,
                 color_overrides=view_config.colors,
-                show_points=view.name == "14d",
+                show_points=False,
                 pinned_states=_pinned_states(view, observation_counts, missing_counts_through_anchor),
             )
             (stage / f"trends-{view.name}.svg").write_text(svg, encoding="utf-8", newline="\n")

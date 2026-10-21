@@ -5,7 +5,6 @@ from __future__ import annotations
 import hashlib
 import html
 import colorsys
-from collections import defaultdict
 from typing import Mapping, Sequence
 
 from .metrics import MetricSeries
@@ -66,7 +65,7 @@ def render_svg(
     generated_at: str | None = None,
     partial_period_note: str | None = None,
     color_overrides: Mapping[str, str] | None = None,
-    show_points: bool = True,
+    show_points: bool = False,
     pinned_states: Mapping[tuple[str, str, str], str] | None = None,
 ) -> str:
     statuses = {day: ("verified" if day in coverage else "unknown") for day in dates} if isinstance(coverage, set) else dict(coverage or {})
@@ -97,7 +96,7 @@ def render_svg(
     lines = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">', '<rect width="100%" height="100%" fill="#ffffff"/>', f'<text x="{left}" y="30" font-family="Arial" font-size="20" font-weight="700">{html.escape(title)}</text>', f'<text x="{left}" y="51" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt; {html.escape(bucket)} buckets; pinned groups consume the series limit.</text>', f'<text x="{left}" y="68" font-family="Arial" font-size="11" fill="#4b5563">{html.escape(metadata)}</text>']
     unknown = sum(1 for day in dates if statuses.get(day, "unknown") == "unknown")
     partial = sum(1 for day in dates if statuses.get(day) == "partial")
-    lines.append(f'<text x="{left}" y="86" font-family="Arial" font-size="12" fill="#b45309">Coverage: {partial} partial, {unknown} unknown bucket(s); unverified counts are lower bounds; gaps are not zeros.</text>')
+    lines.append(f'<text x="{left}" y="86" font-family="Arial" font-size="12" fill="#b45309">Coverage: {partial} partial (yellow), {unknown} unknown (gray); unverified counts are lower bounds. 0 means no recorded publications, not a verified absence.</text>')
     if partial_period_note:
         lines.append(f'<text x="{left}" y="103" font-family="Arial" font-size="11" fill="#b45309">{html.escape(partial_period_note)}</text>')
     for panel_index, (model_type, metric, label) in enumerate(panels):
@@ -126,53 +125,39 @@ def render_svg(
             lines.append(f'<text x="{left - 12}" y="{y + 4:.1f}" text-anchor="end" font-family="Arial" font-size="12">{value}</text>')
         legend_x = left + plot_w + 30
         legend_cursor = panel_top + 18
-        for index, group in enumerate(visible):
+        for group in visible:
             color = stable_color(group, color_overrides)
             values = values_by_group[group]
-            segments: list[list[tuple[float, float, str]]] = []
-            current_segment: list[tuple[float, float, str]] = []
-            visible_points = sum(1 for day in dates if statuses.get(day, "unknown") != "unknown" or values.get(day, 0) > 0)
-            eligible = {
-                day_index
-                for day_index, day in enumerate(dates)
-                if statuses.get(day, "unknown") != "unknown" or values.get(day, 0) > 0
-            }
+            points: list[tuple[float, float, str]] = []
             for day_index, day in enumerate(dates):
                 value = values.get(day, 0)
                 state = statuses.get(day, "unknown")
                 x = x_pos(day_index)
                 y = panel_bottom - plot_h * value / panel_max
-                if state == "unknown" and value == 0:
-                    if current_segment:
-                        segments.append(current_segment)
-                        current_segment = []
-                    lines.append(
-                        f'<path data-missing="true" d="M {x - 3:.1f},{panel_bottom - 3:.1f} '
-                        f'L {x + 3:.1f},{panel_bottom + 3:.1f} M {x - 3:.1f},{panel_bottom + 3:.1f} '
-                        f'L {x + 3:.1f},{panel_bottom - 3:.1f}" stroke="#9ca3af"/>'
-                    )
-                    continue
-                current_segment.append((x, y, state))
-                connected = day_index - 1 in eligible or day_index + 1 in eligible
-                if state in {"unknown", "partial"} and (show_points or not connected):
+                # Plot the recorded count even when collection completeness is
+                # unverified. Coverage is conveyed by the background and note.
+                points.append((x, y, state))
+            if len(points) > 1:
+                coordinates = " ".join(f"{x:.1f},{y:.1f}" for x, y, _ in points)
+                lines.append(
+                    f'<polyline fill="none" stroke="{color}" stroke-width="2.4" '
+                    f'stroke-linejoin="round" stroke-linecap="round" points="{coordinates}"/>'
+                )
+            elif points and not show_points:
+                x, y, _ = points[0]
+                lines.append(
+                    f'<line x1="{x - 4:.1f}" y1="{y:.1f}" x2="{x + 4:.1f}" y2="{y:.1f}" '
+                    f'stroke="{color}" stroke-width="2.4" stroke-linecap="round"/>'
+                )
+            for x, y, state in points if show_points else ():
+                if state in {"unknown", "partial"}:
                     lines.append(
                         f'<circle data-coverage="lower-bound" cx="{x:.1f}" cy="{y:.1f}" '
                         f'r="4" fill="{color}" stroke="#b45309" stroke-width="2" '
                         f'data-quality="{state}"/>'
                     )
-                elif show_points or visible_points <= 1:
+                else:
                     lines.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="{color}"/>')
-            if current_segment:
-                segments.append(current_segment)
-            for points in segments:
-                for start_point, end_point in zip(points, points[1:]):
-                    partial_line = any(state != "verified" for state in (start_point[2], end_point[2]))
-                    dash = ' stroke-dasharray="5 4" data-coverage="partial"' if partial_line else ""
-                    lines.append(
-                        f'<line x1="{start_point[0]:.1f}" y1="{start_point[1]:.1f}" '
-                        f'x2="{end_point[0]:.1f}" y2="{end_point[1]:.1f}" '
-                        f'stroke="{color}" stroke-width="2.4"{dash}/>'
-                    )
             legend_y = legend_cursor
             lines.append(f'<line x1="{legend_x}" y1="{legend_y}" x2="{legend_x + 22}" y2="{legend_y}" stroke="{color}" stroke-width="3"/>')
             legend_parts = _legend_lines(f"{group} ({totals[group]})")

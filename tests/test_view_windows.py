@@ -5,6 +5,7 @@ import unittest
 import json
 import re
 import tempfile
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from scripts.civitrends.exports import ViewSpec, _partial_week_note, dates_for_view, load_view_config
@@ -88,32 +89,43 @@ class ViewWindowTests(unittest.TestCase):
         svg = render_svg(["2026-10-20"], {"Checkpoint": {"new_versions": {}, "new_models": {}}}, {"2026-10-20": "partial"}, pinned_groups=("MOSS Image",))
         self.assertIn("MOSS Image: no publications in this window", svg)
 
-    def test_unknown_zero_is_a_gap_but_unknown_positive_is_lower_bound(self) -> None:
-        series = {"Checkpoint": {"new_versions": {"MOSS Image": {"2026-10-19": 2}}, "new_models": {}}}
-        svg = render_svg(["2026-10-19", "2026-10-20"], series, {"2026-10-19": "unknown", "2026-10-20": "unknown"})
-        self.assertIn('data-coverage="lower-bound"', svg)
-        self.assertIn('data-missing="true"', svg)
+    def test_unknown_zero_keeps_observed_count_line_continuous(self) -> None:
+        dates = ["2026-10-18", "2026-10-19", "2026-10-20"]
+        series = {"Checkpoint": {"new_versions": {"MOSS Image": {dates[0]: 2, dates[2]: 4}}, "new_models": {}}}
+        svg = render_svg(dates, series, dict.fromkeys(dates, "unknown"))
+        root = ET.fromstring(svg)
+        curves = root.findall("{http://www.w3.org/2000/svg}polyline")
+        self.assertEqual(len(curves), 1)
+        self.assertEqual(curves[0].get("points"), "90.0,250.0 500.0,365.0 910.0,135.0")
+        self.assertNotIn('data-missing="true"', svg)
+        self.assertIn('data-quality="unknown"', svg)
+        self.assertIn("0 means no recorded publications, not a verified absence", svg)
 
-    def test_connected_unknown_values_use_sparse_qualified_lines(self) -> None:
+    def test_connected_unknown_values_use_solid_lines_without_points_by_default(self) -> None:
         dates = ["2026-10-19", "2026-10-20"]
         series = {"Checkpoint": {"new_versions": {"MOSS Image": dict(zip(dates, [2, 3]))}, "new_models": {}}}
-        svg = render_svg(dates, series, dict.fromkeys(dates, "unknown"), show_points=False)
-        self.assertIn('stroke-dasharray="5 4"', svg)
-        self.assertNotIn('<circle data-coverage=', svg)
+        svg = render_svg(dates, series, dict.fromkeys(dates, "unknown"))
+        self.assertIn('<polyline', svg)
+        self.assertNotIn('stroke-dasharray=', svg)
+        self.assertNotIn('<circle', svg)
 
-    def test_partial_coverage_is_shaded_and_dashed_without_dense_points(self) -> None:
+    def test_partial_coverage_is_shaded_with_solid_lines_without_points(self) -> None:
         series = {"Checkpoint": {"new_versions": {"A very long architecture group label": {"2026-10-19": 1, "2026-10-20": 2}}, "new_models": {}}}
         svg = render_svg(["2026-10-19", "2026-10-20"], series, {"2026-10-19": "partial", "2026-10-20": "partial"}, show_points=False)
         self.assertIn('data-quality="partial"', svg)
-        self.assertIn('stroke-dasharray="5 4"', svg)
-        self.assertNotIn('<circle cx=', svg)
+        self.assertIn('<polyline', svg)
+        self.assertNotIn('stroke-dasharray=', svg)
+        self.assertNotIn('<circle', svg)
         self.assertNotIn('data-coverage="lower-bound"', svg)
         self.assertIn("<tspan", svg)
 
-    def test_isolated_partial_value_keeps_lower_bound_marker(self) -> None:
+    def test_single_bucket_stays_visible_without_a_circle(self) -> None:
         series = {"Checkpoint": {"new_versions": {"MOSS Image": {"2026-10-20": 0}}, "new_models": {}}}
-        svg = render_svg(["2026-10-20"], series, {"2026-10-20": "partial"}, show_points=False)
-        self.assertIn('data-coverage="lower-bound"', svg)
+        for state in ("verified", "partial", "unknown"):
+            with self.subTest(state=state):
+                svg = render_svg(["2026-10-20"], series, {"2026-10-20": state})
+                self.assertNotIn('<circle', svg)
+                self.assertIn('x1="496.0" y1="365.0" x2="504.0" y2="365.0"', svg)
 
     def test_hidden_summary_is_below_wrapped_legend_rows(self) -> None:
         values = {"2026-10-20": 1}
@@ -124,15 +136,19 @@ class ViewWindowTests(unittest.TestCase):
         self.assertIsNotNone(hidden_match)
         self.assertGreater(float(hidden_match.group(1)), max(legend_ys) + 12)
 
-    def test_partial_zero_and_positive_are_lower_bounds_while_unknown_zero_is_gap(self) -> None:
+    def test_optional_points_retain_quality_while_line_crosses_quality_changes(self) -> None:
         dates = [f"2026-10-{day:02d}" for day in range(15, 21)]
         values = {dates[0]: 0, dates[1]: 1, dates[2]: 0, dates[3]: 2, dates[4]: 3}
         statuses = {dates[0]: "verified", dates[1]: "verified", dates[2]: "partial", dates[3]: "partial", dates[4]: "unknown", dates[5]: "unknown"}
         series = {"Checkpoint": {"new_versions": {"MOSS Image": values}, "new_models": {}}}
         svg = render_svg(dates, series, statuses, show_points=True)
-        self.assertEqual(svg.count('data-coverage="lower-bound"'), 3)
-        self.assertIn('data-missing="true"', svg)
+        self.assertEqual(svg.count('data-coverage="lower-bound"'), 4)
+        self.assertNotIn('data-missing="true"', svg)
         self.assertIn('data-quality="partial"', svg)
+        curves = ET.fromstring(svg).findall("{http://www.w3.org/2000/svg}polyline")
+        self.assertEqual(len(curves), 1)
+        self.assertEqual(len(curves[0].get("points").split()), 6)
+        self.assertNotIn('stroke-dasharray=', svg)
 
     def test_four_panels_render_when_every_publication_timestamp_is_missing(self) -> None:
         svg = render_svg(["2026-10-20"], {}, {"2026-10-20": "partial"}, pinned_groups=("MOSS Image",), pinned_states={(kind, metric, "MOSS Image"): "publication timestamps missing" for kind in ("Checkpoint", "LORA") for metric in ("new_versions", "new_models")})

@@ -72,6 +72,11 @@ class ExportTests(unittest.TestCase):
             self.assertEqual(missing_lora["missing_version_ids_through_anchor"], "[3]")
             self.assertEqual(missing_lora["missing_raw_values_through_anchor"], '["MOSS Image Base"]')
             self.assertIn("MOSS Image: publication timestamps missing", (out1 / "trends-14d.svg").read_text(encoding="utf-8"))
+            for name in ("all", "90d", "30d", "14d"):
+                svg = (out1 / f"trends-{name}.svg").read_text(encoding="utf-8")
+                self.assertNotIn('<circle', svg, name)
+                self.assertNotIn('stroke-dasharray=', svg, name)
+                self.assertNotIn('data-missing="true"', svg, name)
 
     def test_publication_csv_is_same_daily_data_used_by_graphs(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
