@@ -1,36 +1,36 @@
 {
-  "anchor_date": "2026-10-26",
+  "anchor_date": "2026-10-27",
   "files": {
-    "base_model_audit.csv": "ae83bd59ac940a9ca997c8795a09e1ae8bbd8a85b33cfcf1d413db41654830a8",
-    "coverage_daily.csv": "1bafe45b9296fee7f2a9ff08064163fa930d1c84644393a1ba0b90516754d20c",
-    "daily_counts.csv": "33bf90b073ab1b48a2ffffca6b676844f897d007b533fabf6caac5074658b1fd",
-    "monthly_counts.csv": "4085385a464e11acab24c6c2f9a00303785c68623c70d78ba6fca3069f428d08",
-    "publication_daily_counts.csv": "f306dce134820acadd8a9a39703104c9d64273def191a50f0b98d90d58d9d20c",
-    "series_diagnostics.csv": "a93dd798d5bab7bb060c28be798c5b79617d11b243c24895ec37f6cd6cdf1966",
-    "trends-14d.svg": "45eabbb5b1102fcb2b3714911bd2b290868e3581655ad4afc902aa2f12b055e8",
-    "trends-30d.svg": "732ea7432f74991d907ea341c929757b1ca8a1b61f7fdfa5e0107f491f8fc770",
-    "trends-90d.svg": "e2334a43586ffabfcb9d8deed734e96c0ce470fb67ff873ff58b44a113b6a7d4",
-    "trends-all.svg": "bc88d303a7695417eb74427627d3ed4e58b735190ffcbceb2507390d92bb507b",
-    "trends.svg": "bc88d303a7695417eb74427627d3ed4e58b735190ffcbceb2507390d92bb507b",
-    "weekly_counts.csv": "30e6c167ff0d699a4c95447a10b568cde0705437b437081ed429e29578c06875"
+    "base_model_audit.csv": "f4ad788033921d8867fa76ba7d136ddf4e4b59bf38669874083e0815a2f77738",
+    "coverage_daily.csv": "e12684f4b7550737ca181d5685c6a63b96165b1b3ddb0c706f1c33ad4f6e944e",
+    "daily_counts.csv": "b05122a37d8d7947700dc11430b32124f86441dae963e5f82fcca2d6159af784",
+    "monthly_counts.csv": "16306077dece38fde578b0bd2935c8ccc0d7786f38027ccb820b785110b37e9f",
+    "publication_daily_counts.csv": "6bbef9d085350bba16ea34a9e755b675a4b14f2dee8dfd1ee10f16a2a7321722",
+    "series_diagnostics.csv": "2f21dd34558dbbb91fb4854d2b4566d7a53409326ff3cb64c4709205e431d867",
+    "trends-14d.svg": "1e34e7d21eab5e9d153b25e83355084213bf1d428defff5f31f0be8838cc28a1",
+    "trends-30d.svg": "d3e14fb056b919602ab720de0626233b5f4bce894833b5af43cdf554d80002df",
+    "trends-90d.svg": "f9124b2e7c82aa63c0626161f26d4ccfa79b13b67339074409f35160ef7f5e76",
+    "trends-all.svg": "ee06c3a19084da64edcf489f008402b82dfd310607ca86f4fb24b299c03b7505",
+    "trends.svg": "ee06c3a19084da64edcf489f008402b82dfd310607ca86f4fb24b299c03b7505",
+    "weekly_counts.csv": "54db48146e2bb8b57e9b68f1831d1deabb8a1a317cc0078eeb5ffc45f5959f6d"
   },
-  "generated_at": "2026-10-26T20:11:48+00:00",
+  "generated_at": "2026-10-27T19:41:56+00:00",
   "grouping_hash": "035ac17b8df19a03b40fcd8319e7af8db9e5d02e597dfa670d79a5c120bce78f",
   "measurement_start": "2026-05-18",
-  "snapshot_id": "8bcd5ab5da492adac5381798a3109703a90f9f6c42be5206b3d1a37f27daeab4",
+  "snapshot_id": "c524e4d1d447c7eab144ccd3698b88dfe33f2c8a2963920362ca38c129edfde7",
   "timezone": "+09:00",
   "view_config_hash": "f2e81bf046be92c089b40adb091bbedc4057ee1291945bcc8ac4439b7fda73b7",
   "views": {
     "14d": {
       "bucket": "day",
-      "end_date": "2026-10-26",
+      "end_date": "2026-10-27",
       "max_series": 8,
       "pinned_groups": [
         "MOSS Image"
       ],
       "quality": {
-        "partial": 6,
-        "unknown": 8,
+        "partial": 7,
+        "unknown": 7,
         "verified": 0
       },
       "selected_series": {
@@ -43,7 +43,7 @@
             "Krea 2 Turbo",
             "SDXL",
             "SD 1.5",
-            "Qwen 2.1"
+            "Legacy"
           ],
           "new_versions": [
             "Anima",
@@ -52,8 +52,8 @@
             "Krea 2",
             "Krea 2 Turbo",
             "SDXL",
-            "Qwen 2.1",
-            "SD 1.5"
+            "SD 1.5",
+            "Flux.3 Klein"
           ]
         },
         "LORA": {
@@ -65,7 +65,7 @@
             "SDXL",
             "Z-Image",
             "Pony",
-            "Flux"
+            "Krea 2 Turbo"
           ],
           "new_versions": [
             "Anima",
@@ -79,18 +79,18 @@
           ]
         }
       },
-      "start_date": "2026-10-13"
+      "start_date": "2026-10-14"
     },
     "30d": {
       "bucket": "day",
-      "end_date": "2026-10-26",
+      "end_date": "2026-10-27",
       "max_series": 8,
       "pinned_groups": [
         "MOSS Image"
       ],
       "quality": {
-        "partial": 6,
-        "unknown": 24,
+        "partial": 7,
+        "unknown": 23,
         "verified": 0
       },
       "selected_series": {
@@ -132,25 +132,25 @@
             "Illustrious",
             "Krea 2",
             "MOSS Image",
-            "SDXL",
             "Z-Image",
-            "MiniMax H3",
-            "Pony"
+            "SDXL",
+            "Pony",
+            "MiniMax H3"
           ]
         }
       },
-      "start_date": "2026-09-27"
+      "start_date": "2026-09-28"
     },
     "90d": {
       "bucket": "day",
-      "end_date": "2026-10-26",
+      "end_date": "2026-10-27",
       "max_series": 8,
       "pinned_groups": [
         "MOSS Image"
       ],
       "quality": {
-        "partial": 6,
-        "unknown": 84,
+        "partial": 7,
+        "unknown": 83,
         "verified": 0
       },
       "selected_series": {
@@ -199,17 +199,17 @@
           ]
         }
       },
-      "start_date": "2026-07-29"
+      "start_date": "2026-07-30"
     },
     "all": {
       "bucket": "week",
-      "end_date": "2026-10-26",
+      "end_date": "2026-10-27",
       "max_series": 8,
       "pinned_groups": [
         "MOSS Image"
       ],
       "quality": {
-        "partial": 6,
+        "partial": 7,
         "unknown": 156,
         "verified": 0
       },
