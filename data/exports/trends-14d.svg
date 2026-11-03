@@ -2,10 +2,10 @@
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="90" y="30" font-family="Arial" font-size="20" font-weight="700">Civitai publication trends — 14d</text>
 <text x="90" y="51" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt; day buckets; pinned groups consume the series limit.</text>
-<text x="90" y="68" font-family="Arial" font-size="11" fill="#4b5563">measurement 2026-05-18 · anchor 2026-11-02 · generated 2026-11-02T22:55:02+00:00</text>
-<text x="90" y="86" font-family="Arial" font-size="12" fill="#b45309">Coverage: 13 partial (yellow), 1 unknown (gray); unverified counts are lower bounds. 0 means no recorded publications, not a verified absence.</text>
+<text x="90" y="68" font-family="Arial" font-size="11" fill="#4b5563">measurement 2026-05-18 · anchor 2026-11-03 · generated 2026-11-03T20:40:44+00:00</text>
+<text x="90" y="86" font-family="Arial" font-size="12" fill="#b45309">Coverage: 14 partial (yellow), 0 unknown (gray); unverified counts are lower bounds. 0 means no recorded publications, not a verified absence.</text>
 <text x="90" y="121.0" font-family="Arial" font-size="15" font-weight="700">Checkpoint - Version publications</text>
-<rect data-quality="unknown" x="90.0" y="135.0" width="31.5" height="230" fill="#f3f4f6" opacity="0.55"/>
+<rect data-quality="partial" x="90.0" y="135.0" width="31.5" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="121.5" y="135.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="184.6" y="135.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="247.7" y="135.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
@@ -30,33 +30,33 @@
 <text x="78" y="196.5" text-anchor="end" font-family="Arial" font-size="12">9</text>
 <line x1="90" y1="135.0" x2="910" y2="135.0" stroke="#e5e7eb"/>
 <text x="78" y="139.0" text-anchor="end" font-family="Arial" font-size="12">12</text>
-<polyline fill="none" stroke="#0891b2" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,250.0 153.1,326.7 216.2,250.0 279.2,135.0 342.3,307.5 405.4,250.0 468.5,269.2 531.5,288.3 594.6,230.8 657.7,230.8 720.8,307.5 783.8,230.8 846.9,269.2 910.0,269.2"/>
-<line x1="940" y1="153" x2="962" y2="153" stroke="#0891b2" stroke-width="3"/>
-<text x="972" y="157" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (78)</tspan></text>
-<polyline fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,288.3 153.1,269.2 216.2,230.8 279.2,269.2 342.3,230.8 405.4,288.3 468.5,211.7 531.5,211.7 594.6,269.2 657.7,288.3 720.8,326.7 783.8,250.0 846.9,211.7 910.0,288.3"/>
-<line x1="940" y1="169" x2="962" y2="169" stroke="#2563eb" stroke-width="3"/>
-<text x="972" y="173" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (77)</tspan></text>
-<polyline fill="none" stroke="#9333ea" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,326.7 153.1,345.8 216.2,307.5 279.2,345.8 342.3,288.3 405.4,326.7 468.5,365.0 531.5,250.0 594.6,365.0 657.7,345.8 720.8,345.8 783.8,154.2 846.9,326.7 910.0,192.5"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,269.2 153.1,230.8 216.2,269.2 279.2,230.8 342.3,288.3 405.4,211.7 468.5,211.7 531.5,269.2 594.6,288.3 657.7,326.7 720.8,269.2 783.8,211.7 846.9,288.3 910.0,211.7"/>
+<line x1="940" y1="153" x2="962" y2="153" stroke="#2563eb" stroke-width="3"/>
+<text x="972" y="157" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (80)</tspan></text>
+<polyline fill="none" stroke="#0891b2" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,326.7 153.1,250.0 216.2,135.0 279.2,307.5 342.3,250.0 405.4,288.3 468.5,288.3 531.5,211.7 594.6,230.8 657.7,307.5 720.8,230.8 783.8,250.0 846.9,269.2 910.0,250.0"/>
+<line x1="940" y1="169" x2="962" y2="169" stroke="#0891b2" stroke-width="3"/>
+<text x="972" y="173" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (79)</tspan></text>
+<polyline fill="none" stroke="#9333ea" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,345.8 153.1,288.3 216.2,345.8 279.2,288.3 342.3,326.7 405.4,365.0 468.5,250.0 531.5,365.0 594.6,345.8 657.7,345.8 720.8,154.2 783.8,326.7 846.9,192.5 910.0,326.7"/>
 <line x1="940" y1="185" x2="962" y2="185" stroke="#9333ea" stroke-width="3"/>
-<text x="972" y="189" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (43)</tspan></text>
-<polyline fill="none" stroke="#ea580c" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,345.8 153.1,307.5 216.2,365.0 279.2,345.8 342.3,326.7 405.4,345.8 468.5,307.5 531.5,345.8 594.6,288.3 657.7,326.7 720.8,269.2 783.8,288.3 846.9,365.0 910.0,345.8"/>
+<text x="972" y="189" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (44)</tspan></text>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,307.5 153.1,365.0 216.2,345.8 279.2,326.7 342.3,307.5 405.4,307.5 468.5,345.8 531.5,288.3 594.6,326.7 657.7,269.2 720.8,288.3 783.8,365.0 846.9,345.8 910.0,269.2"/>
 <line x1="940" y1="201" x2="962" y2="201" stroke="#ea580c" stroke-width="3"/>
-<text x="972" y="205" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 (28)</tspan></text>
-<polyline fill="none" stroke="#ca8a04" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,345.8 153.1,345.8 216.2,326.7 279.2,288.3 342.3,326.7 405.4,307.5 468.5,345.8 531.5,365.0 594.6,365.0 657.7,365.0 720.8,326.7 783.8,345.8 846.9,365.0 910.0,326.7"/>
+<text x="972" y="205" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 (34)</tspan></text>
+<polyline fill="none" stroke="#ca8a04" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,345.8 153.1,326.7 216.2,288.3 279.2,326.7 342.3,307.5 405.4,345.8 468.5,365.0 531.5,365.0 594.6,365.0 657.7,326.7 720.8,345.8 783.8,365.0 846.9,326.7 910.0,365.0"/>
 <line x1="940" y1="217" x2="962" y2="217" stroke="#ca8a04" stroke-width="3"/>
-<text x="972" y="221" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 Turbo (19)</tspan></text>
-<polyline fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,365.0 153.1,345.8 216.2,345.8 279.2,365.0 342.3,365.0 405.4,326.7 468.5,307.5 531.5,365.0 594.6,307.5 657.7,326.7 720.8,307.5 783.8,345.8 846.9,365.0 910.0,365.0"/>
+<text x="972" y="221" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 Turbo (18)</tspan></text>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,345.8 153.1,345.8 216.2,365.0 279.2,365.0 342.3,326.7 405.4,307.5 468.5,365.0 531.5,307.5 594.6,326.7 657.7,307.5 720.8,345.8 783.8,365.0 846.9,365.0 910.0,345.8"/>
 <line x1="940" y1="233" x2="962" y2="233" stroke="#dc2626" stroke-width="3"/>
-<text x="972" y="237" font-family="Arial" font-size="11"><tspan x="972" dy="0">SDXL (16)</tspan></text>
-<polyline fill="none" stroke="#4f46e5" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,365.0 153.1,365.0 216.2,365.0 279.2,365.0 342.3,269.2 405.4,365.0 468.5,345.8 531.5,365.0 594.6,345.8 657.7,365.0 720.8,365.0 783.8,365.0 846.9,365.0 910.0,345.8"/>
+<text x="972" y="237" font-family="Arial" font-size="11"><tspan x="972" dy="0">SDXL (17)</tspan></text>
+<polyline fill="none" stroke="#4f46e5" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,365.0 153.1,365.0 216.2,365.0 279.2,269.2 342.3,365.0 405.4,345.8 468.5,365.0 531.5,345.8 594.6,365.0 657.7,365.0 720.8,365.0 783.8,365.0 846.9,345.8 910.0,365.0"/>
 <line x1="940" y1="249" x2="962" y2="249" stroke="#4f46e5" stroke-width="3"/>
 <text x="972" y="253" font-family="Arial" font-size="11"><tspan x="972" dy="0">SD 1.5 (8)</tspan></text>
-<polyline fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,365.0 153.1,365.0 216.2,365.0 279.2,345.8 342.3,365.0 405.4,345.8 468.5,365.0 531.5,365.0 594.6,365.0 657.7,326.7 720.8,345.8 783.8,345.8 846.9,365.0 910.0,345.8"/>
+<polyline fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,365.0 153.1,365.0 216.2,345.8 279.2,365.0 342.3,345.8 405.4,365.0 468.5,365.0 531.5,365.0 594.6,326.7 657.7,345.8 720.8,345.8 783.8,365.0 846.9,345.8 910.0,365.0"/>
 <line x1="940" y1="265" x2="962" y2="265" stroke="#0f766e" stroke-width="3"/>
 <text x="972" y="269" font-family="Arial" font-size="11"><tspan x="972" dy="0">MiniMax H3 (7)</tspan></text>
 <text x="940" y="285" font-family="Arial" font-size="11" fill="#6b7280">6 hidden series (16 total)</text>
 <text x="90" y="407.0" font-family="Arial" font-size="15" font-weight="700">Checkpoint - Earliest observed version per model</text>
-<rect data-quality="unknown" x="90.0" y="421.0" width="31.5" height="230" fill="#f3f4f6" opacity="0.55"/>
+<rect data-quality="partial" x="90.0" y="421.0" width="31.5" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="121.5" y="421.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="184.6" y="421.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="247.7" y="421.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
@@ -81,33 +81,33 @@
 <text x="78" y="482.5" text-anchor="end" font-family="Arial" font-size="12">6</text>
 <line x1="90" y1="421.0" x2="910" y2="421.0" stroke="#e5e7eb"/>
 <text x="78" y="425.0" text-anchor="end" font-family="Arial" font-size="12">8</text>
-<polyline fill="none" stroke="#0891b2" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,536.0 153.1,593.5 216.2,536.0 279.2,449.8 342.3,622.2 405.4,507.2 468.5,536.0 531.5,593.5 594.6,536.0 657.7,564.8 720.8,593.5 783.8,564.8 846.9,651.0 910.0,564.8"/>
+<polyline fill="none" stroke="#0891b2" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,593.5 153.1,536.0 216.2,449.8 279.2,622.2 342.3,507.2 405.4,564.8 468.5,593.5 531.5,536.0 594.6,564.8 657.7,593.5 720.8,564.8 783.8,651.0 846.9,564.8 910.0,564.8"/>
 <line x1="940" y1="439" x2="962" y2="439" stroke="#0891b2" stroke-width="3"/>
-<text x="972" y="443" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (44)</tspan></text>
-<polyline fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,593.5 153.1,593.5 216.2,564.8 279.2,651.0 342.3,622.2 405.4,564.8 468.5,536.0 531.5,536.0 594.6,564.8 657.7,593.5 720.8,622.2 783.8,651.0 846.9,564.8 910.0,622.2"/>
+<text x="972" y="443" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (42)</tspan></text>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,593.5 153.1,564.8 216.2,651.0 279.2,622.2 342.3,564.8 405.4,536.0 468.5,536.0 531.5,564.8 594.6,593.5 657.7,622.2 720.8,651.0 783.8,564.8 846.9,622.2 910.0,593.5"/>
 <line x1="940" y1="455" x2="962" y2="455" stroke="#2563eb" stroke-width="3"/>
 <text x="972" y="459" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (29)</tspan></text>
-<polyline fill="none" stroke="#9333ea" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,622.2 153.1,651.0 216.2,651.0 279.2,622.2 342.3,536.0 405.4,622.2 468.5,651.0 531.5,651.0 594.6,651.0 657.7,622.2 720.8,651.0 783.8,421.0 846.9,622.2 910.0,449.8"/>
+<polyline fill="none" stroke="#9333ea" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,651.0 153.1,651.0 216.2,622.2 279.2,536.0 342.3,622.2 405.4,651.0 468.5,651.0 531.5,651.0 594.6,622.2 657.7,651.0 720.8,421.0 783.8,622.2 846.9,449.8 910.0,651.0"/>
 <line x1="940" y1="471" x2="962" y2="471" stroke="#9333ea" stroke-width="3"/>
-<text x="972" y="475" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (24)</tspan></text>
-<polyline fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,651.0 153.1,622.2 216.2,622.2 279.2,651.0 342.3,651.0 405.4,593.5 468.5,564.8 531.5,651.0 594.6,564.8 657.7,622.2 720.8,564.8 783.8,622.2 846.9,651.0 910.0,651.0"/>
+<text x="972" y="475" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (23)</tspan></text>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,622.2 153.1,622.2 216.2,651.0 279.2,651.0 342.3,593.5 405.4,564.8 468.5,651.0 531.5,564.8 594.6,622.2 657.7,564.8 720.8,622.2 783.8,651.0 846.9,651.0 910.0,622.2"/>
 <line x1="940" y1="487" x2="962" y2="487" stroke="#dc2626" stroke-width="3"/>
-<text x="972" y="491" font-family="Arial" font-size="11"><tspan x="972" dy="0">SDXL (15)</tspan></text>
-<polyline fill="none" stroke="#ea580c" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,651.0 153.1,651.0 216.2,651.0 279.2,651.0 342.3,622.2 405.4,622.2 468.5,622.2 531.5,651.0 594.6,564.8 657.7,622.2 720.8,622.2 783.8,622.2 846.9,651.0 910.0,622.2"/>
+<text x="972" y="491" font-family="Arial" font-size="11"><tspan x="972" dy="0">SDXL (16)</tspan></text>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,651.0 153.1,651.0 216.2,651.0 279.2,622.2 342.3,622.2 405.4,622.2 468.5,651.0 531.5,564.8 594.6,622.2 657.7,622.2 720.8,622.2 783.8,651.0 846.9,622.2 910.0,564.8"/>
 <line x1="940" y1="503" x2="962" y2="503" stroke="#ea580c" stroke-width="3"/>
-<text x="972" y="507" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 (10)</tspan></text>
-<polyline fill="none" stroke="#ca8a04" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,622.2 153.1,622.2 216.2,622.2 279.2,622.2 342.3,593.5 405.4,651.0 468.5,651.0 531.5,651.0 594.6,651.0 657.7,651.0 720.8,622.2 783.8,622.2 846.9,651.0 910.0,622.2"/>
+<text x="972" y="507" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 (13)</tspan></text>
+<polyline fill="none" stroke="#ca8a04" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,622.2 153.1,622.2 216.2,622.2 279.2,593.5 342.3,651.0 405.4,651.0 468.5,651.0 531.5,651.0 594.6,651.0 657.7,622.2 720.8,622.2 783.8,651.0 846.9,622.2 910.0,651.0"/>
 <line x1="940" y1="519" x2="962" y2="519" stroke="#ca8a04" stroke-width="3"/>
-<text x="972" y="523" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 Turbo (9)</tspan></text>
-<polyline fill="none" stroke="#4f46e5" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,651.0 153.1,651.0 216.2,651.0 279.2,651.0 342.3,507.2 405.4,651.0 468.5,651.0 531.5,651.0 594.6,622.2 657.7,651.0 720.8,651.0 783.8,651.0 846.9,651.0 910.0,651.0"/>
+<text x="972" y="523" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 Turbo (8)</tspan></text>
+<polyline fill="none" stroke="#4f46e5" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,651.0 153.1,651.0 216.2,651.0 279.2,507.2 342.3,651.0 405.4,651.0 468.5,651.0 531.5,622.2 594.6,651.0 657.7,651.0 720.8,651.0 783.8,651.0 846.9,651.0 910.0,651.0"/>
 <line x1="940" y1="535" x2="962" y2="535" stroke="#4f46e5" stroke-width="3"/>
 <text x="972" y="539" font-family="Arial" font-size="11"><tspan x="972" dy="0">SD 1.5 (6)</tspan></text>
-<polyline fill="none" stroke="#6622aa" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,651.0 153.1,622.2 216.2,622.2 279.2,622.2 342.3,651.0 405.4,651.0 468.5,651.0 531.5,651.0 594.6,622.2 657.7,651.0 720.8,651.0 783.8,651.0 846.9,651.0 910.0,651.0"/>
+<polyline fill="none" stroke="#6622aa" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,622.2 153.1,622.2 216.2,622.2 279.2,651.0 342.3,651.0 405.4,651.0 468.5,651.0 531.5,622.2 594.6,651.0 657.7,651.0 720.8,651.0 783.8,651.0 846.9,651.0 910.0,651.0"/>
 <line x1="940" y1="551" x2="962" y2="551" stroke="#6622aa" stroke-width="3"/>
 <text x="972" y="555" font-family="Arial" font-size="11"><tspan x="972" dy="0">Legacy (4)</tspan></text>
 <text x="940" y="571" font-family="Arial" font-size="11" fill="#6b7280">6 hidden series (8 total)</text>
 <text x="90" y="693.0" font-family="Arial" font-size="15" font-weight="700">LORA - Version publications</text>
-<rect data-quality="unknown" x="90.0" y="707.0" width="31.5" height="230" fill="#f3f4f6" opacity="0.55"/>
+<rect data-quality="partial" x="90.0" y="707.0" width="31.5" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="121.5" y="707.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="184.6" y="707.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="247.7" y="707.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
@@ -124,41 +124,41 @@
 <line x1="90" y1="937.0" x2="910" y2="937.0" stroke="#111827"/>
 <line x1="90" y1="937.0" x2="910" y2="937.0" stroke="#e5e7eb"/>
 <text x="78" y="941.0" text-anchor="end" font-family="Arial" font-size="12">0</text>
-<line x1="90" y1="879.5" x2="910" y2="879.5" stroke="#e5e7eb"/>
-<text x="78" y="883.5" text-anchor="end" font-family="Arial" font-size="12">68</text>
-<line x1="90" y1="822.0" x2="910" y2="822.0" stroke="#e5e7eb"/>
-<text x="78" y="826.0" text-anchor="end" font-family="Arial" font-size="12">136</text>
-<line x1="90" y1="764.5" x2="910" y2="764.5" stroke="#e5e7eb"/>
-<text x="78" y="768.5" text-anchor="end" font-family="Arial" font-size="12">204</text>
+<line x1="90" y1="879.3" x2="910" y2="879.3" stroke="#e5e7eb"/>
+<text x="78" y="883.3" text-anchor="end" font-family="Arial" font-size="12">69</text>
+<line x1="90" y1="821.6" x2="910" y2="821.6" stroke="#e5e7eb"/>
+<text x="78" y="825.6" text-anchor="end" font-family="Arial" font-size="12">138</text>
+<line x1="90" y1="764.7" x2="910" y2="764.7" stroke="#e5e7eb"/>
+<text x="78" y="768.7" text-anchor="end" font-family="Arial" font-size="12">206</text>
 <line x1="90" y1="707.0" x2="910" y2="707.0" stroke="#e5e7eb"/>
-<text x="78" y="711.0" text-anchor="end" font-family="Arial" font-size="12">272</text>
-<polyline fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,785.6 153.1,806.8 216.2,790.7 279.2,777.2 342.3,771.3 405.4,763.7 468.5,779.7 531.5,780.6 594.6,767.0 657.7,793.2 720.8,762.8 783.8,743.4 846.9,707.0 910.0,744.2"/>
+<text x="78" y="711.0" text-anchor="end" font-family="Arial" font-size="12">275</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,808.2 153.1,792.3 216.2,778.9 279.2,772.2 342.3,766.4 405.4,781.4 468.5,785.6 531.5,768.9 594.6,794.8 657.7,764.7 720.8,746.3 783.8,707.0 846.9,744.6 910.0,758.9"/>
 <line x1="940" y1="725" x2="962" y2="725" stroke="#2563eb" stroke-width="3"/>
-<text x="972" y="729" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (2773)</tspan></text>
-<polyline fill="none" stroke="#9333ea" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,821.2 153.1,835.5 216.2,835.5 279.2,862.6 342.3,817.8 405.4,806.8 468.5,811.9 531.5,841.4 594.6,803.4 657.7,824.5 720.8,850.8 783.8,793.2 846.9,808.5 910.0,829.6"/>
+<text x="972" y="729" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (2807)</tspan></text>
+<polyline fill="none" stroke="#9333ea" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,836.6 153.1,836.6 216.2,863.4 279.2,819.1 342.3,808.2 405.4,813.2 468.5,845.8 531.5,806.5 594.6,825.8 657.7,850.9 720.8,794.8 783.8,808.2 846.9,828.3 910.0,814.9"/>
 <line x1="940" y1="741" x2="962" y2="741" stroke="#9333ea" stroke-width="3"/>
-<text x="972" y="745" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (1863)</tspan></text>
-<polyline fill="none" stroke="#ea580c" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,873.6 153.1,877.8 216.2,874.4 279.2,883.7 342.3,868.5 405.4,874.4 468.5,858.4 531.5,871.9 594.6,882.9 657.7,835.5 720.8,867.7 783.8,879.5 846.9,858.4 910.0,864.3"/>
+<text x="972" y="745" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (1872)</tspan></text>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,878.5 153.1,875.1 216.2,884.3 279.2,869.3 342.3,875.1 405.4,859.2 468.5,872.6 531.5,883.5 594.6,837.5 657.7,867.6 720.8,880.1 783.8,856.7 846.9,864.2 910.0,833.3"/>
 <line x1="940" y1="757" x2="962" y2="757" stroke="#ea580c" stroke-width="3"/>
-<text x="972" y="761" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 (1120)</tspan></text>
-<polyline fill="none" stroke="#0891b2" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,883.7 153.1,877.8 216.2,880.3 279.2,851.6 342.3,884.6 405.4,852.4 468.5,882.0 531.5,869.4 594.6,877.0 657.7,877.0 720.8,895.6 783.8,852.4 846.9,866.0 910.0,854.1"/>
+<text x="972" y="761" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 (1173)</tspan></text>
+<polyline fill="none" stroke="#0891b2" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,878.5 153.1,881.0 216.2,852.5 279.2,885.1 342.3,853.4 405.4,882.6 468.5,870.1 531.5,877.6 594.6,877.6 657.7,895.2 720.8,854.2 783.8,868.4 846.9,855.0 910.0,878.5"/>
 <line x1="940" y1="773" x2="962" y2="773" stroke="#0891b2" stroke-width="3"/>
-<text x="972" y="777" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (1081)</tspan></text>
-<polyline fill="none" stroke="#16a34a" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,925.2 153.1,925.2 216.2,924.3 279.2,914.2 342.3,926.9 405.4,928.5 468.5,919.2 531.5,926.0 594.6,931.1 657.7,927.7 720.8,930.2 783.8,923.5 846.9,925.2 910.0,926.9"/>
+<text x="972" y="777" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (1086)</tspan></text>
+<polyline fill="none" stroke="#16a34a" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,925.3 153.1,924.5 216.2,914.4 279.2,927.0 342.3,928.6 405.4,919.4 468.5,926.1 531.5,931.1 594.6,927.8 657.7,930.3 720.8,922.8 783.8,925.3 846.9,927.8 910.0,925.3"/>
 <line x1="940" y1="789" x2="962" y2="789" stroke="#16a34a" stroke-width="3"/>
 <text x="972" y="793" font-family="Arial" font-size="11"><tspan x="972" dy="0">Z-Image (194)</tspan></text>
-<polyline fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,924.3 153.1,921.8 216.2,911.6 279.2,921.8 342.3,926.9 405.4,929.4 468.5,925.2 531.5,927.7 594.6,934.5 657.7,927.7 720.8,927.7 783.8,926.9 846.9,926.9 910.0,926.9"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,921.9 153.1,911.9 216.2,921.9 279.2,927.0 342.3,929.5 405.4,925.3 468.5,927.8 531.5,934.5 594.6,927.8 657.7,927.8 720.8,927.0 783.8,927.0 846.9,927.8 910.0,930.3"/>
 <line x1="940" y1="805" x2="962" y2="805" stroke="#dc2626" stroke-width="3"/>
-<text x="972" y="809" font-family="Arial" font-size="11"><tspan x="972" dy="0">SDXL (188)</tspan></text>
-<polyline fill="none" stroke="#db2777" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,931.1 153.1,930.2 216.2,928.5 279.2,927.7 342.3,927.7 405.4,931.9 468.5,928.5 531.5,931.1 594.6,932.8 657.7,929.4 720.8,926.9 783.8,926.0 846.9,926.0 910.0,923.5"/>
+<text x="972" y="809" font-family="Arial" font-size="11"><tspan x="972" dy="0">SDXL (180)</tspan></text>
+<polyline fill="none" stroke="#db2777" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,930.3 153.1,928.6 216.2,927.8 279.2,927.8 342.3,932.0 405.4,928.6 468.5,931.1 531.5,932.8 594.6,929.5 657.7,927.0 720.8,926.1 783.8,926.1 846.9,923.6 910.0,925.3"/>
 <line x1="940" y1="821" x2="962" y2="821" stroke="#db2777" stroke-width="3"/>
-<text x="972" y="825" font-family="Arial" font-size="11"><tspan x="972" dy="0">Pony (138)</tspan></text>
-<polyline fill="none" stroke="#ca8a04" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,932.8 153.1,931.9 216.2,934.5 279.2,929.4 342.3,924.3 405.4,925.2 468.5,930.2 531.5,932.8 594.6,930.2 657.7,934.5 720.8,931.1 783.8,926.9 846.9,929.4 910.0,934.5"/>
+<text x="972" y="825" font-family="Arial" font-size="11"><tspan x="972" dy="0">Pony (145)</tspan></text>
+<polyline fill="none" stroke="#ca8a04" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,932.0 153.1,934.5 216.2,929.5 279.2,924.5 342.3,925.3 405.4,930.3 468.5,932.8 531.5,930.3 594.6,934.5 657.7,931.1 720.8,927.0 783.8,931.1 846.9,934.5 910.0,932.8"/>
 <line x1="940" y1="837" x2="962" y2="837" stroke="#ca8a04" stroke-width="3"/>
-<text x="972" y="841" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 Turbo (107)</tspan></text>
-<text x="940" y="857" font-family="Arial" font-size="11" fill="#6b7280">16 hidden series (379 total)</text>
+<text x="972" y="841" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 Turbo (105)</tspan></text>
+<text x="940" y="857" font-family="Arial" font-size="11" fill="#6b7280">16 hidden series (378 total)</text>
 <text x="90" y="979.0" font-family="Arial" font-size="15" font-weight="700">LORA - Earliest observed version per model</text>
-<rect data-quality="unknown" x="90.0" y="993.0" width="31.5" height="230" fill="#f3f4f6" opacity="0.55"/>
+<rect data-quality="partial" x="90.0" y="993.0" width="31.5" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="121.5" y="993.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="184.6" y="993.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="247.7" y="993.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
@@ -175,44 +175,44 @@
 <line x1="90" y1="1223.0" x2="910" y2="1223.0" stroke="#111827"/>
 <line x1="90" y1="1223.0" x2="910" y2="1223.0" stroke="#e5e7eb"/>
 <text x="78" y="1227.0" text-anchor="end" font-family="Arial" font-size="12">0</text>
-<line x1="90" y1="1166.3" x2="910" y2="1166.3" stroke="#e5e7eb"/>
-<text x="78" y="1170.3" text-anchor="end" font-family="Arial" font-size="12">36</text>
-<line x1="90" y1="1108.0" x2="910" y2="1108.0" stroke="#e5e7eb"/>
-<text x="78" y="1112.0" text-anchor="end" font-family="Arial" font-size="12">73</text>
-<line x1="90" y1="1049.7" x2="910" y2="1049.7" stroke="#e5e7eb"/>
-<text x="78" y="1053.7" text-anchor="end" font-family="Arial" font-size="12">110</text>
+<line x1="90" y1="1165.9" x2="910" y2="1165.9" stroke="#e5e7eb"/>
+<text x="78" y="1169.9" text-anchor="end" font-family="Arial" font-size="12">38</text>
+<line x1="90" y1="1108.8" x2="910" y2="1108.8" stroke="#e5e7eb"/>
+<text x="78" y="1112.8" text-anchor="end" font-family="Arial" font-size="12">76</text>
+<line x1="90" y1="1050.1" x2="910" y2="1050.1" stroke="#e5e7eb"/>
+<text x="78" y="1054.1" text-anchor="end" font-family="Arial" font-size="12">115</text>
 <line x1="90" y1="993.0" x2="910" y2="993.0" stroke="#e5e7eb"/>
-<text x="78" y="997.0" text-anchor="end" font-family="Arial" font-size="12">146</text>
-<polyline fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1049.7 153.1,1046.6 216.2,1022.9 279.2,1049.7 342.3,1018.2 405.4,993.0 468.5,1027.7 531.5,1034.0 594.6,1024.5 657.7,1049.7 720.8,1030.8 783.8,1018.2 846.9,1040.3 910.0,996.2"/>
+<text x="78" y="997.0" text-anchor="end" font-family="Arial" font-size="12">153</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1054.6 153.1,1032.1 216.2,1057.6 279.2,1026.1 342.3,1005.0 405.4,1036.6 468.5,1047.1 531.5,1033.6 594.6,1057.6 657.7,1039.6 720.8,1026.1 783.8,1044.1 846.9,1003.5 910.0,993.0"/>
 <line x1="940" y1="1011" x2="962" y2="1011" stroke="#2563eb" stroke-width="3"/>
-<text x="972" y="1015" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (1727)</tspan></text>
-<polyline fill="none" stroke="#9333ea" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1048.1 153.1,1057.6 216.2,1071.8 279.2,1117.5 342.3,1056.0 405.4,1016.6 468.5,1052.9 531.5,1076.5 594.6,1026.1 657.7,1054.4 720.8,1085.9 783.8,1011.9 846.9,1022.9 910.0,1076.5"/>
+<text x="972" y="1015" font-family="Arial" font-size="11"><tspan x="972" dy="0">Anima (1773)</tspan></text>
+<polyline fill="none" stroke="#9333ea" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1065.2 153.1,1078.7 216.2,1122.3 279.2,1063.7 342.3,1026.1 405.4,1060.6 468.5,1087.7 531.5,1036.6 594.6,1062.2 657.7,1092.2 720.8,1021.6 783.8,1029.1 846.9,1081.7 910.0,1045.6"/>
 <line x1="940" y1="1027" x2="962" y2="1027" stroke="#9333ea" stroke-width="3"/>
-<text x="972" y="1031" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (1490)</tspan></text>
-<polyline fill="none" stroke="#ea580c" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1149.0 153.1,1152.1 216.2,1144.2 279.2,1153.7 342.3,1133.2 405.4,1137.9 468.5,1125.3 531.5,1133.2 594.6,1163.1 657.7,1106.4 720.8,1131.6 783.8,1145.8 846.9,1117.5 910.0,1141.1"/>
+<text x="972" y="1031" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (1496)</tspan></text>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1155.4 153.1,1147.8 216.2,1156.9 279.2,1137.3 342.3,1141.8 405.4,1129.8 468.5,1137.3 531.5,1165.9 594.6,1111.8 657.7,1135.8 720.8,1149.3 783.8,1120.8 846.9,1144.8 910.0,1095.2"/>
 <line x1="940" y1="1043" x2="962" y2="1043" stroke="#ea580c" stroke-width="3"/>
-<text x="972" y="1047" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 (754)</tspan></text>
-<polyline fill="none" stroke="#0891b2" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1185.2 153.1,1177.3 216.2,1180.5 279.2,1141.1 342.3,1175.7 405.4,1161.6 468.5,1188.3 531.5,1174.2 594.6,1166.3 657.7,1172.6 720.8,1183.6 783.8,1161.6 846.9,1152.1 910.0,1144.2"/>
+<text x="972" y="1047" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 (793)</tspan></text>
+<polyline fill="none" stroke="#0891b2" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1179.4 153.1,1182.4 216.2,1144.8 279.2,1177.9 342.3,1164.4 405.4,1189.9 468.5,1176.4 531.5,1168.9 594.6,1174.9 657.7,1185.4 720.8,1165.9 783.8,1158.4 846.9,1147.8 910.0,1165.9"/>
 <line x1="940" y1="1059" x2="962" y2="1059" stroke="#0891b2" stroke-width="3"/>
-<text x="972" y="1063" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (481)</tspan></text>
-<polyline fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1216.7 153.1,1210.4 216.2,1197.8 279.2,1212.0 342.3,1212.0 405.4,1210.4 468.5,1208.8 531.5,1208.8 594.6,1218.3 657.7,1208.8 720.8,1216.7 783.8,1213.5 846.9,1207.2 910.0,1218.3"/>
-<line x1="940" y1="1075" x2="962" y2="1075" stroke="#dc2626" stroke-width="3"/>
-<text x="972" y="1079" font-family="Arial" font-size="11"><tspan x="972" dy="0">SDXL (103)</tspan></text>
-<polyline fill="none" stroke="#16a34a" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1213.5 153.1,1212.0 216.2,1213.5 279.2,1219.8 342.3,1215.1 405.4,1213.5 468.5,1197.8 531.5,1210.4 594.6,1213.5 657.7,1210.4 720.8,1215.1 783.8,1205.7 846.9,1210.4 910.0,1213.5"/>
-<line x1="940" y1="1091" x2="962" y2="1091" stroke="#16a34a" stroke-width="3"/>
-<text x="972" y="1095" font-family="Arial" font-size="11"><tspan x="972" dy="0">Z-Image (100)</tspan></text>
-<polyline fill="none" stroke="#db2777" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1216.7 153.1,1213.5 216.2,1215.1 279.2,1212.0 342.3,1213.5 405.4,1216.7 468.5,1216.7 531.5,1213.5 594.6,1215.1 657.7,1213.5 720.8,1205.7 783.8,1208.8 846.9,1210.4 910.0,1207.2"/>
+<text x="972" y="1063" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (492)</tspan></text>
+<polyline fill="none" stroke="#16a34a" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1212.5 153.1,1214.0 216.2,1220.0 279.2,1215.5 342.3,1214.0 405.4,1198.9 468.5,1211.0 531.5,1214.0 594.6,1211.0 657.7,1215.5 720.8,1206.5 783.8,1211.0 846.9,1214.0 910.0,1206.5"/>
+<line x1="940" y1="1075" x2="962" y2="1075" stroke="#16a34a" stroke-width="3"/>
+<text x="972" y="1079" font-family="Arial" font-size="11"><tspan x="972" dy="0">Z-Image (105)</tspan></text>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1211.0 153.1,1198.9 216.2,1212.5 279.2,1212.5 342.3,1211.0 405.4,1209.5 468.5,1209.5 531.5,1218.5 594.6,1209.5 657.7,1217.0 720.8,1214.0 783.8,1208.0 846.9,1218.5 910.0,1218.5"/>
+<line x1="940" y1="1091" x2="962" y2="1091" stroke="#dc2626" stroke-width="3"/>
+<text x="972" y="1095" font-family="Arial" font-size="11"><tspan x="972" dy="0">SDXL (102)</tspan></text>
+<polyline fill="none" stroke="#db2777" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1214.0 153.1,1215.5 216.2,1212.5 279.2,1214.0 342.3,1217.0 405.4,1217.0 468.5,1214.0 531.5,1215.5 594.6,1214.0 657.7,1206.5 720.8,1209.5 783.8,1211.0 846.9,1208.0 910.0,1209.5"/>
 <line x1="940" y1="1107" x2="962" y2="1107" stroke="#db2777" stroke-width="3"/>
-<text x="972" y="1111" font-family="Arial" font-size="11"><tspan x="972" dy="0">Pony (91)</tspan></text>
-<polyline fill="none" stroke="#ca8a04" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1216.7 153.1,1218.3 216.2,1219.8 279.2,1215.1 342.3,1207.2 405.4,1212.0 468.5,1213.5 531.5,1216.7 594.6,1216.7 657.7,1219.8 720.8,1215.1 783.8,1216.7 846.9,1219.8 910.0,1221.4"/>
+<text x="972" y="1111" font-family="Arial" font-size="11"><tspan x="972" dy="0">Pony (96)</tspan></text>
+<polyline fill="none" stroke="#ca8a04" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,1218.5 153.1,1220.0 216.2,1215.5 279.2,1208.0 342.3,1212.5 405.4,1214.0 468.5,1217.0 531.5,1217.0 594.6,1220.0 657.7,1215.5 720.8,1217.0 783.8,1220.0 846.9,1221.5 910.0,1217.0"/>
 <line x1="940" y1="1123" x2="962" y2="1123" stroke="#ca8a04" stroke-width="3"/>
 <text x="972" y="1127" font-family="Arial" font-size="11"><tspan x="972" dy="0">Krea 2 Turbo (59)</tspan></text>
-<text x="940" y="1143" font-family="Arial" font-size="11" fill="#6b7280">12 hidden series (177 total)</text>
-<text x="90.0" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-10-20 ?</text>
-<text x="216.2" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-10-22 ~</text>
-<text x="342.3" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-10-24 ~</text>
-<text x="468.5" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-10-26 ~</text>
-<text x="594.6" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-10-28 ~</text>
-<text x="720.8" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-10-30 ~</text>
-<text x="910.0" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-11-02 ~</text>
+<text x="940" y="1143" font-family="Arial" font-size="11" fill="#6b7280">13 hidden series (182 total)</text>
+<text x="90.0" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-10-21 ~</text>
+<text x="216.2" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-10-23 ~</text>
+<text x="342.3" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-10-25 ~</text>
+<text x="468.5" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-10-27 ~</text>
+<text x="594.6" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-10-29 ~</text>
+<text x="720.8" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-10-31 ~</text>
+<text x="910.0" y="1261" text-anchor="middle" font-family="Arial" font-size="12">2026-11-03 ~</text>
 </svg>
