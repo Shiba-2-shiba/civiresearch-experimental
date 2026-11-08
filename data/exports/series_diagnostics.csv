@@ -1,56 +1,56 @@
 window,model_type,metric,base_model_group,observation_count,publication_count,missing_timestamp_count_through_anchor,missing_version_ids_through_anchor,missing_raw_values_through_anchor,rank,visible,reason
-all,Checkpoint,new_versions,Anima,1312,1182,0,[],[],1,yes,ranked
+all,Checkpoint,new_versions,Anima,1319,1189,0,[],[],1,yes,ranked
 all,Checkpoint,new_versions,Boogu,13,13,0,[],[],17,no,outside_rank
 all,Checkpoint,new_versions,Ernie,44,10,0,[],[],20,no,outside_rank
-all,Checkpoint,new_versions,FLUX2 Klein 9B,89,29,0,[],[],14,no,outside_rank
-all,Checkpoint,new_versions,Flux,1367,27,2,"[1520991, 1521033]","[""Flux.1 D""]",15,no,outside_rank
+all,Checkpoint,new_versions,FLUX2 Klein 9B,90,30,0,[],[],14,no,outside_rank
+all,Checkpoint,new_versions,Flux,1367,28,2,"[1520991, 1521033]","[""Flux.1 D""]",15,no,outside_rank
 all,Checkpoint,new_versions,Flux.3 Klein,5,5,0,[],[],24,no,outside_rank
 all,Checkpoint,new_versions,Flux.3 Klein-base,2,2,0,[],[],26,no,outside_rank
 all,Checkpoint,new_versions,Hi-Dream O1,79,9,0,[],[],21,no,outside_rank
 all,Checkpoint,new_versions,Ideogram 4.0,8,8,0,[],[],23,no,outside_rank
-all,Checkpoint,new_versions,Illustrious,5175,640,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",2,yes,ranked
-all,Checkpoint,new_versions,Krea 2,541,541,0,[],[],3,yes,ranked
-all,Checkpoint,new_versions,Krea 2 Turbo,136,136,0,[],[],6,yes,ranked
+all,Checkpoint,new_versions,Illustrious,5177,641,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",2,yes,ranked
+all,Checkpoint,new_versions,Krea 2,543,542,0,[],[],3,yes,ranked
+all,Checkpoint,new_versions,Krea 2 Turbo,138,137,0,[],[],6,yes,ranked
 all,Checkpoint,new_versions,LTXV 2.5,11,11,0,[],[],18,no,outside_rank
 all,Checkpoint,new_versions,LTXV2.3,64,18,0,[],[],16,no,outside_rank
-all,Checkpoint,new_versions,Legacy,910,46,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",10,no,outside_rank
+all,Checkpoint,new_versions,Legacy,910,47,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",10,no,outside_rank
 all,Checkpoint,new_versions,Lens,2,2,0,[],[],27,no,outside_rank
-all,Checkpoint,new_versions,MOSS Image,139,138,0,[],[],5,yes,pinned
+all,Checkpoint,new_versions,MOSS Image,141,141,0,[],[],5,yes,pinned
 all,Checkpoint,new_versions,MageFlow,9,9,0,[],[],22,no,outside_rank
 all,Checkpoint,new_versions,Ming Image Design 0.1,1,1,0,[],[],28,no,outside_rank
 all,Checkpoint,new_versions,Ming Image Design Layer 0.1,1,1,0,[],[],29,no,outside_rank
 all,Checkpoint,new_versions,MiniMax H3,62,62,0,[],[],9,no,outside_rank
 all,Checkpoint,new_versions,MiniMax Music 3,1,1,0,[],[],30,no,outside_rank
-all,Checkpoint,new_versions,NoobAI,695,44,2,"[2039079, 2576824]","[""NoobAI""]",11,no,outside_rank
+all,Checkpoint,new_versions,NoobAI,695,45,2,"[2039079, 2576824]","[""NoobAI""]",11,no,outside_rank
 all,Checkpoint,new_versions,Pony,2289,41,3,"[408049, 812199, 823217]","[""Pony""]",12,no,outside_rank
 all,Checkpoint,new_versions,Qwen,194,11,0,[],[],19,no,outside_rank
 all,Checkpoint,new_versions,Qwen 2.1,35,35,0,[],[],13,no,outside_rank
 all,Checkpoint,new_versions,SD 1.4,5,1,0,[],[],31,no,outside_rank
 all,Checkpoint,new_versions,SD 1.5,7105,64,21,"[6419, 11027, 47544, 59168, 96182, 97072, 131403, 153290, 192698, 206148, 206184, 206214, 255138, 273386, 296415, 296419, 307109, 377640, 438802, 461739, 463282]","[""SD 1.5""]",8,yes,ranked
 all,Checkpoint,new_versions,SD 2.1 768,28,0,3,"[338276, 386665, 386693]","[""SD 2.1 768""]",35,no,missing_publication_timestamp
-all,Checkpoint,new_versions,SDXL,3381,127,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",7,yes,ranked
+all,Checkpoint,new_versions,SDXL,3381,128,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",7,yes,ranked
 all,Checkpoint,new_versions,Upscaler,1,1,0,[],[],32,no,outside_rank
 all,Checkpoint,new_versions,Wan Video 14B i2v 480p,13,1,1,[2082942],"[""Wan Video 14B i2v 480p""]",33,no,outside_rank
 all,Checkpoint,new_versions,Wanvideo2.2,87,5,0,[],[],25,no,outside_rank
 all,Checkpoint,new_versions,YuE2,1,1,0,[],[],34,no,outside_rank
 all,Checkpoint,new_versions,Z-Image,522,173,1,[2851321],"[""ZImageTurbo""]",4,yes,ranked
-all,Checkpoint,new_models,Anima,474,426,0,[],[],1,yes,ranked
+all,Checkpoint,new_models,Anima,477,430,0,[],[],1,yes,ranked
 all,Checkpoint,new_models,Boogu,7,7,0,[],[],17,no,outside_rank
 all,Checkpoint,new_models,Ernie,17,5,0,[],[],19,no,outside_rank
 all,Checkpoint,new_models,FLUX2 Klein 9B,28,10,0,[],[],15,no,outside_rank
-all,Checkpoint,new_models,Flux,467,14,2,"[1520991, 1521033]","[""Flux.1 D""]",13,no,outside_rank
+all,Checkpoint,new_models,Flux,467,15,2,"[1520991, 1521033]","[""Flux.1 D""]",13,no,outside_rank
 all,Checkpoint,new_models,Flux.3 Klein,1,2,0,[],[],22,no,outside_rank
 all,Checkpoint,new_models,Flux.3 Klein-base,2,1,0,[],[],25,no,outside_rank
 all,Checkpoint,new_models,Hi-Dream O1,16,1,0,[],[],26,no,outside_rank
 all,Checkpoint,new_models,Ideogram 4.0,2,5,0,[],[],20,no,outside_rank
 all,Checkpoint,new_models,Illustrious,2047,271,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",2,yes,ranked
-all,Checkpoint,new_models,Krea 2,171,144,0,[],[],3,yes,ranked
-all,Checkpoint,new_models,Krea 2 Turbo,15,51,0,[],[],6,yes,ranked
+all,Checkpoint,new_models,Krea 2,172,144,0,[],[],3,yes,ranked
+all,Checkpoint,new_models,Krea 2 Turbo,16,52,0,[],[],6,yes,ranked
 all,Checkpoint,new_models,LTXV 2.5,5,5,0,[],[],21,no,outside_rank
 all,Checkpoint,new_models,LTXV2.3,16,10,0,[],[],16,no,outside_rank
-all,Checkpoint,new_models,Legacy,362,24,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",9,no,outside_rank
+all,Checkpoint,new_models,Legacy,362,25,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",9,no,outside_rank
 all,Checkpoint,new_models,Lens,1,1,0,[],[],27,no,outside_rank
-all,Checkpoint,new_models,MOSS Image,66,69,0,[],[],5,yes,pinned
+all,Checkpoint,new_models,MOSS Image,67,70,0,[],[],5,yes,pinned
 all,Checkpoint,new_models,MageFlow,2,2,0,[],[],23,no,outside_rank
 all,Checkpoint,new_models,Ming Image Design 0.1,1,1,0,[],[],28,no,outside_rank
 all,Checkpoint,new_models,Ming Image Design Layer 0.1,1,1,0,[],[],29,no,outside_rank
@@ -63,385 +63,384 @@ all,Checkpoint,new_models,Qwen 2.1,16,18,0,[],[],11,no,outside_rank
 all,Checkpoint,new_models,SD 1.4,2,1,0,[],[],31,no,outside_rank
 all,Checkpoint,new_models,SD 1.5,2837,37,21,"[6419, 11027, 47544, 59168, 96182, 97072, 131403, 153290, 192698, 206148, 206184, 206214, 255138, 273386, 296415, 296419, 307109, 377640, 438802, 461739, 463282]","[""SD 1.5""]",7,yes,ranked
 all,Checkpoint,new_models,SD 2.1 768,11,0,3,"[338276, 386665, 386693]","[""SD 2.1 768""]",34,no,missing_publication_timestamp
-all,Checkpoint,new_models,SDXL,1328,85,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",4,yes,ranked
+all,Checkpoint,new_models,SDXL,1328,86,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",4,yes,ranked
 all,Checkpoint,new_models,Upscaler,1,1,0,[],[],32,no,outside_rank
 all,Checkpoint,new_models,Wan Video 14B i2v 480p,3,0,1,[2082942],"[""Wan Video 14B i2v 480p""]",35,no,missing_publication_timestamp
 all,Checkpoint,new_models,Wanvideo2.2,19,2,0,[],[],24,no,outside_rank
 all,Checkpoint,new_models,YuE2,1,1,0,[],[],33,no,outside_rank
 all,Checkpoint,new_models,Z-Image,139,36,1,[2851321],"[""ZImageTurbo""]",8,yes,ranked
 all,LORA,new_versions,ANIMA,67,67,0,[],[],19,no,outside_rank
-all,LORA,new_versions,Anima,29836,28176,0,[],[],1,yes,ranked
+all,LORA,new_versions,Anima,30106,28438,0,[],[],1,yes,ranked
 all,LORA,new_versions,AuraFlow,1,1,0,[],[],33,no,outside_rank
 all,LORA,new_versions,Boogu,35,35,0,[],[],24,no,outside_rank
 all,LORA,new_versions,Ernie,194,115,0,[],[],17,no,outside_rank
-all,LORA,new_versions,FLUX2 Klein 9B,1179,687,0,[],[],10,no,outside_rank
-all,LORA,new_versions,Flux,2785,1153,1,[2983464],"[""Flux.1 D""]",8,yes,ranked
+all,LORA,new_versions,FLUX2 Klein 9B,1181,689,0,[],[],10,no,outside_rank
+all,LORA,new_versions,Flux,2796,1158,1,[2983464],"[""Flux.1 D""]",8,yes,ranked
 all,LORA,new_versions,Flux 1.0,4,4,0,[],[],29,no,outside_rank
 all,LORA,new_versions,Flux.1 Kontext,14,1,0,[],[],34,no,outside_rank
 all,LORA,new_versions,Flux.3,4,4,0,[],[],30,no,outside_rank
-all,LORA,new_versions,Flux.3 Klein,26,26,0,[],[],25,no,outside_rank
+all,LORA,new_versions,Flux.3 Klein,28,28,0,[],[],25,no,outside_rank
 all,LORA,new_versions,Flux.3 Klein-base,8,8,0,[],[],27,no,outside_rank
 all,LORA,new_versions,Hi-Dream O1,70,62,1,[2958104],"[""HiDream-O1""]",20,no,outside_rank
 all,LORA,new_versions,Ideogram 4.0,58,58,0,[],[],21,no,outside_rank
-all,LORA,new_versions,Illustrious,37558,22909,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
-all,LORA,new_versions,Krea 2,10937,10925,0,[],[],3,yes,ranked
-all,LORA,new_versions,Krea 2 Turbo,147,145,0,[],[],15,no,outside_rank
-all,LORA,new_versions,LTXV 2.5,43,42,0,[],[],23,no,outside_rank
+all,LORA,new_versions,Illustrious,37797,23099,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
+all,LORA,new_versions,Krea 2,10998,10988,0,[],[],3,yes,ranked
+all,LORA,new_versions,Krea 2 Turbo,151,150,0,[],[],15,no,outside_rank
+all,LORA,new_versions,LTXV 2.5,44,44,0,[],[],23,no,outside_rank
 all,LORA,new_versions,LTXV2.3,150,123,0,[],[],16,no,outside_rank
-all,LORA,new_versions,Legacy,893,495,0,[],[],13,no,outside_rank
+all,LORA,new_versions,Legacy,892,496,0,[],[],13,no,outside_rank
 all,LORA,new_versions,Lens,9,9,0,[],[],26,no,outside_rank
-all,LORA,new_versions,MOSS Image,1554,1550,0,[],[],7,yes,pinned
+all,LORA,new_versions,MOSS Image,1631,1611,0,[],[],7,yes,pinned
 all,LORA,new_versions,MageFlow,6,6,0,[],[],28,no,outside_rank
-all,LORA,new_versions,MiniMax H3,608,606,0,[],[],11,no,outside_rank
-all,LORA,new_versions,NoobAI,1658,895,1,[1693857],"[""NoobAI""]",9,no,outside_rank
+all,LORA,new_versions,MiniMax H3,618,615,0,[],[],11,no,outside_rank
+all,LORA,new_versions,NoobAI,1662,899,1,[1693857],"[""NoobAI""]",9,no,outside_rank
 all,LORA,new_versions,PixArt E,1,1,0,[],[],35,no,outside_rank
 all,LORA,new_versions,PixArt a,1,1,0,[],[],36,no,outside_rank
-all,LORA,new_versions,Pony,5046,1652,3,"[627970, 1038306, 1435826]","[""Pony""]",6,yes,ranked
+all,LORA,new_versions,Pony,5073,1659,3,"[627970, 1038306, 1435826]","[""Pony""]",6,yes,ranked
 all,LORA,new_versions,Qwen,358,109,0,[],[],18,no,outside_rank
-all,LORA,new_versions,Qwen 2.1,180,180,0,[],[],14,no,outside_rank
-all,LORA,new_versions,SD 1.5,1793,549,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",12,no,outside_rank
+all,LORA,new_versions,Qwen 2.1,185,185,0,[],[],14,no,outside_rank
+all,LORA,new_versions,SD 1.5,1806,551,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",12,no,outside_rank
 all,LORA,new_versions,SD 2.0,1,1,0,[],[],37,no,outside_rank
-all,LORA,new_versions,SDXL,3517,2442,0,[],[],4,yes,ranked
+all,LORA,new_versions,SDXL,3534,2451,0,[],[],4,yes,ranked
 all,LORA,new_versions,Wan Image 2.7,2,2,0,[],[],32,no,outside_rank
 all,LORA,new_versions,Wan Video,4,0,1,[1739292],"[""Wan Video""]",39,no,missing_publication_timestamp
 all,LORA,new_versions,Wan Video 14B i2v 720p,5,3,0,[],[],31,no,outside_rank
 all,LORA,new_versions,Wan Video 2.5 I2V,1,1,0,[],[],38,no,outside_rank
 all,LORA,new_versions,Wanvideo2.2,128,45,0,[],[],22,no,outside_rank
-all,LORA,new_versions,Z-Image,3759,2177,0,[],[],5,yes,ranked
+all,LORA,new_versions,Z-Image,3782,2188,0,[],[],5,yes,ranked
 all,LORA,new_models,ANIMA,120,67,0,[],[],16,no,outside_rank
-all,LORA,new_models,Anima,24373,17091,0,[],[],2,yes,ranked
+all,LORA,new_models,Anima,24592,17263,0,[],[],2,yes,ranked
 all,LORA,new_models,Boogu,17,20,0,[],[],22,no,outside_rank
 all,LORA,new_models,Ernie,89,26,0,[],[],19,no,outside_rank
-all,LORA,new_models,FLUX2 Klein 9B,547,320,0,[],[],10,no,outside_rank
-all,LORA,new_models,Flux,1127,845,1,[2983464],"[""Flux.1 D""]",7,yes,ranked
+all,LORA,new_models,FLUX2 Klein 9B,549,322,0,[],[],10,no,outside_rank
+all,LORA,new_models,Flux,1129,848,1,[2983464],"[""Flux.1 D""]",7,yes,ranked
 all,LORA,new_models,Flux 1.0,4,4,0,[],[],27,no,outside_rank
 all,LORA,new_models,Flux.1 Kontext,1,1,0,[],[],30,no,outside_rank
 all,LORA,new_models,Flux.3,2,1,0,[],[],31,no,outside_rank
-all,LORA,new_models,Flux.3 Klein,8,8,0,[],[],25,no,outside_rank
+all,LORA,new_models,Flux.3 Klein,9,9,0,[],[],25,no,outside_rank
 all,LORA,new_models,Flux.3 Klein-base,6,6,0,[],[],26,no,outside_rank
 all,LORA,new_models,Hi-Dream O1,26,26,1,[2958104],"[""HiDream-O1""]",20,no,outside_rank
 all,LORA,new_models,Ideogram 4.0,21,14,0,[],[],23,no,outside_rank
-all,LORA,new_models,Illustrious,22603,17579,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",1,yes,ranked
-all,LORA,new_models,Krea 2,7971,6886,0,[],[],3,yes,ranked
-all,LORA,new_models,Krea 2 Turbo,110,82,0,[],[],14,no,outside_rank
+all,LORA,new_models,Illustrious,22754,17733,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",1,yes,ranked
+all,LORA,new_models,Krea 2,8012,6923,0,[],[],3,yes,ranked
+all,LORA,new_models,Krea 2 Turbo,113,84,0,[],[],14,no,outside_rank
 all,LORA,new_models,LTXV 2.5,15,12,0,[],[],24,no,outside_rank
 all,LORA,new_models,LTXV2.3,68,48,0,[],[],18,no,outside_rank
-all,LORA,new_models,Legacy,472,161,0,[],[],13,no,outside_rank
+all,LORA,new_models,Legacy,473,161,0,[],[],13,no,outside_rank
 all,LORA,new_models,Lens,1,1,0,[],[],32,no,outside_rank
-all,LORA,new_models,MOSS Image,804,699,0,[],[],8,yes,pinned
+all,LORA,new_models,MOSS Image,850,725,0,[],[],8,yes,pinned
 all,LORA,new_models,MageFlow,4,4,0,[],[],28,no,outside_rank
-all,LORA,new_models,MiniMax H3,324,288,0,[],[],12,no,outside_rank
+all,LORA,new_models,MiniMax H3,328,291,0,[],[],12,no,outside_rank
 all,LORA,new_models,NoobAI,770,556,1,[1693857],"[""NoobAI""]",9,no,outside_rank
 all,LORA,new_models,PixArt E,1,1,0,[],[],33,no,outside_rank
 all,LORA,new_models,PixArt a,1,1,0,[],[],34,no,outside_rank
-all,LORA,new_models,Pony,1302,1177,3,"[627970, 1038306, 1435826]","[""Pony""]",5,yes,ranked
+all,LORA,new_models,Pony,1311,1181,3,"[627970, 1038306, 1435826]","[""Pony""]",5,yes,ranked
 all,LORA,new_models,Qwen,79,55,0,[],[],17,no,outside_rank
-all,LORA,new_models,Qwen 2.1,78,73,0,[],[],15,no,outside_rank
-all,LORA,new_models,SD 1.5,384,313,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",11,no,outside_rank
+all,LORA,new_models,Qwen 2.1,81,76,0,[],[],15,no,outside_rank
+all,LORA,new_models,SD 1.5,385,314,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",11,no,outside_rank
 all,LORA,new_models,SD 2.0,1,1,0,[],[],35,no,outside_rank
-all,LORA,new_models,SDXL,2121,1994,0,[],[],4,yes,ranked
+all,LORA,new_models,SDXL,2131,2000,0,[],[],4,yes,ranked
 all,LORA,new_models,Wan Image 2.7,2,2,0,[],[],29,no,outside_rank
 all,LORA,new_models,Wan Video,0,0,1,[1739292],"[""Wan Video""]",38,no,missing_publication_timestamp
 all,LORA,new_models,Wan Video 14B i2v 720p,1,1,0,[],[],36,no,outside_rank
 all,LORA,new_models,Wan Video 2.5 I2V,1,1,0,[],[],37,no,outside_rank
 all,LORA,new_models,Wanvideo2.2,31,23,0,[],[],21,no,outside_rank
-all,LORA,new_models,Z-Image,1626,1096,0,[],[],6,yes,ranked
-90d,Checkpoint,new_versions,Anima,608,598,0,[],[],1,yes,ranked
+all,LORA,new_models,Z-Image,1636,1102,0,[],[],6,yes,ranked
+90d,Checkpoint,new_versions,Anima,609,599,0,[],[],1,yes,ranked
 90d,Checkpoint,new_versions,Boogu,1,1,0,[],[],21,no,outside_rank
 90d,Checkpoint,new_versions,Ernie,1,1,0,[],[],22,no,outside_rank
-90d,Checkpoint,new_versions,FLUX2 Klein 9B,9,9,0,[],[],15,no,outside_rank
-90d,Checkpoint,new_versions,Flux,12,9,2,"[1520991, 1521033]","[""Flux.1 D""]",16,no,outside_rank
+90d,Checkpoint,new_versions,FLUX2 Klein 9B,10,10,0,[],[],15,no,outside_rank
+90d,Checkpoint,new_versions,Flux,12,10,2,"[1520991, 1521033]","[""Flux.1 D""]",16,no,outside_rank
 90d,Checkpoint,new_versions,Flux.3 Klein,5,5,0,[],[],18,no,outside_rank
 90d,Checkpoint,new_versions,Flux.3 Klein-base,2,2,0,[],[],20,no,outside_rank
 90d,Checkpoint,new_versions,Ideogram 4.0,1,1,0,[],[],23,no,outside_rank
-90d,Checkpoint,new_versions,Illustrious,314,298,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",3,yes,ranked
-90d,Checkpoint,new_versions,Krea 2,319,325,0,[],[],2,yes,ranked
-90d,Checkpoint,new_versions,Krea 2 Turbo,101,102,0,[],[],5,yes,ranked
+90d,Checkpoint,new_versions,Illustrious,316,298,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",3,yes,ranked
+90d,Checkpoint,new_versions,Krea 2,315,319,0,[],[],2,yes,ranked
+90d,Checkpoint,new_versions,Krea 2 Turbo,103,103,0,[],[],5,yes,ranked
 90d,Checkpoint,new_versions,LTXV 2.5,11,11,0,[],[],14,no,outside_rank
-90d,Checkpoint,new_versions,Legacy,24,23,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",12,no,outside_rank
-90d,Checkpoint,new_versions,MOSS Image,139,138,0,[],[],4,yes,pinned
+90d,Checkpoint,new_versions,Legacy,23,23,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",12,no,outside_rank
+90d,Checkpoint,new_versions,MOSS Image,141,141,0,[],[],4,yes,pinned
 90d,Checkpoint,new_versions,MageFlow,5,5,0,[],[],19,no,outside_rank
 90d,Checkpoint,new_versions,Ming Image Design 0.1,1,1,0,[],[],24,no,outside_rank
 90d,Checkpoint,new_versions,Ming Image Design Layer 0.1,1,1,0,[],[],25,no,outside_rank
 90d,Checkpoint,new_versions,MiniMax H3,45,44,0,[],[],7,yes,ranked
 90d,Checkpoint,new_versions,MiniMax Music 3,1,1,0,[],[],26,no,outside_rank
-90d,Checkpoint,new_versions,NoobAI,28,24,2,"[2039079, 2576824]","[""NoobAI""]",11,no,outside_rank
-90d,Checkpoint,new_versions,Pony,15,15,3,"[408049, 812199, 823217]","[""Pony""]",13,no,outside_rank
+90d,Checkpoint,new_versions,NoobAI,28,25,2,"[2039079, 2576824]","[""NoobAI""]",11,no,outside_rank
+90d,Checkpoint,new_versions,Pony,14,14,3,"[408049, 812199, 823217]","[""Pony""]",13,no,outside_rank
 90d,Checkpoint,new_versions,Qwen,7,7,0,[],[],17,no,outside_rank
 90d,Checkpoint,new_versions,Qwen 2.1,35,35,0,[],[],9,no,outside_rank
 90d,Checkpoint,new_versions,SD 1.4,1,1,0,[],[],27,no,outside_rank
 90d,Checkpoint,new_versions,SD 1.5,43,41,21,"[6419, 11027, 47544, 59168, 96182, 97072, 131403, 153290, 192698, 206148, 206184, 206214, 255138, 273386, 296415, 296419, 307109, 377640, 438802, 461739, 463282]","[""SD 1.5""]",8,yes,ranked
 90d,Checkpoint,new_versions,SD 2.1 768,0,0,3,"[338276, 386665, 386693]","[""SD 2.1 768""]",30,no,missing_publication_timestamp
-90d,Checkpoint,new_versions,SDXL,57,56,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",6,yes,ranked
+90d,Checkpoint,new_versions,SDXL,56,56,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",6,yes,ranked
 90d,Checkpoint,new_versions,Upscaler,1,1,0,[],[],28,no,outside_rank
 90d,Checkpoint,new_versions,Wan Video 14B i2v 480p,0,0,1,[2082942],"[""Wan Video 14B i2v 480p""]",31,no,missing_publication_timestamp
 90d,Checkpoint,new_versions,YuE2,1,1,0,[],[],29,no,outside_rank
-90d,Checkpoint,new_versions,Z-Image,41,32,1,[2851321],"[""ZImageTurbo""]",10,no,outside_rank
-90d,Checkpoint,new_models,Anima,231,218,0,[],[],1,yes,ranked
+90d,Checkpoint,new_versions,Z-Image,41,31,1,[2851321],"[""ZImageTurbo""]",10,no,outside_rank
+90d,Checkpoint,new_models,Anima,231,219,0,[],[],1,yes,ranked
 90d,Checkpoint,new_models,Ernie,1,1,0,[],[],19,no,outside_rank
 90d,Checkpoint,new_models,FLUX2 Klein 9B,5,5,0,[],[],15,no,outside_rank
-90d,Checkpoint,new_models,Flux,6,4,2,"[1520991, 1521033]","[""Flux.1 D""]",17,no,outside_rank
+90d,Checkpoint,new_models,Flux,6,5,2,"[1520991, 1521033]","[""Flux.1 D""]",16,no,outside_rank
 90d,Checkpoint,new_models,Flux.3 Klein,1,2,0,[],[],18,no,outside_rank
 90d,Checkpoint,new_models,Flux.3 Klein-base,2,1,0,[],[],20,no,outside_rank
 90d,Checkpoint,new_models,Ideogram 4.0,1,1,0,[],[],21,no,outside_rank
 90d,Checkpoint,new_models,Illustrious,166,165,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",2,yes,ranked
-90d,Checkpoint,new_models,Krea 2,92,71,0,[],[],3,yes,ranked
-90d,Checkpoint,new_models,Krea 2 Turbo,15,43,0,[],[],5,yes,ranked
-90d,Checkpoint,new_models,LTXV 2.5,5,5,0,[],[],16,no,outside_rank
-90d,Checkpoint,new_models,Legacy,47,16,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",9,no,outside_rank
-90d,Checkpoint,new_models,MOSS Image,66,69,0,[],[],4,yes,pinned
+90d,Checkpoint,new_models,Krea 2,92,69,0,[],[],4,yes,ranked
+90d,Checkpoint,new_models,Krea 2 Turbo,16,44,0,[],[],5,yes,ranked
+90d,Checkpoint,new_models,LTXV 2.5,5,5,0,[],[],17,no,outside_rank
+90d,Checkpoint,new_models,Legacy,47,17,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",9,no,outside_rank
+90d,Checkpoint,new_models,MOSS Image,67,70,0,[],[],3,yes,pinned
 90d,Checkpoint,new_models,MageFlow,1,1,0,[],[],22,no,outside_rank
 90d,Checkpoint,new_models,Ming Image Design 0.1,1,1,0,[],[],23,no,outside_rank
 90d,Checkpoint,new_models,Ming Image Design Layer 0.1,1,1,0,[],[],24,no,outside_rank
 90d,Checkpoint,new_models,MiniMax H3,15,14,0,[],[],10,no,outside_rank
 90d,Checkpoint,new_models,MiniMax Music 3,1,1,0,[],[],25,no,outside_rank
 90d,Checkpoint,new_models,NoobAI,6,6,2,"[2039079, 2576824]","[""NoobAI""]",13,no,outside_rank
-90d,Checkpoint,new_models,Pony,11,11,3,"[408049, 812199, 823217]","[""Pony""]",11,no,outside_rank
+90d,Checkpoint,new_models,Pony,10,10,3,"[408049, 812199, 823217]","[""Pony""]",11,no,outside_rank
 90d,Checkpoint,new_models,Qwen,8,6,0,[],[],14,no,outside_rank
 90d,Checkpoint,new_models,Qwen 2.1,16,18,0,[],[],8,yes,ranked
 90d,Checkpoint,new_models,SD 1.4,1,1,0,[],[],26,no,outside_rank
 90d,Checkpoint,new_models,SD 1.5,22,23,21,"[6419, 11027, 47544, 59168, 96182, 97072, 131403, 153290, 192698, 206148, 206184, 206214, 255138, 273386, 296415, 296419, 307109, 377640, 438802, 461739, 463282]","[""SD 1.5""]",7,yes,ranked
 90d,Checkpoint,new_models,SD 2.1 768,0,0,3,"[338276, 386665, 386693]","[""SD 2.1 768""]",29,no,missing_publication_timestamp
-90d,Checkpoint,new_models,SDXL,41,42,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",6,yes,ranked
+90d,Checkpoint,new_models,SDXL,41,43,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",6,yes,ranked
 90d,Checkpoint,new_models,Upscaler,1,1,0,[],[],27,no,outside_rank
 90d,Checkpoint,new_models,Wan Video 14B i2v 480p,0,0,1,[2082942],"[""Wan Video 14B i2v 480p""]",30,no,missing_publication_timestamp
 90d,Checkpoint,new_models,YuE2,1,1,0,[],[],28,no,outside_rank
 90d,Checkpoint,new_models,Z-Image,9,9,1,[2851321],"[""ZImageTurbo""]",12,no,outside_rank
-90d,LORA,new_versions,Anima,16026,15745,0,[],[],1,yes,ranked
+90d,LORA,new_versions,Anima,16100,15800,0,[],[],1,yes,ranked
 90d,LORA,new_versions,AuraFlow,1,1,0,[],[],29,no,outside_rank
 90d,LORA,new_versions,Boogu,8,7,0,[],[],23,no,outside_rank
 90d,LORA,new_versions,Ernie,39,33,0,[],[],18,no,outside_rank
-90d,LORA,new_versions,FLUX2 Klein 9B,283,199,0,[],[],12,no,outside_rank
-90d,LORA,new_versions,Flux,911,449,1,[2983464],"[""Flux.1 D""]",9,no,outside_rank
+90d,LORA,new_versions,FLUX2 Klein 9B,284,200,0,[],[],12,no,outside_rank
+90d,LORA,new_versions,Flux,915,449,1,[2983464],"[""Flux.1 D""]",9,no,outside_rank
 90d,LORA,new_versions,Flux.3,4,4,0,[],[],26,no,outside_rank
-90d,LORA,new_versions,Flux.3 Klein,26,26,0,[],[],19,no,outside_rank
+90d,LORA,new_versions,Flux.3 Klein,28,28,0,[],[],19,no,outside_rank
 90d,LORA,new_versions,Flux.3 Klein-base,8,8,0,[],[],22,no,outside_rank
 90d,LORA,new_versions,Hi-Dream O1,5,3,1,[2958104],"[""HiDream-O1""]",27,no,outside_rank
 90d,LORA,new_versions,Ideogram 4.0,16,16,0,[],[],21,no,outside_rank
-90d,LORA,new_versions,Illustrious,16556,11663,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
-90d,LORA,new_versions,Krea 2,8094,8046,0,[],[],3,yes,ranked
-90d,LORA,new_versions,Krea 2 Turbo,147,145,0,[],[],15,no,outside_rank
-90d,LORA,new_versions,LTXV 2.5,43,42,0,[],[],17,no,outside_rank
+90d,LORA,new_versions,Illustrious,16672,11758,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
+90d,LORA,new_versions,Krea 2,8094,8044,0,[],[],3,yes,ranked
+90d,LORA,new_versions,Krea 2 Turbo,151,150,0,[],[],15,no,outside_rank
+90d,LORA,new_versions,LTXV 2.5,44,44,0,[],[],17,no,outside_rank
 90d,LORA,new_versions,LTXV2.3,32,26,0,[],[],20,no,outside_rank
-90d,LORA,new_versions,Legacy,264,164,0,[],[],14,no,outside_rank
-90d,LORA,new_versions,MOSS Image,1554,1550,0,[],[],4,yes,pinned
+90d,LORA,new_versions,Legacy,262,164,0,[],[],14,no,outside_rank
+90d,LORA,new_versions,MOSS Image,1631,1611,0,[],[],4,yes,pinned
 90d,LORA,new_versions,MageFlow,5,5,0,[],[],24,no,outside_rank
-90d,LORA,new_versions,MiniMax H3,602,595,0,[],[],8,yes,ranked
-90d,LORA,new_versions,NoobAI,572,318,1,[1693857],"[""NoobAI""]",10,no,outside_rank
+90d,LORA,new_versions,MiniMax H3,612,604,0,[],[],8,yes,ranked
+90d,LORA,new_versions,NoobAI,554,315,1,[1693857],"[""NoobAI""]",10,no,outside_rank
 90d,LORA,new_versions,PixArt E,1,1,0,[],[],30,no,outside_rank
 90d,LORA,new_versions,PixArt a,1,1,0,[],[],31,no,outside_rank
-90d,LORA,new_versions,Pony,2103,798,3,"[627970, 1038306, 1435826]","[""Pony""]",7,yes,ranked
+90d,LORA,new_versions,Pony,2100,793,3,"[627970, 1038306, 1435826]","[""Pony""]",7,yes,ranked
 90d,LORA,new_versions,Qwen,119,57,0,[],[],16,no,outside_rank
-90d,LORA,new_versions,Qwen 2.1,180,180,0,[],[],13,no,outside_rank
-90d,LORA,new_versions,SD 1.5,759,209,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",11,no,outside_rank
+90d,LORA,new_versions,Qwen 2.1,185,185,0,[],[],13,no,outside_rank
+90d,LORA,new_versions,SD 1.5,768,210,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",11,no,outside_rank
 90d,LORA,new_versions,SD 2.0,1,1,0,[],[],32,no,outside_rank
-90d,LORA,new_versions,SDXL,1807,1444,0,[],[],5,yes,ranked
+90d,LORA,new_versions,SDXL,1812,1443,0,[],[],5,yes,ranked
 90d,LORA,new_versions,Wan Image 2.7,1,1,0,[],[],33,no,outside_rank
 90d,LORA,new_versions,Wan Video,2,0,1,[1739292],"[""Wan Video""]",34,no,missing_publication_timestamp
 90d,LORA,new_versions,Wan Video 14B i2v 720p,4,3,0,[],[],28,no,outside_rank
 90d,LORA,new_versions,Wanvideo2.2,25,5,0,[],[],25,no,outside_rank
-90d,LORA,new_versions,Z-Image,1225,836,0,[],[],6,yes,ranked
-90d,LORA,new_models,Anima,13086,9576,0,[],[],1,yes,ranked
+90d,LORA,new_versions,Z-Image,1244,845,0,[],[],6,yes,ranked
+90d,LORA,new_models,Anima,13144,9621,0,[],[],1,yes,ranked
 90d,LORA,new_models,Boogu,5,6,0,[],[],19,no,outside_rank
 90d,LORA,new_models,Ernie,6,6,0,[],[],20,no,outside_rank
-90d,LORA,new_models,FLUX2 Klein 9B,110,98,0,[],[],12,no,outside_rank
-90d,LORA,new_models,Flux,382,361,1,[2983464],"[""Flux.1 D""]",8,yes,ranked
+90d,LORA,new_models,FLUX2 Klein 9B,112,100,0,[],[],12,no,outside_rank
+90d,LORA,new_models,Flux,379,359,1,[2983464],"[""Flux.1 D""]",8,yes,ranked
 90d,LORA,new_models,Flux.3,2,1,0,[],[],27,no,outside_rank
-90d,LORA,new_models,Flux.3 Klein,8,8,0,[],[],18,no,outside_rank
+90d,LORA,new_models,Flux.3 Klein,9,9,0,[],[],18,no,outside_rank
 90d,LORA,new_models,Flux.3 Klein-base,6,6,0,[],[],21,no,outside_rank
 90d,LORA,new_models,Hi-Dream O1,3,3,1,[2958104],"[""HiDream-O1""]",22,no,outside_rank
 90d,LORA,new_models,Ideogram 4.0,2,2,0,[],[],25,no,outside_rank
-90d,LORA,new_models,Illustrious,9578,9113,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
-90d,LORA,new_models,Krea 2,6037,5366,0,[],[],3,yes,ranked
-90d,LORA,new_models,Krea 2 Turbo,110,82,0,[],[],13,no,outside_rank
+90d,LORA,new_models,Illustrious,9653,9189,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
+90d,LORA,new_models,Krea 2,6027,5354,0,[],[],3,yes,ranked
+90d,LORA,new_models,Krea 2 Turbo,113,84,0,[],[],13,no,outside_rank
 90d,LORA,new_models,LTXV 2.5,15,12,0,[],[],17,no,outside_rank
 90d,LORA,new_models,LTXV2.3,3,3,0,[],[],23,no,outside_rank
 90d,LORA,new_models,Legacy,181,67,0,[],[],15,no,outside_rank
-90d,LORA,new_models,MOSS Image,804,699,0,[],[],5,yes,pinned
+90d,LORA,new_models,MOSS Image,850,725,0,[],[],5,yes,pinned
 90d,LORA,new_models,MageFlow,3,3,0,[],[],24,no,outside_rank
-90d,LORA,new_models,MiniMax H3,319,285,0,[],[],9,no,outside_rank
-90d,LORA,new_models,NoobAI,234,209,1,[1693857],"[""NoobAI""]",10,no,outside_rank
+90d,LORA,new_models,MiniMax H3,323,288,0,[],[],9,no,outside_rank
+90d,LORA,new_models,NoobAI,228,204,1,[1693857],"[""NoobAI""]",10,no,outside_rank
 90d,LORA,new_models,PixArt E,1,1,0,[],[],28,no,outside_rank
 90d,LORA,new_models,PixArt a,1,1,0,[],[],29,no,outside_rank
-90d,LORA,new_models,Pony,548,540,3,"[627970, 1038306, 1435826]","[""Pony""]",6,yes,ranked
+90d,LORA,new_models,Pony,544,534,3,"[627970, 1038306, 1435826]","[""Pony""]",6,yes,ranked
 90d,LORA,new_models,Qwen,37,28,0,[],[],16,no,outside_rank
-90d,LORA,new_models,Qwen 2.1,78,73,0,[],[],14,no,outside_rank
+90d,LORA,new_models,Qwen 2.1,81,76,0,[],[],14,no,outside_rank
 90d,LORA,new_models,SD 1.5,129,133,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",11,no,outside_rank
 90d,LORA,new_models,SD 2.0,1,1,0,[],[],30,no,outside_rank
-90d,LORA,new_models,SDXL,1153,1154,0,[],[],4,yes,ranked
+90d,LORA,new_models,SDXL,1155,1154,0,[],[],4,yes,ranked
 90d,LORA,new_models,Wan Image 2.7,1,1,0,[],[],31,no,outside_rank
 90d,LORA,new_models,Wan Video,0,0,1,[1739292],"[""Wan Video""]",33,no,missing_publication_timestamp
 90d,LORA,new_models,Wan Video 14B i2v 720p,1,1,0,[],[],32,no,outside_rank
 90d,LORA,new_models,Wanvideo2.2,3,2,0,[],[],26,no,outside_rank
-90d,LORA,new_models,Z-Image,465,436,0,[],[],7,yes,ranked
-30d,Checkpoint,new_versions,Anima,169,167,0,[],[],1,yes,ranked
+90d,LORA,new_models,Z-Image,474,441,0,[],[],7,yes,ranked
+30d,Checkpoint,new_versions,Anima,171,168,0,[],[],1,yes,ranked
 30d,Checkpoint,new_versions,Boogu,1,1,0,[],[],17,no,outside_rank
 30d,Checkpoint,new_versions,Ernie,1,1,0,[],[],18,no,outside_rank
 30d,Checkpoint,new_versions,FLUX2 Klein 9B,1,1,0,[],[],19,no,outside_rank
-30d,Checkpoint,new_versions,Flux,4,3,2,"[1520991, 1521033]","[""Flux.1 D""]",15,no,outside_rank
-30d,Checkpoint,new_versions,Flux.3 Klein,5,5,0,[],[],14,no,outside_rank
+30d,Checkpoint,new_versions,Flux,4,4,2,"[1520991, 1521033]","[""Flux.1 D""]",15,no,outside_rank
+30d,Checkpoint,new_versions,Flux.3 Klein,5,5,0,[],[],13,no,outside_rank
 30d,Checkpoint,new_versions,Flux.3 Klein-base,2,2,0,[],[],16,no,outside_rank
-30d,Checkpoint,new_versions,Illustrious,147,140,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",2,yes,ranked
-30d,Checkpoint,new_versions,Krea 2,72,74,0,[],[],4,yes,ranked
-30d,Checkpoint,new_versions,Krea 2 Turbo,37,40,0,[],[],5,yes,ranked
-30d,Checkpoint,new_versions,Legacy,8,7,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",11,no,outside_rank
-30d,Checkpoint,new_versions,MOSS Image,139,138,0,[],[],3,yes,pinned
+30d,Checkpoint,new_versions,Illustrious,145,135,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",3,yes,ranked
+30d,Checkpoint,new_versions,Krea 2,72,72,0,[],[],4,yes,ranked
+30d,Checkpoint,new_versions,Krea 2 Turbo,39,41,0,[],[],5,yes,ranked
+30d,Checkpoint,new_versions,Legacy,8,8,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",11,no,outside_rank
+30d,Checkpoint,new_versions,MOSS Image,141,141,0,[],[],2,yes,pinned
 30d,Checkpoint,new_versions,MageFlow,1,1,0,[],[],20,no,outside_rank
-30d,Checkpoint,new_versions,MiniMax H3,12,12,0,[],[],9,no,outside_rank
-30d,Checkpoint,new_versions,NoobAI,17,13,2,"[2039079, 2576824]","[""NoobAI""]",8,yes,ranked
-30d,Checkpoint,new_versions,Pony,5,6,3,"[408049, 812199, 823217]","[""Pony""]",13,no,outside_rank
-30d,Checkpoint,new_versions,Qwen 2.1,19,19,0,[],[],7,yes,ranked
+30d,Checkpoint,new_versions,MiniMax H3,10,12,0,[],[],9,no,outside_rank
+30d,Checkpoint,new_versions,NoobAI,16,13,2,"[2039079, 2576824]","[""NoobAI""]",8,yes,ranked
+30d,Checkpoint,new_versions,Pony,5,6,3,"[408049, 812199, 823217]","[""Pony""]",12,no,outside_rank
+30d,Checkpoint,new_versions,Qwen 2.1,14,18,0,[],[],7,yes,ranked
 30d,Checkpoint,new_versions,SD 1.5,12,12,21,"[6419, 11027, 47544, 59168, 96182, 97072, 131403, 153290, 192698, 206148, 206184, 206214, 255138, 273386, 296415, 296419, 307109, 377640, 438802, 461739, 463282]","[""SD 1.5""]",10,no,outside_rank
 30d,Checkpoint,new_versions,SD 2.1 768,0,0,3,"[338276, 386665, 386693]","[""SD 2.1 768""]",22,no,missing_publication_timestamp
-30d,Checkpoint,new_versions,SDXL,29,30,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",6,yes,ranked
+30d,Checkpoint,new_versions,SDXL,27,28,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",6,yes,ranked
 30d,Checkpoint,new_versions,Upscaler,1,1,0,[],[],21,no,outside_rank
 30d,Checkpoint,new_versions,Wan Video 14B i2v 480p,0,0,1,[2082942],"[""Wan Video 14B i2v 480p""]",23,no,missing_publication_timestamp
-30d,Checkpoint,new_versions,Z-Image,17,7,1,[2851321],"[""ZImageTurbo""]",12,no,outside_rank
-30d,Checkpoint,new_models,Anima,65,63,0,[],[],3,yes,ranked
+30d,Checkpoint,new_versions,Z-Image,17,5,1,[2851321],"[""ZImageTurbo""]",14,no,outside_rank
+30d,Checkpoint,new_models,Anima,66,64,0,[],[],3,yes,ranked
 30d,Checkpoint,new_models,Ernie,1,1,0,[],[],15,no,outside_rank
-30d,Checkpoint,new_models,FLUX2 Klein 9B,1,1,0,[],[],16,no,outside_rank
-30d,Checkpoint,new_models,Flux,4,3,2,"[1520991, 1521033]","[""Flux.1 D""]",12,no,outside_rank
+30d,Checkpoint,new_models,Flux,4,4,2,"[1520991, 1521033]","[""Flux.1 D""]",11,no,outside_rank
 30d,Checkpoint,new_models,Flux.3 Klein,1,2,0,[],[],14,no,outside_rank
-30d,Checkpoint,new_models,Flux.3 Klein-base,2,1,0,[],[],17,no,outside_rank
-30d,Checkpoint,new_models,Illustrious,99,97,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",1,yes,ranked
-30d,Checkpoint,new_models,Krea 2,28,24,0,[],[],4,yes,ranked
-30d,Checkpoint,new_models,Krea 2 Turbo,15,20,0,[],[],6,yes,ranked
-30d,Checkpoint,new_models,Legacy,13,6,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",9,no,outside_rank
-30d,Checkpoint,new_models,MOSS Image,66,69,0,[],[],2,yes,pinned
-30d,Checkpoint,new_models,MiniMax H3,3,3,0,[],[],13,no,outside_rank
-30d,Checkpoint,new_models,NoobAI,1,1,2,"[2039079, 2576824]","[""NoobAI""]",18,no,outside_rank
+30d,Checkpoint,new_models,Flux.3 Klein-base,2,1,0,[],[],16,no,outside_rank
+30d,Checkpoint,new_models,Illustrious,98,96,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",1,yes,ranked
+30d,Checkpoint,new_models,Krea 2,29,23,0,[],[],4,yes,ranked
+30d,Checkpoint,new_models,Krea 2 Turbo,16,21,0,[],[],6,yes,ranked
+30d,Checkpoint,new_models,Legacy,13,7,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",9,no,outside_rank
+30d,Checkpoint,new_models,MOSS Image,67,70,0,[],[],2,yes,pinned
+30d,Checkpoint,new_models,MiniMax H3,3,3,0,[],[],12,no,outside_rank
+30d,Checkpoint,new_models,NoobAI,1,1,2,"[2039079, 2576824]","[""NoobAI""]",17,no,outside_rank
 30d,Checkpoint,new_models,Pony,4,5,3,"[408049, 812199, 823217]","[""Pony""]",10,no,outside_rank
-30d,Checkpoint,new_models,Qwen 2.1,8,8,0,[],[],7,yes,ranked
+30d,Checkpoint,new_models,Qwen 2.1,7,8,0,[],[],7,yes,ranked
 30d,Checkpoint,new_models,SD 1.5,8,8,21,"[6419, 11027, 47544, 59168, 96182, 97072, 131403, 153290, 192698, 206148, 206184, 206214, 255138, 273386, 296415, 296419, 307109, 377640, 438802, 461739, 463282]","[""SD 1.5""]",8,yes,ranked
-30d,Checkpoint,new_models,SD 2.1 768,0,0,3,"[338276, 386665, 386693]","[""SD 2.1 768""]",20,no,missing_publication_timestamp
+30d,Checkpoint,new_models,SD 2.1 768,0,0,3,"[338276, 386665, 386693]","[""SD 2.1 768""]",19,no,missing_publication_timestamp
 30d,Checkpoint,new_models,SDXL,20,22,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",5,yes,ranked
-30d,Checkpoint,new_models,Upscaler,1,1,0,[],[],19,no,outside_rank
-30d,Checkpoint,new_models,Wan Video 14B i2v 480p,0,0,1,[2082942],"[""Wan Video 14B i2v 480p""]",21,no,missing_publication_timestamp
-30d,Checkpoint,new_models,Z-Image,4,4,1,[2851321],"[""ZImageTurbo""]",11,no,outside_rank
-30d,LORA,new_versions,Anima,5743,5647,0,[],[],1,yes,ranked
+30d,Checkpoint,new_models,Upscaler,1,1,0,[],[],18,no,outside_rank
+30d,Checkpoint,new_models,Wan Video 14B i2v 480p,0,0,1,[2082942],"[""Wan Video 14B i2v 480p""]",20,no,missing_publication_timestamp
+30d,Checkpoint,new_models,Z-Image,4,3,1,[2851321],"[""ZImageTurbo""]",13,no,outside_rank
+30d,LORA,new_versions,Anima,5764,5712,0,[],[],1,yes,ranked
 30d,LORA,new_versions,Boogu,1,2,0,[],[],24,no,outside_rank
-30d,LORA,new_versions,Ernie,5,6,0,[],[],21,no,outside_rank
-30d,LORA,new_versions,FLUX2 Klein 9B,79,63,0,[],[],14,no,outside_rank
-30d,LORA,new_versions,Flux,316,165,1,[2983464],"[""Flux.1 D""]",9,no,outside_rank
-30d,LORA,new_versions,Flux.3,4,4,0,[],[],22,no,outside_rank
-30d,LORA,new_versions,Flux.3 Klein,26,26,0,[],[],16,no,outside_rank
+30d,LORA,new_versions,Ernie,5,5,0,[],[],21,no,outside_rank
+30d,LORA,new_versions,FLUX2 Klein 9B,75,62,0,[],[],14,no,outside_rank
+30d,LORA,new_versions,Flux,323,168,1,[2983464],"[""Flux.1 D""]",9,no,outside_rank
+30d,LORA,new_versions,Flux.3,3,3,0,[],[],23,no,outside_rank
+30d,LORA,new_versions,Flux.3 Klein,28,28,0,[],[],16,no,outside_rank
 30d,LORA,new_versions,Flux.3 Klein-base,8,8,0,[],[],20,no,outside_rank
 30d,LORA,new_versions,Hi-Dream O1,0,0,1,[2958104],"[""HiDream-O1""]",25,no,missing_publication_timestamp
 30d,LORA,new_versions,Ideogram 4.0,9,9,0,[],[],19,no,outside_rank
-30d,LORA,new_versions,Illustrious,5714,4156,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
-30d,LORA,new_versions,Krea 2,2677,2659,0,[],[],3,yes,ranked
-30d,LORA,new_versions,Krea 2 Turbo,147,145,0,[],[],10,no,outside_rank
-30d,LORA,new_versions,LTXV 2.5,18,16,0,[],[],17,no,outside_rank
-30d,LORA,new_versions,Legacy,71,61,0,[],[],15,no,outside_rank
-30d,LORA,new_versions,MOSS Image,1554,1550,0,[],[],4,yes,pinned
-30d,LORA,new_versions,MiniMax H3,233,234,0,[],[],8,yes,ranked
-30d,LORA,new_versions,NoobAI,153,81,1,[1693857],"[""NoobAI""]",12,no,outside_rank
-30d,LORA,new_versions,Pony,772,295,3,"[627970, 1038306, 1435826]","[""Pony""]",7,yes,ranked
-30d,LORA,new_versions,Qwen,29,15,0,[],[],18,no,outside_rank
-30d,LORA,new_versions,Qwen 2.1,79,78,0,[],[],13,no,outside_rank
-30d,LORA,new_versions,SD 1.5,253,86,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",11,no,outside_rank
-30d,LORA,new_versions,SDXL,448,371,0,[],[],6,yes,ranked
+30d,LORA,new_versions,Illustrious,5737,4201,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
+30d,LORA,new_versions,Krea 2,2634,2616,0,[],[],3,yes,ranked
+30d,LORA,new_versions,Krea 2 Turbo,151,150,0,[],[],10,no,outside_rank
+30d,LORA,new_versions,LTXV 2.5,19,18,0,[],[],17,no,outside_rank
+30d,LORA,new_versions,Legacy,67,60,0,[],[],15,no,outside_rank
+30d,LORA,new_versions,MOSS Image,1631,1611,0,[],[],4,yes,pinned
+30d,LORA,new_versions,MiniMax H3,231,226,0,[],[],8,yes,ranked
+30d,LORA,new_versions,NoobAI,151,82,1,[1693857],"[""NoobAI""]",13,no,outside_rank
+30d,LORA,new_versions,Pony,776,296,3,"[627970, 1038306, 1435826]","[""Pony""]",7,yes,ranked
+30d,LORA,new_versions,Qwen,27,15,0,[],[],18,no,outside_rank
+30d,LORA,new_versions,Qwen 2.1,83,83,0,[],[],12,no,outside_rank
+30d,LORA,new_versions,SD 1.5,261,87,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",11,no,outside_rank
+30d,LORA,new_versions,SDXL,450,367,0,[],[],6,yes,ranked
 30d,LORA,new_versions,Wan Video,0,0,1,[1739292],"[""Wan Video""]",26,no,missing_publication_timestamp
-30d,LORA,new_versions,Wanvideo2.2,6,4,0,[],[],23,no,outside_rank
-30d,LORA,new_versions,Z-Image,484,399,0,[],[],5,yes,ranked
-30d,LORA,new_models,Anima,4655,3566,0,[],[],1,yes,ranked
+30d,LORA,new_versions,Wanvideo2.2,6,4,0,[],[],22,no,outside_rank
+30d,LORA,new_versions,Z-Image,494,393,0,[],[],5,yes,ranked
+30d,LORA,new_models,Anima,4682,3608,0,[],[],1,yes,ranked
 30d,LORA,new_models,Boogu,1,2,0,[],[],19,no,outside_rank
 30d,LORA,new_models,Ernie,1,2,0,[],[],20,no,outside_rank
 30d,LORA,new_models,FLUX2 Klein 9B,32,33,0,[],[],13,no,outside_rank
-30d,LORA,new_models,Flux,121,122,1,[2983464],"[""Flux.1 D""]",8,yes,ranked
-30d,LORA,new_models,Flux.3,2,1,0,[],[],21,no,outside_rank
-30d,LORA,new_models,Flux.3 Klein,8,8,0,[],[],17,no,outside_rank
+30d,LORA,new_models,Flux,122,124,1,[2983464],"[""Flux.1 D""]",8,yes,ranked
+30d,LORA,new_models,Flux.3 Klein,9,9,0,[],[],16,no,outside_rank
 30d,LORA,new_models,Flux.3 Klein-base,6,6,0,[],[],18,no,outside_rank
-30d,LORA,new_models,Hi-Dream O1,0,0,1,[2958104],"[""HiDream-O1""]",24,no,missing_publication_timestamp
-30d,LORA,new_models,Illustrious,3435,3315,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
-30d,LORA,new_models,Krea 2,1946,1768,0,[],[],3,yes,ranked
-30d,LORA,new_models,Krea 2 Turbo,110,82,0,[],[],10,no,outside_rank
-30d,LORA,new_models,LTXV 2.5,2,1,0,[],[],22,no,outside_rank
-30d,LORA,new_models,Legacy,56,22,0,[],[],15,no,outside_rank
-30d,LORA,new_models,MOSS Image,804,699,0,[],[],4,yes,pinned
-30d,LORA,new_models,MiniMax H3,112,111,0,[],[],9,no,outside_rank
-30d,LORA,new_models,NoobAI,50,37,1,[1693857],"[""NoobAI""]",12,no,outside_rank
-30d,LORA,new_models,Pony,203,191,3,"[627970, 1038306, 1435826]","[""Pony""]",7,yes,ranked
-30d,LORA,new_models,Qwen,8,9,0,[],[],16,no,outside_rank
-30d,LORA,new_models,Qwen 2.1,31,30,0,[],[],14,no,outside_rank
+30d,LORA,new_models,Hi-Dream O1,0,0,1,[2958104],"[""HiDream-O1""]",23,no,missing_publication_timestamp
+30d,LORA,new_models,Illustrious,3464,3363,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
+30d,LORA,new_models,Krea 2,1905,1727,0,[],[],3,yes,ranked
+30d,LORA,new_models,Krea 2 Turbo,113,84,0,[],[],10,no,outside_rank
+30d,LORA,new_models,LTXV 2.5,2,1,0,[],[],21,no,outside_rank
+30d,LORA,new_models,Legacy,55,20,0,[],[],15,no,outside_rank
+30d,LORA,new_models,MOSS Image,850,725,0,[],[],4,yes,pinned
+30d,LORA,new_models,MiniMax H3,104,99,0,[],[],9,no,outside_rank
+30d,LORA,new_models,NoobAI,48,36,1,[1693857],"[""NoobAI""]",12,no,outside_rank
+30d,LORA,new_models,Pony,208,191,3,"[627970, 1038306, 1435826]","[""Pony""]",7,yes,ranked
+30d,LORA,new_models,Qwen,8,9,0,[],[],17,no,outside_rank
+30d,LORA,new_models,Qwen 2.1,34,33,0,[],[],14,no,outside_rank
 30d,LORA,new_models,SD 1.5,46,45,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",11,no,outside_rank
-30d,LORA,new_models,SDXL,204,213,0,[],[],6,yes,ranked
-30d,LORA,new_models,Wan Video,0,0,1,[1739292],"[""Wan Video""]",25,no,missing_publication_timestamp
-30d,LORA,new_models,Wanvideo2.2,1,1,0,[],[],23,no,outside_rank
-30d,LORA,new_models,Z-Image,212,218,0,[],[],5,yes,ranked
-14d,Checkpoint,new_versions,Anima,71,76,0,[],[],2,yes,ranked
-14d,Checkpoint,new_versions,Flux,2,1,2,"[1520991, 1521033]","[""Flux.1 D""]",13,no,outside_rank
-14d,Checkpoint,new_versions,Illustrious,73,63,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",3,yes,ranked
-14d,Checkpoint,new_versions,Krea 2,40,41,0,[],[],4,yes,ranked
-14d,Checkpoint,new_versions,Krea 2 Turbo,17,18,0,[],[],6,yes,ranked
-14d,Checkpoint,new_versions,Legacy,3,2,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",11,no,outside_rank
-14d,Checkpoint,new_versions,MOSS Image,86,85,0,[],[],1,yes,pinned
-14d,Checkpoint,new_versions,MiniMax H3,8,8,0,[],[],7,yes,ranked
-14d,Checkpoint,new_versions,NoobAI,7,6,2,"[2039079, 2576824]","[""NoobAI""]",8,yes,ranked
-14d,Checkpoint,new_versions,Pony,2,2,3,"[408049, 812199, 823217]","[""Pony""]",12,no,outside_rank
+30d,LORA,new_models,SDXL,209,210,0,[],[],5,yes,ranked
+30d,LORA,new_models,Wan Video,0,0,1,[1739292],"[""Wan Video""]",24,no,missing_publication_timestamp
+30d,LORA,new_models,Wanvideo2.2,1,1,0,[],[],22,no,outside_rank
+30d,LORA,new_models,Z-Image,214,210,0,[],[],6,yes,ranked
+14d,Checkpoint,new_versions,Anima,72,79,0,[],[],2,yes,ranked
+14d,Checkpoint,new_versions,FLUX2 Klein 9B,1,1,0,[],[],14,no,outside_rank
+14d,Checkpoint,new_versions,Flux,2,2,2,"[1520991, 1521033]","[""Flux.1 D""]",12,no,outside_rank
+14d,Checkpoint,new_versions,Illustrious,73,62,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",3,yes,ranked
+14d,Checkpoint,new_versions,Krea 2,39,39,0,[],[],4,yes,ranked
+14d,Checkpoint,new_versions,Krea 2 Turbo,16,16,0,[],[],6,yes,ranked
+14d,Checkpoint,new_versions,Legacy,3,3,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",11,no,outside_rank
+14d,Checkpoint,new_versions,MOSS Image,81,82,0,[],[],1,yes,pinned
+14d,Checkpoint,new_versions,MiniMax H3,7,7,0,[],[],7,yes,ranked
+14d,Checkpoint,new_versions,NoobAI,6,6,2,"[2039079, 2576824]","[""NoobAI""]",8,yes,ranked
+14d,Checkpoint,new_versions,Pony,2,2,3,"[408049, 812199, 823217]","[""Pony""]",13,no,outside_rank
 14d,Checkpoint,new_versions,SD 1.5,5,5,21,"[6419, 11027, 47544, 59168, 96182, 97072, 131403, 153290, 192698, 206148, 206184, 206214, 255138, 273386, 296415, 296419, 307109, 377640, 438802, 461739, 463282]","[""SD 1.5""]",9,no,outside_rank
-14d,Checkpoint,new_versions,SD 2.1 768,0,0,3,"[338276, 386665, 386693]","[""SD 2.1 768""]",14,no,missing_publication_timestamp
-14d,Checkpoint,new_versions,SDXL,21,20,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",5,yes,ranked
-14d,Checkpoint,new_versions,Wan Video 14B i2v 480p,0,0,1,[2082942],"[""Wan Video 14B i2v 480p""]",15,no,missing_publication_timestamp
+14d,Checkpoint,new_versions,SD 2.1 768,0,0,3,"[338276, 386665, 386693]","[""SD 2.1 768""]",15,no,missing_publication_timestamp
+14d,Checkpoint,new_versions,SDXL,18,19,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",5,yes,ranked
+14d,Checkpoint,new_versions,Wan Video 14B i2v 480p,0,0,1,[2082942],"[""Wan Video 14B i2v 480p""]",16,no,missing_publication_timestamp
 14d,Checkpoint,new_versions,Z-Image,14,4,1,[2851321],"[""ZImageTurbo""]",10,no,outside_rank
-14d,Checkpoint,new_models,Anima,30,31,0,[],[],3,yes,ranked
-14d,Checkpoint,new_models,Flux,2,1,2,"[1520991, 1521033]","[""Flux.1 D""]",11,no,outside_rank
-14d,Checkpoint,new_models,Illustrious,43,41,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",1,yes,ranked
-14d,Checkpoint,new_models,Krea 2,14,16,0,[],[],4,yes,ranked
-14d,Checkpoint,new_models,Krea 2 Turbo,6,7,0,[],[],6,yes,ranked
-14d,Checkpoint,new_models,Legacy,5,2,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",8,yes,ranked
-14d,Checkpoint,new_models,MOSS Image,36,38,0,[],[],2,yes,pinned
-14d,Checkpoint,new_models,MiniMax H3,2,2,0,[],[],9,no,outside_rank
+14d,Checkpoint,new_models,Anima,30,32,0,[],[],3,yes,ranked
+14d,Checkpoint,new_models,Flux,2,2,2,"[1520991, 1521033]","[""Flux.1 D""]",9,no,outside_rank
+14d,Checkpoint,new_models,Illustrious,42,40,6,"[1438553, 1468334, 1811339, 2333476, 2590364, 2957804]","[""Illustrious""]",1,yes,ranked
+14d,Checkpoint,new_models,Krea 2,14,15,0,[],[],4,yes,ranked
+14d,Checkpoint,new_models,Krea 2 Turbo,7,8,0,[],[],6,yes,ranked
+14d,Checkpoint,new_models,Legacy,4,3,8,"[45727, 45735, 92352, 92356, 92357, 92462, 438979, 1314144]","[""Other"", ""SD 1.5 LCM""]",7,yes,ranked
+14d,Checkpoint,new_models,MOSS Image,31,34,0,[],[],2,yes,pinned
+14d,Checkpoint,new_models,MiniMax H3,1,1,0,[],[],11,no,outside_rank
 14d,Checkpoint,new_models,NoobAI,1,1,2,"[2039079, 2576824]","[""NoobAI""]",12,no,outside_rank
 14d,Checkpoint,new_models,Pony,2,2,3,"[408049, 812199, 823217]","[""Pony""]",10,no,outside_rank
 14d,Checkpoint,new_models,SD 1.5,1,1,21,"[6419, 11027, 47544, 59168, 96182, 97072, 131403, 153290, 192698, 206148, 206184, 206214, 255138, 273386, 296415, 296419, 307109, 377640, 438802, 461739, 463282]","[""SD 1.5""]",13,no,outside_rank
 14d,Checkpoint,new_models,SD 2.1 768,0,0,3,"[338276, 386665, 386693]","[""SD 2.1 768""]",14,no,missing_publication_timestamp
-14d,Checkpoint,new_models,SDXL,16,15,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",5,yes,ranked
+14d,Checkpoint,new_models,SDXL,13,14,7,"[209446, 271373, 306413, 351007, 425584, 1129634, 1461059]","[""SDXL 1.0""]",5,yes,ranked
 14d,Checkpoint,new_models,Wan Video 14B i2v 480p,0,0,1,[2082942],"[""Wan Video 14B i2v 480p""]",15,no,missing_publication_timestamp
-14d,Checkpoint,new_models,Z-Image,2,3,1,[2851321],"[""ZImageTurbo""]",7,yes,ranked
-14d,LORA,new_versions,Anima,2816,2774,0,[],[],1,yes,ranked
+14d,Checkpoint,new_models,Z-Image,2,3,1,[2851321],"[""ZImageTurbo""]",8,yes,ranked
+14d,LORA,new_versions,Anima,2853,2828,0,[],[],1,yes,ranked
 14d,LORA,new_versions,Ernie,2,3,0,[],[],21,no,outside_rank
-14d,LORA,new_versions,FLUX2 Klein 9B,25,28,0,[],[],13,no,outside_rank
-14d,LORA,new_versions,Flux,162,74,1,[2983464],"[""Flux.1 D""]",10,no,outside_rank
-14d,LORA,new_versions,Flux.3 Klein,8,8,0,[],[],17,no,outside_rank
+14d,LORA,new_versions,FLUX2 Klein 9B,22,26,0,[],[],14,no,outside_rank
+14d,LORA,new_versions,Flux,169,73,1,[2983464],"[""Flux.1 D""]",10,no,outside_rank
+14d,LORA,new_versions,Flux.3 Klein,9,9,0,[],[],17,no,outside_rank
 14d,LORA,new_versions,Flux.3 Klein-base,2,2,0,[],[],22,no,outside_rank
 14d,LORA,new_versions,Hi-Dream O1,0,0,1,[2958104],"[""HiDream-O1""]",23,no,missing_publication_timestamp
 14d,LORA,new_versions,Ideogram 4.0,4,4,0,[],[],19,no,outside_rank
-14d,LORA,new_versions,Illustrious,2649,1915,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
-14d,LORA,new_versions,Krea 2,1182,1191,0,[],[],3,yes,ranked
-14d,LORA,new_versions,Krea 2 Turbo,91,93,0,[],[],9,no,outside_rank
-14d,LORA,new_versions,LTXV 2.5,11,9,0,[],[],16,no,outside_rank
-14d,LORA,new_versions,Legacy,32,27,0,[],[],14,no,outside_rank
-14d,LORA,new_versions,MOSS Image,1048,1062,0,[],[],4,yes,pinned
-14d,LORA,new_versions,MiniMax H3,109,103,0,[],[],8,yes,ranked
-14d,LORA,new_versions,NoobAI,52,20,1,[1693857],"[""NoobAI""]",15,no,outside_rank
-14d,LORA,new_versions,Pony,373,158,3,"[627970, 1038306, 1435826]","[""Pony""]",7,yes,ranked
+14d,LORA,new_versions,Illustrious,2690,1949,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
+14d,LORA,new_versions,Krea 2,1158,1178,0,[],[],3,yes,ranked
+14d,LORA,new_versions,Krea 2 Turbo,81,84,0,[],[],9,no,outside_rank
+14d,LORA,new_versions,LTXV 2.5,12,11,0,[],[],16,no,outside_rank
+14d,LORA,new_versions,Legacy,28,27,0,[],[],13,no,outside_rank
+14d,LORA,new_versions,MOSS Image,1028,1022,0,[],[],4,yes,pinned
+14d,LORA,new_versions,MiniMax H3,110,106,0,[],[],8,yes,ranked
+14d,LORA,new_versions,NoobAI,51,20,1,[1693857],"[""NoobAI""]",15,no,outside_rank
+14d,LORA,new_versions,Pony,382,159,3,"[627970, 1038306, 1435826]","[""Pony""]",7,yes,ranked
 14d,LORA,new_versions,Qwen,7,7,0,[],[],18,no,outside_rank
-14d,LORA,new_versions,Qwen 2.1,35,35,0,[],[],12,no,outside_rank
-14d,LORA,new_versions,SD 1.5,152,51,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",11,no,outside_rank
-14d,LORA,new_versions,SDXL,208,169,0,[],[],6,yes,ranked
+14d,LORA,new_versions,Qwen 2.1,39,39,0,[],[],12,no,outside_rank
+14d,LORA,new_versions,SD 1.5,156,49,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",11,no,outside_rank
+14d,LORA,new_versions,SDXL,213,169,0,[],[],6,yes,ranked
 14d,LORA,new_versions,Wan Video,0,0,1,[1739292],"[""Wan Video""]",24,no,missing_publication_timestamp
 14d,LORA,new_versions,Wanvideo2.2,6,4,0,[],[],20,no,outside_rank
 14d,LORA,new_versions,Z-Image,233,176,0,[],[],5,yes,ranked
-14d,LORA,new_models,Anima,2221,1732,0,[],[],1,yes,ranked
+14d,LORA,new_models,Anima,2245,1757,0,[],[],1,yes,ranked
 14d,LORA,new_models,Ernie,0,1,0,[],[],19,no,outside_rank
-14d,LORA,new_models,FLUX2 Klein 9B,11,12,0,[],[],13,no,outside_rank
-14d,LORA,new_models,Flux,56,58,1,[2983464],"[""Flux.1 D""]",8,yes,ranked
-14d,LORA,new_models,Flux.3 Klein,3,3,0,[],[],17,no,outside_rank
+14d,LORA,new_models,FLUX2 Klein 9B,10,12,0,[],[],13,no,outside_rank
+14d,LORA,new_models,Flux,57,58,1,[2983464],"[""Flux.1 D""]",8,yes,ranked
+14d,LORA,new_models,Flux.3 Klein,4,4,0,[],[],15,no,outside_rank
 14d,LORA,new_models,Flux.3 Klein-base,2,2,0,[],[],18,no,outside_rank
 14d,LORA,new_models,Hi-Dream O1,0,0,1,[2958104],"[""HiDream-O1""]",21,no,missing_publication_timestamp
-14d,LORA,new_models,Illustrious,1559,1512,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
-14d,LORA,new_models,Krea 2,872,790,0,[],[],3,yes,ranked
-14d,LORA,new_models,Krea 2 Turbo,66,49,0,[],[],9,no,outside_rank
-14d,LORA,new_models,Legacy,26,10,0,[],[],14,no,outside_rank
-14d,LORA,new_models,MOSS Image,549,482,0,[],[],4,yes,pinned
-14d,LORA,new_models,MiniMax H3,43,43,0,[],[],10,no,outside_rank
-14d,LORA,new_models,NoobAI,12,5,1,[1693857],"[""NoobAI""]",15,no,outside_rank
-14d,LORA,new_models,Pony,100,95,3,"[627970, 1038306, 1435826]","[""Pony""]",7,yes,ranked
-14d,LORA,new_models,Qwen,4,4,0,[],[],16,no,outside_rank
-14d,LORA,new_models,Qwen 2.1,13,13,0,[],[],12,no,outside_rank
-14d,LORA,new_models,SD 1.5,27,26,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",11,no,outside_rank
-14d,LORA,new_models,SDXL,93,97,0,[],[],6,yes,ranked
+14d,LORA,new_models,Illustrious,1586,1533,8,"[1355085, 2171546, 2337512, 2913847, 2918935, 2923064, 2968787, 2976295]","[""Illustrious""]",2,yes,ranked
+14d,LORA,new_models,Krea 2,843,771,0,[],[],3,yes,ranked
+14d,LORA,new_models,Krea 2 Turbo,58,44,0,[],[],9,no,outside_rank
+14d,LORA,new_models,Legacy,23,9,0,[],[],14,no,outside_rank
+14d,LORA,new_models,MOSS Image,559,468,0,[],[],4,yes,pinned
+14d,LORA,new_models,MiniMax H3,41,41,0,[],[],10,no,outside_rank
+14d,LORA,new_models,NoobAI,11,4,1,[1693857],"[""NoobAI""]",16,no,outside_rank
+14d,LORA,new_models,Pony,105,95,3,"[627970, 1038306, 1435826]","[""Pony""]",6,yes,ranked
+14d,LORA,new_models,Qwen,4,4,0,[],[],17,no,outside_rank
+14d,LORA,new_models,Qwen 2.1,16,16,0,[],[],12,no,outside_rank
+14d,LORA,new_models,SD 1.5,26,25,7,"[257829, 257835, 362467, 431945, 437573, 2141726, 2191787]","[""SD 1.5""]",11,no,outside_rank
+14d,LORA,new_models,SDXL,95,95,0,[],[],7,yes,ranked
 14d,LORA,new_models,Wan Video,0,0,1,[1739292],"[""Wan Video""]",22,no,missing_publication_timestamp
 14d,LORA,new_models,Wanvideo2.2,1,1,0,[],[],20,no,outside_rank
-14d,LORA,new_models,Z-Image,118,117,0,[],[],5,yes,ranked
+14d,LORA,new_models,Z-Image,112,117,0,[],[],5,yes,ranked
