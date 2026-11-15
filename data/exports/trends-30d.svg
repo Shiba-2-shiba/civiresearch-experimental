@@ -2,7 +2,7 @@
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="90" y="30" font-family="Arial" font-size="20" font-weight="700">Civitai publication trends — 30d</text>
 <text x="90" y="51" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt; day buckets; pinned groups consume the series limit.</text>
-<text x="90" y="68" font-family="Arial" font-size="11" fill="#4b5563">measurement 2026-05-18 · anchor 2026-11-15 · generated 2026-11-15T20:00:34+00:00</text>
+<text x="90" y="68" font-family="Arial" font-size="11" fill="#4b5563">measurement 2026-05-18 · anchor 2026-11-15 · generated 2026-11-15T20:27:53+00:00</text>
 <text x="90" y="86" font-family="Arial" font-size="12" fill="#b45309">Coverage: 26 partial (yellow), 4 unknown (gray); unverified counts are lower bounds. 0 means no recorded publications, not a verified absence.</text>
 <text x="90" y="121.0" font-family="Arial" font-size="15" font-weight="700">Checkpoint - Version publications</text>
 <rect data-quality="unknown" x="90.0" y="135.0" width="14.1" height="230" fill="#f3f4f6" opacity="0.55"/>
@@ -46,9 +46,9 @@
 <text x="78" y="194.2" text-anchor="end" font-family="Arial" font-size="12">19</text>
 <line x1="90" y1="135.0" x2="910" y2="135.0" stroke="#e5e7eb"/>
 <text x="78" y="139.0" text-anchor="end" font-family="Arial" font-size="12">25</text>
-<polyline fill="none" stroke="#9333ea" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,300.6 118.3,254.6 146.6,365.0 174.8,346.6 203.1,355.8 231.4,328.2 259.7,355.8 287.9,328.2 316.2,346.6 344.5,365.0 372.8,309.8 401.0,365.0 429.3,346.6 457.6,355.8 485.9,273.0 514.1,346.6 542.4,282.2 570.7,346.6 599.0,309.8 627.2,208.6 655.5,328.2 683.8,355.8 712.1,355.8 740.3,346.6 768.6,300.6 796.9,273.0 825.2,217.8 853.4,135.0 881.7,181.0 910.0,236.2"/>
+<polyline fill="none" stroke="#9333ea" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,300.6 118.3,254.6 146.6,365.0 174.8,346.6 203.1,355.8 231.4,328.2 259.7,355.8 287.9,328.2 316.2,346.6 344.5,365.0 372.8,309.8 401.0,365.0 429.3,346.6 457.6,346.6 485.9,273.0 514.1,337.4 542.4,282.2 570.7,346.6 599.0,309.8 627.2,208.6 655.5,328.2 683.8,355.8 712.1,355.8 740.3,346.6 768.6,300.6 796.9,273.0 825.2,217.8 853.4,135.0 881.7,181.0 910.0,236.2"/>
 <line x1="940" y1="153" x2="962" y2="153" stroke="#9333ea" stroke-width="3"/>
-<text x="972" y="157" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (188)</tspan></text>
+<text x="972" y="157" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (190)</tspan></text>
 <polyline fill="none" stroke="#0891b2" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,282.2 118.3,273.0 146.6,309.8 174.8,309.8 203.1,346.6 231.4,309.8 259.7,263.8 287.9,337.4 316.2,309.8 344.5,328.2 372.8,337.4 401.0,291.4 429.3,300.6 457.6,337.4 485.9,300.6 514.1,309.8 542.4,319.0 570.7,309.8 599.0,273.0 627.2,300.6 655.5,346.6 683.8,291.4 712.1,337.4 740.3,300.6 768.6,337.4 796.9,300.6 825.2,337.4 853.4,346.6 881.7,328.2 910.0,337.4"/>
 <line x1="940" y1="169" x2="962" y2="169" stroke="#0891b2" stroke-width="3"/>
 <text x="972" y="173" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (167)</tspan></text>
@@ -113,9 +113,9 @@
 <text x="78" y="482.5" text-anchor="end" font-family="Arial" font-size="12">18</text>
 <line x1="90" y1="421.0" x2="910" y2="421.0" stroke="#e5e7eb"/>
 <text x="78" y="425.0" text-anchor="end" font-family="Arial" font-size="12">24</text>
-<polyline fill="none" stroke="#9333ea" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,593.5 118.3,545.6 146.6,651.0 174.8,641.4 203.1,651.0 231.4,651.0 259.7,641.4 287.9,612.7 316.2,641.4 344.5,651.0 372.8,651.0 401.0,651.0 429.3,641.4 457.6,651.0 485.9,574.3 514.1,641.4 542.4,583.9 570.7,651.0 599.0,612.7 627.2,507.2 655.5,622.2 683.8,641.4 712.1,651.0 740.3,641.4 768.6,603.1 796.9,583.9 825.2,516.8 853.4,421.0 881.7,459.3 910.0,526.4"/>
+<polyline fill="none" stroke="#9333ea" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,593.5 118.3,545.6 146.6,651.0 174.8,641.4 203.1,651.0 231.4,651.0 259.7,641.4 287.9,612.7 316.2,641.4 344.5,651.0 372.8,651.0 401.0,651.0 429.3,641.4 457.6,641.4 485.9,574.3 514.1,641.4 542.4,583.9 570.7,651.0 599.0,612.7 627.2,507.2 655.5,622.2 683.8,641.4 712.1,651.0 740.3,641.4 768.6,603.1 796.9,583.9 825.2,516.8 853.4,421.0 881.7,459.3 910.0,526.4"/>
 <line x1="940" y1="439" x2="962" y2="439" stroke="#9333ea" stroke-width="3"/>
-<text x="972" y="443" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (148)</tspan></text>
+<text x="972" y="443" font-family="Arial" font-size="11"><tspan x="972" dy="0">Illustrious (149)</tspan></text>
 <polyline fill="none" stroke="#0891b2" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,622.2 118.3,583.9 146.6,612.7 174.8,612.7 203.1,631.8 231.4,612.7 259.7,593.5 287.9,641.4 316.2,603.1 344.5,622.2 372.8,631.8 401.0,612.7 429.3,622.2 457.6,631.8 485.9,622.2 514.1,651.0 542.4,622.2 570.7,622.2 599.0,622.2 627.2,641.4 655.5,631.8 683.8,622.2 712.1,641.4 740.3,612.7 768.6,641.4 796.9,631.8 825.2,631.8 853.4,651.0 881.7,622.2 910.0,622.2"/>
 <line x1="940" y1="455" x2="962" y2="455" stroke="#0891b2" stroke-width="3"/>
 <text x="972" y="459" font-family="Arial" font-size="11"><tspan x="972" dy="0">MOSS Image (84)</tspan></text>

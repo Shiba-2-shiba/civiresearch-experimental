@@ -2,7 +2,7 @@
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="90" y="30" font-family="Arial" font-size="20" font-weight="700">Civitai publication trends — 14d</text>
 <text x="90" y="51" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt; day buckets; pinned groups consume the series limit.</text>
-<text x="90" y="68" font-family="Arial" font-size="11" fill="#4b5563">measurement 2026-05-18 · anchor 2026-11-15 · generated 2026-11-15T20:00:34+00:00</text>
+<text x="90" y="68" font-family="Arial" font-size="11" fill="#4b5563">measurement 2026-05-18 · anchor 2026-11-15 · generated 2026-11-15T20:27:53+00:00</text>
 <text x="90" y="86" font-family="Arial" font-size="12" fill="#b45309">Coverage: 14 partial (yellow), 0 unknown (gray); unverified counts are lower bounds. 0 means no recorded publications, not a verified absence.</text>
 <text x="90" y="121.0" font-family="Arial" font-size="15" font-weight="700">Checkpoint - Version publications</text>
 <rect data-quality="partial" x="90.0" y="135.0" width="31.5" height="230" fill="#fef3c7" opacity="0.55"/>

@@ -1,6 +1,6 @@
 status,model_type,base_model_raw,base_model_group,version_count,present_in_daily_counts
 grouped,Checkpoint,ACE Audio,Legacy,9,yes
-grouped,Checkpoint,Anima,Anima,1346,yes
+grouped,Checkpoint,Anima,Anima,1347,yes
 ungrouped,Checkpoint,AuraFlow,,7,yes
 ungrouped,Checkpoint,Boogu,,13,yes
 grouped,Checkpoint,Chroma,Legacy,49,yes
@@ -23,7 +23,7 @@ grouped,Checkpoint,HiDream-O1,Hi-Dream O1,11,yes
 ungrouped,Checkpoint,Hunyuan 1,,7,yes
 grouped,Checkpoint,Hunyuan Video,Legacy,40,yes
 ungrouped,Checkpoint,Ideogram 4.0,,8,yes
-grouped,Checkpoint,Illustrious,Illustrious,5270,yes
+grouped,Checkpoint,Illustrious,Illustrious,5273,yes
 ungrouped,Checkpoint,Imagen4,,1,yes
 ungrouped,Checkpoint,Kling,,4,yes
 grouped,Checkpoint,Kolors,Legacy,19,yes
@@ -50,7 +50,7 @@ grouped,Checkpoint,Other,Legacy,232,yes
 ungrouped,Checkpoint,PixArt E,,68,yes
 ungrouped,Checkpoint,PixArt a,,3,yes
 ungrouped,Checkpoint,Playground v2,,10,yes
-grouped,Checkpoint,Pony,Pony,2290,yes
+grouped,Checkpoint,Pony,Pony,2292,yes
 grouped,Checkpoint,Pony V7,Legacy,2,yes
 grouped,Checkpoint,Qwen,Qwen,189,yes
 grouped,Checkpoint,Qwen 2,Qwen,5,yes
@@ -93,7 +93,7 @@ grouped,Checkpoint,ZImageBase,Z-Image,115,yes
 grouped,Checkpoint,ZImageTurbo,Z-Image,411,yes
 grouped,LORA,ACE Audio,Legacy,152,yes
 ungrouped,LORA,ANIMA,,67,yes
-grouped,LORA,Anima,Anima,31798,yes
+grouped,LORA,Anima,Anima,31800,yes
 ungrouped,LORA,AuraFlow,,1,yes
 ungrouped,LORA,Boogu,,37,yes
 grouped,LORA,Chroma,Legacy,156,yes
@@ -115,10 +115,10 @@ grouped,LORA,HiDream,Hi-Dream O1,11,yes
 grouped,LORA,HiDream-O1,Hi-Dream O1,59,yes
 grouped,LORA,Hunyuan Video,Legacy,31,yes
 ungrouped,LORA,Ideogram 4.0,,58,yes
-grouped,LORA,Illustrious,Illustrious,39220,yes
+grouped,LORA,Illustrious,Illustrious,39223,yes
 grouped,LORA,Illustrious 0.1,Illustrious,3,yes
 grouped,LORA,Kolors,Legacy,1,yes
-ungrouped,LORA,Krea 2,,11587,yes
+ungrouped,LORA,Krea 2,,11592,yes
 ungrouped,LORA,Krea 2 Turbo,,200,yes
 ungrouped,LORA,LTXV,,1,yes
 grouped,LORA,LTXV 2.3,LTXV2.3,150,yes
@@ -142,7 +142,7 @@ ungrouped,LORA,Qwen 2.1,,202,yes
 ungrouped,LORA,SD 1.4,,1,yes
 grouped,LORA,SD 1.5,SD 1.5,1865,yes
 ungrouped,LORA,SD 2.0,,1,yes
-grouped,LORA,SDXL 1.0,SDXL,3656,yes
+grouped,LORA,SDXL 1.0,SDXL,3657,yes
 grouped,LORA,SDXL Hyper,Legacy,3,yes
 grouped,LORA,SDXL Lightning,Legacy,11,yes
 ungrouped,LORA,Wan Image 2.7,,2,yes
@@ -156,4 +156,4 @@ grouped,LORA,Wan Video 2.2 TI2V-5B,Wanvideo2.2,4,yes
 ungrouped,LORA,Wan Video 2.5 I2V,,1,yes
 ungrouped,LORA,Wan Video 3.0,,1,yes
 grouped,LORA,ZImageBase,Z-Image,540,yes
-grouped,LORA,ZImageTurbo,Z-Image,3346,yes
+grouped,LORA,ZImageTurbo,Z-Image,3347,yes
