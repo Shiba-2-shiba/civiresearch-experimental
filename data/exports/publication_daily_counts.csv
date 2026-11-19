@@ -67,7 +67,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-05-21,LORA,FLUX2 Klein 9B,9,2
 2026-05-21,LORA,Flux,7,3
 2026-05-21,LORA,Hi-Dream O1,1,1
-2026-05-21,LORA,Illustrious,197,159
+2026-05-21,LORA,Illustrious,198,160
 2026-05-21,LORA,LTXV2.3,1,1
 2026-05-21,LORA,Legacy,1,0
 2026-05-21,LORA,NoobAI,10,10
@@ -82,7 +82,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-05-22,Checkpoint,Illustrious,4,1
 2026-05-22,Checkpoint,Pony,1,0
 2026-05-22,Checkpoint,SDXL,2,2
-2026-05-22,Checkpoint,Z-Image,1,0
+2026-05-22,Checkpoint,Z-Image,2,0
 2026-05-22,LORA,Anima,84,44
 2026-05-22,LORA,Ernie,4,3
 2026-05-22,LORA,FLUX2 Klein 9B,7,2
@@ -210,7 +210,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-05-28,LORA,FLUX2 Klein 9B,19,6
 2026-05-28,LORA,Flux,8,7
 2026-05-28,LORA,Hi-Dream O1,1,0
-2026-05-28,LORA,Illustrious,163,127
+2026-05-28,LORA,Illustrious,164,127
 2026-05-28,LORA,LTXV2.3,2,0
 2026-05-28,LORA,Legacy,9,2
 2026-05-28,LORA,NoobAI,3,1
@@ -289,7 +289,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-06-01,Checkpoint,Illustrious,7,4
 2026-06-01,Checkpoint,Pony,2,1
 2026-06-01,Checkpoint,Qwen,1,0
-2026-06-01,Checkpoint,Z-Image,2,0
+2026-06-01,Checkpoint,Z-Image,3,0
 2026-06-01,LORA,Anima,131,70
 2026-06-01,LORA,Ernie,1,0
 2026-06-01,LORA,FLUX2 Klein 9B,7,3
@@ -425,7 +425,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-06-08,Checkpoint,Illustrious,3,3
 2026-06-08,Checkpoint,Pony,1,0
 2026-06-08,Checkpoint,Z-Image,4,1
-2026-06-08,LORA,Anima,155,115
+2026-06-08,LORA,Anima,156,116
 2026-06-08,LORA,Ernie,1,1
 2026-06-08,LORA,FLUX2 Klein 9B,8,3
 2026-06-08,LORA,Flux,7,5
@@ -514,7 +514,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-06-13,Checkpoint,Illustrious,2,1
 2026-06-13,Checkpoint,Pony,1,1
 2026-06-13,Checkpoint,SDXL,1,1
-2026-06-13,Checkpoint,Z-Image,4,0
+2026-06-13,Checkpoint,Z-Image,5,0
 2026-06-13,LORA,Anima,236,126
 2026-06-13,LORA,Ernie,2,0
 2026-06-13,LORA,FLUX2 Klein 9B,7,3
@@ -702,6 +702,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-06-23,Checkpoint,NoobAI,1,1
 2026-06-23,Checkpoint,SD 1.5,2,2
 2026-06-23,Checkpoint,SDXL,1,1
+2026-06-23,Checkpoint,Z-Image,1,0
 2026-06-23,LORA,Anima,127,70
 2026-06-23,LORA,Ernie,1,0
 2026-06-23,LORA,FLUX2 Klein 9B,4,1
@@ -712,7 +713,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-06-23,LORA,LTXV2.3,1,0
 2026-06-23,LORA,Legacy,4,0
 2026-06-23,LORA,NoobAI,1,0
-2026-06-23,LORA,Pony,12,9
+2026-06-23,LORA,Pony,13,10
 2026-06-23,LORA,Qwen,1,1
 2026-06-23,LORA,SD 1.5,5,3
 2026-06-23,LORA,SDXL,12,8
@@ -879,6 +880,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-07-02,Checkpoint,Illustrious,5,1
 2026-07-02,Checkpoint,Krea 2,4,2
 2026-07-02,Checkpoint,Legacy,1,0
+2026-07-02,Checkpoint,Z-Image,1,0
 2026-07-02,LORA,Anima,139,88
 2026-07-02,LORA,Boogu,1,0
 2026-07-02,LORA,Ernie,1,0
@@ -1050,7 +1052,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-07-11,Checkpoint,Anima,8,2
 2026-07-11,Checkpoint,FLUX2 Klein 9B,1,0
 2026-07-11,Checkpoint,Illustrious,1,0
-2026-07-11,Checkpoint,Krea 2,4,0
+2026-07-11,Checkpoint,Krea 2,5,1
 2026-07-11,Checkpoint,Z-Image,1,0
 2026-07-11,LORA,Anima,199,110
 2026-07-11,LORA,Ernie,1,1
@@ -1125,7 +1127,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-07-15,Checkpoint,Illustrious,5,1
 2026-07-15,Checkpoint,Krea 2,5,1
 2026-07-15,Checkpoint,Krea 2 Turbo,1,0
-2026-07-15,Checkpoint,Z-Image,1,0
+2026-07-15,Checkpoint,Z-Image,2,0
 2026-07-15,LORA,Anima,146,82
 2026-07-15,LORA,Boogu,1,0
 2026-07-15,LORA,Ernie,1,0
@@ -1279,7 +1281,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-07-22,LORA,Z-Image,10,5
 2026-07-23,Checkpoint,Anima,5,3
 2026-07-23,Checkpoint,Illustrious,4,2
-2026-07-23,Checkpoint,Krea 2,6,2
+2026-07-23,Checkpoint,Krea 2,7,2
 2026-07-23,Checkpoint,Krea 2 Turbo,1,0
 2026-07-23,Checkpoint,LTXV2.3,1,1
 2026-07-23,Checkpoint,Z-Image,1,0
@@ -1336,6 +1338,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-07-26,Checkpoint,Krea 2 Turbo,4,1
 2026-07-26,Checkpoint,NoobAI,1,0
 2026-07-26,Checkpoint,SD 1.5,1,1
+2026-07-26,Checkpoint,Z-Image,1,0
 2026-07-26,LORA,Anima,175,86
 2026-07-26,LORA,FLUX2 Klein 9B,1,0
 2026-07-26,LORA,Flux,4,2
@@ -1354,6 +1357,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-07-27,Checkpoint,Krea 2,6,3
 2026-07-27,Checkpoint,Krea 2 Turbo,1,1
 2026-07-27,Checkpoint,LTXV2.3,1,1
+2026-07-27,Checkpoint,Z-Image,1,0
 2026-07-27,LORA,Anima,145,83
 2026-07-27,LORA,FLUX2 Klein 9B,3,1
 2026-07-27,LORA,Flux,5,2
@@ -1442,7 +1446,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-08-01,Checkpoint,Anima,7,3
 2026-08-01,Checkpoint,Flux,1,1
 2026-08-01,Checkpoint,Illustrious,4,0
-2026-08-01,Checkpoint,Krea 2,2,1
+2026-08-01,Checkpoint,Krea 2,3,1
 2026-08-01,Checkpoint,SD 1.5,1,1
 2026-08-01,Checkpoint,SDXL,1,1
 2026-08-01,Checkpoint,Z-Image,1,0
@@ -1460,7 +1464,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-08-01,LORA,Z-Image,19,3
 2026-08-02,Checkpoint,Anima,6,2
 2026-08-02,Checkpoint,Illustrious,3,2
-2026-08-02,Checkpoint,Krea 2,7,4
+2026-08-02,Checkpoint,Krea 2,8,4
 2026-08-02,Checkpoint,SDXL,1,0
 2026-08-02,LORA,Anima,149,76
 2026-08-02,LORA,Ernie,1,0
@@ -1531,7 +1535,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-08-06,Checkpoint,Anima,6,2
 2026-08-06,Checkpoint,FLUX2 Klein 9B,1,0
 2026-08-06,Checkpoint,Illustrious,9,2
-2026-08-06,Checkpoint,Krea 2,4,1
+2026-08-06,Checkpoint,Krea 2,5,1
 2026-08-06,Checkpoint,Krea 2 Turbo,2,0
 2026-08-06,Checkpoint,Pony,1,0
 2026-08-06,LORA,Anima,204,81
@@ -1677,6 +1681,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-08-14,Checkpoint,LTXV 2.5,3,1
 2026-08-14,Checkpoint,MiniMax H3,2,1
 2026-08-14,Checkpoint,NoobAI,1,0
+2026-08-14,Checkpoint,Z-Image,1,0
 2026-08-14,LORA,Anima,196,79
 2026-08-14,LORA,FLUX2 Klein 9B,4,0
 2026-08-14,LORA,Flux,7,2
@@ -1957,7 +1962,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-08-29,Checkpoint,Anima,5,5
 2026-08-29,Checkpoint,FLUX2 Klein 9B,2,0
 2026-08-29,Checkpoint,Illustrious,2,1
-2026-08-29,Checkpoint,Krea 2,4,0
+2026-08-29,Checkpoint,Krea 2,5,0
 2026-08-29,Checkpoint,MiniMax H3,1,0
 2026-08-29,LORA,Anima,95,47
 2026-08-29,LORA,FLUX2 Klein 9B,2,1
@@ -2201,7 +2206,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-09-10,LORA,Z-Image,10,5
 2026-09-11,Checkpoint,Anima,7,2
 2026-09-11,Checkpoint,Illustrious,1,1
-2026-09-11,Checkpoint,Krea 2,6,0
+2026-09-11,Checkpoint,Krea 2,7,0
 2026-09-11,Checkpoint,MiniMax H3,2,0
 2026-09-11,LORA,Anima,140,92
 2026-09-11,LORA,FLUX2 Klein 9B,2,1
@@ -2241,11 +2246,12 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-09-13,Checkpoint,Krea 2,5,2
 2026-09-13,Checkpoint,Krea 2 Turbo,2,1
 2026-09-13,Checkpoint,MageFlow,1,0
+2026-09-13,Checkpoint,Z-Image,1,0
 2026-09-13,LORA,Anima,174,92
 2026-09-13,LORA,Flux,1,1
 2026-09-13,LORA,Hi-Dream O1,1,1
 2026-09-13,LORA,Illustrious,161,134
-2026-09-13,LORA,Krea 2,97,63
+2026-09-13,LORA,Krea 2,98,64
 2026-09-13,LORA,LTXV 2.5,1,1
 2026-09-13,LORA,Legacy,4,1
 2026-09-13,LORA,MageFlow,1,1
@@ -2273,14 +2279,14 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-09-14,LORA,Pony,8,5
 2026-09-14,LORA,SD 1.5,3,3
 2026-09-14,LORA,SDXL,10,9
-2026-09-14,LORA,Z-Image,10,8
+2026-09-14,LORA,Z-Image,11,8
 2026-09-15,Checkpoint,Anima,4,2
 2026-09-15,Checkpoint,Ideogram 4.0,1,1
 2026-09-15,Checkpoint,Illustrious,4,3
 2026-09-15,Checkpoint,Krea 2,4,0
 2026-09-15,Checkpoint,Krea 2 Turbo,5,1
 2026-09-15,Checkpoint,MiniMax H3,1,1
-2026-09-15,LORA,Anima,160,98
+2026-09-15,LORA,Anima,161,98
 2026-09-15,LORA,FLUX2 Klein 9B,3,3
 2026-09-15,LORA,Flux,6,4
 2026-09-15,LORA,Illustrious,142,113
@@ -2308,7 +2314,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-09-16,LORA,MiniMax H3,4,4
 2026-09-16,LORA,NoobAI,2,2
 2026-09-16,LORA,Pony,11,8
-2026-09-16,LORA,SD 1.5,1,0
+2026-09-16,LORA,SD 1.5,2,0
 2026-09-16,LORA,SDXL,11,9
 2026-09-16,LORA,Z-Image,6,0
 2026-09-17,Checkpoint,Anima,7,6
@@ -2462,7 +2468,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-09-24,Checkpoint,Qwen 2.1,1,1
 2026-09-24,Checkpoint,SD 1.4,1,1
 2026-09-24,Checkpoint,SDXL,1,1
-2026-09-24,LORA,Anima,140,99
+2026-09-24,LORA,Anima,141,99
 2026-09-24,LORA,FLUX2 Klein 9B,2,2
 2026-09-24,LORA,Flux,4,2
 2026-09-24,LORA,Illustrious,118,98
@@ -2949,7 +2955,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-10-17,LORA,Krea 2 Turbo,1,1
 2026-10-17,LORA,Legacy,10,2
 2026-10-17,LORA,MOSS Image,18,7
-2026-10-17,LORA,MiniMax H3,11,4
+2026-10-17,LORA,MiniMax H3,12,4
 2026-10-17,LORA,NoobAI,8,4
 2026-10-17,LORA,Pony,11,5
 2026-10-17,LORA,Qwen 2.1,1,0
@@ -3218,7 +3224,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-10-29,LORA,FLUX2 Klein 9B,2,1
 2026-10-29,LORA,Flux,4,3
 2026-10-29,LORA,Flux.3 Klein,1,1
-2026-10-29,LORA,Illustrious,130,105
+2026-10-29,LORA,Illustrious,131,106
 2026-10-29,LORA,Krea 2,116,73
 2026-10-29,LORA,Krea 2 Turbo,3,2
 2026-10-29,LORA,Legacy,1,1
@@ -3264,7 +3270,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-10-31,LORA,FLUX2 Klein 9B,4,2
 2026-10-31,LORA,Flux,7,6
 2026-10-31,LORA,Flux.3 Klein-base,1,1
-2026-10-31,LORA,Illustrious,168,133
+2026-10-31,LORA,Illustrious,171,136
 2026-10-31,LORA,Krea 2,69,50
 2026-10-31,LORA,Krea 2 Turbo,12,4
 2026-10-31,LORA,LTXV 2.5,1,0
@@ -3272,10 +3278,10 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-10-31,LORA,MOSS Image,98,38
 2026-10-31,LORA,MiniMax H3,9,2
 2026-10-31,LORA,NoobAI,6,0
-2026-10-31,LORA,Pony,12,9
+2026-10-31,LORA,Pony,13,9
 2026-10-31,LORA,Qwen 2.1,2,0
 2026-10-31,LORA,SD 1.5,7,3
-2026-10-31,LORA,SDXL,12,6
+2026-10-31,LORA,SDXL,13,6
 2026-10-31,LORA,Z-Image,18,11
 2026-11-01,Checkpoint,Anima,8,3
 2026-11-01,Checkpoint,Illustrious,3,1
@@ -3283,7 +3289,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-11-01,LORA,Anima,267,116
 2026-11-01,LORA,FLUX2 Klein 9B,1,1
 2026-11-01,LORA,Flux,5,5
-2026-11-01,LORA,Illustrious,152,128
+2026-11-01,LORA,Illustrious,153,129
 2026-11-01,LORA,Krea 2,95,67
 2026-11-01,LORA,Krea 2 Turbo,6,1
 2026-11-01,LORA,LTXV 2.5,1,0
@@ -3353,23 +3359,23 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-11-04,Checkpoint,MiniMax H3,2,1
 2026-11-04,Checkpoint,NoobAI,1,0
 2026-11-04,Checkpoint,SDXL,1,0
-2026-11-04,LORA,Anima,172,115
-2026-11-04,LORA,FLUX2 Klein 9B,4,1
+2026-11-04,LORA,Anima,170,113
+2026-11-04,LORA,FLUX2 Klein 9B,4,2
 2026-11-04,LORA,Flux,8,6
 2026-11-04,LORA,Ideogram 4.0,1,0
-2026-11-04,LORA,Illustrious,137,109
-2026-11-04,LORA,Krea 2,88,62
+2026-11-04,LORA,Illustrious,134,107
+2026-11-04,LORA,Krea 2,85,60
 2026-11-04,LORA,Krea 2 Turbo,8,4
 2026-11-04,LORA,LTXV 2.5,1,0
 2026-11-04,LORA,Legacy,2,0
-2026-11-04,LORA,MOSS Image,66,36
+2026-11-04,LORA,MOSS Image,65,36
 2026-11-04,LORA,MiniMax H3,6,5
 2026-11-04,LORA,Pony,13,7
 2026-11-04,LORA,Qwen,2,2
 2026-11-04,LORA,Qwen 2.1,3,2
 2026-11-04,LORA,SD 1.5,3,1
 2026-11-04,LORA,SDXL,25,6
-2026-11-04,LORA,Z-Image,14,11
+2026-11-04,LORA,Z-Image,13,11
 2026-11-05,Checkpoint,Anima,6,2
 2026-11-05,Checkpoint,Illustrious,17,15
 2026-11-05,Checkpoint,Krea 2,3,1
@@ -3459,7 +3465,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-11-08,LORA,Krea 2 Turbo,5,2
 2026-11-08,LORA,LTXV 2.5,2,0
 2026-11-08,LORA,Legacy,1,0
-2026-11-08,LORA,MOSS Image,62,27
+2026-11-08,LORA,MOSS Image,63,27
 2026-11-08,LORA,MiniMax H3,11,4
 2026-11-08,LORA,NoobAI,4,0
 2026-11-08,LORA,Pony,10,7
@@ -3542,12 +3548,12 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-11-12,Checkpoint,Krea 2 Turbo,3,1
 2026-11-12,Checkpoint,MOSS Image,3,2
 2026-11-12,Checkpoint,MiniMax H3,2,1
-2026-11-12,LORA,Anima,373,141
+2026-11-12,LORA,Anima,369,137
 2026-11-12,LORA,FLUX2 Klein 9B,2,1
 2026-11-12,LORA,Flux,7,6
 2026-11-12,LORA,Flux.3,1,0
 2026-11-12,LORA,Flux.3 Klein,2,1
-2026-11-12,LORA,Illustrious,136,100
+2026-11-12,LORA,Illustrious,133,98
 2026-11-12,LORA,Krea 2,90,54
 2026-11-12,LORA,Krea 2 Turbo,9,5
 2026-11-12,LORA,Legacy,4,0
@@ -3570,11 +3576,11 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-11-13,LORA,FLUX2 Klein 9B,1,1
 2026-11-13,LORA,Flux,3,3
 2026-11-13,LORA,Flux.3,1,1
-2026-11-13,LORA,Illustrious,125,100
+2026-11-13,LORA,Illustrious,124,100
 2026-11-13,LORA,Krea 2,55,34
 2026-11-13,LORA,Krea 2 Turbo,7,6
 2026-11-13,LORA,Legacy,1,1
-2026-11-13,LORA,MOSS Image,79,48
+2026-11-13,LORA,MOSS Image,78,48
 2026-11-13,LORA,MiniMax H3,6,1
 2026-11-13,LORA,NoobAI,2,0
 2026-11-13,LORA,Pony,13,11
@@ -3612,10 +3618,10 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-11-15,Checkpoint,MOSS Image,3,3
 2026-11-15,Checkpoint,SD 1.5,1,0
 2026-11-15,Checkpoint,SDXL,1,1
-2026-11-15,LORA,Anima,323,166
+2026-11-15,LORA,Anima,324,167
 2026-11-15,LORA,Boogu,1,0
 2026-11-15,LORA,Flux,5,4
-2026-11-15,LORA,Illustrious,180,153
+2026-11-15,LORA,Illustrious,184,157
 2026-11-15,LORA,Krea 2,90,54
 2026-11-15,LORA,Krea 2 Turbo,9,3
 2026-11-15,LORA,LTXV 2.5,1,0
@@ -3637,8 +3643,8 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-11-16,Checkpoint,Z-Image,1,1
 2026-11-16,LORA,Anima,205,126
 2026-11-16,LORA,Flux,8,5
-2026-11-16,LORA,Illustrious,168,130
-2026-11-16,LORA,Krea 2,94,65
+2026-11-16,LORA,Illustrious,169,130
+2026-11-16,LORA,Krea 2,93,64
 2026-11-16,LORA,Krea 2 Turbo,7,5
 2026-11-16,LORA,MOSS Image,75,31
 2026-11-16,LORA,MiniMax H3,11,6
@@ -3656,11 +3662,11 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-11-17,Checkpoint,MOSS Image,3,1
 2026-11-17,Checkpoint,SD 1.5,1,1
 2026-11-17,Checkpoint,Z-Image,2,1
-2026-11-17,LORA,Anima,196,119
+2026-11-17,LORA,Anima,193,119
 2026-11-17,LORA,Ernie,1,1
 2026-11-17,LORA,Flux,5,5
 2026-11-17,LORA,Illustrious,187,144
-2026-11-17,LORA,Krea 2,90,57
+2026-11-17,LORA,Krea 2,94,58
 2026-11-17,LORA,Krea 2 Turbo,8,4
 2026-11-17,LORA,MOSS Image,67,23
 2026-11-17,LORA,MiniMax H3,10,4
@@ -3683,7 +3689,7 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-11-18,LORA,FLUX2 Klein 9B,1,1
 2026-11-18,LORA,Fibo 2.0,1,1
 2026-11-18,LORA,Flux,5,5
-2026-11-18,LORA,Illustrious,199,126
+2026-11-18,LORA,Illustrious,201,127
 2026-11-18,LORA,Krea 2,93,67
 2026-11-18,LORA,Krea 2 Turbo,10,5
 2026-11-18,LORA,MOSS Image,54,25
@@ -3694,3 +3700,26 @@ publication_date,model_type,base_model_group,published_version_count,first_known
 2026-11-18,LORA,SD 1.5,2,1
 2026-11-18,LORA,SDXL,15,8
 2026-11-18,LORA,Z-Image,7,6
+2026-11-19,Checkpoint,Anima,4,3
+2026-11-19,Checkpoint,FLUX2 Klein 9B,1,0
+2026-11-19,Checkpoint,Illustrious,2,1
+2026-11-19,Checkpoint,Krea 2,3,1
+2026-11-19,Checkpoint,MOSS Image,5,2
+2026-11-19,Checkpoint,MiniMax H3 Image,1,1
+2026-11-19,Checkpoint,SD 1.5,1,0
+2026-11-19,Checkpoint,Z-Image,3,1
+2026-11-19,LORA,Anima,175,126
+2026-11-19,LORA,Flux,10,9
+2026-11-19,LORA,Illustrious,209,123
+2026-11-19,LORA,Krea 2,83,64
+2026-11-19,LORA,Krea 2 Turbo,2,1
+2026-11-19,LORA,Legacy,3,1
+2026-11-19,LORA,MOSS Image,81,44
+2026-11-19,LORA,MiniMax H3,4,2
+2026-11-19,LORA,MiniMax H3 Image,7,3
+2026-11-19,LORA,NoobAI,2,1
+2026-11-19,LORA,Pony,8,4
+2026-11-19,LORA,Qwen 2.1,3,1
+2026-11-19,LORA,SD 1.5,3,1
+2026-11-19,LORA,SDXL,12,7
+2026-11-19,LORA,Z-Image,10,4
