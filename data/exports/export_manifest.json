@@ -1,29 +1,29 @@
 {
-  "anchor_date": "2026-11-20",
+  "anchor_date": "2026-11-21",
   "files": {
-    "base_model_audit.csv": "977b7d7abf095a21bcb986c879e6e808fea911fc0e543cacda4c42ec750b2d7d",
-    "coverage_daily.csv": "4f2d2df1ec18706f5c6ad49c50d45ddf54a604f0893b81e9a7ce9b2d82c41505",
-    "daily_counts.csv": "c400ffe19987fb0952ed583cdca5156c6c097ca85ae08d687f0643606662c467",
-    "monthly_counts.csv": "e5f1d0842a5b8847ecab6e0a644662d54c6cf5efa6c0f0ac982a4d0a379e490f",
-    "publication_daily_counts.csv": "899a15861980ea3f71a70675973389fc312c2939f73524f10db3b1538bd4130e",
-    "series_diagnostics.csv": "4f2a201acf31637c7c6f44273cc8ae5adb9f53d06fe358bc8bd65400dc633bac",
-    "trends-14d.svg": "ca68a76697efa615f3ba2ec1972470d3e7c255906fd13a3adbc95f35ce7b42a0",
-    "trends-30d.svg": "5d79c39842842da446381a39ea01017c99898e68981fda1e3139516540ffea4b",
-    "trends-90d.svg": "9354a5882a967313db9862ebe1fbb359703e66450dd002dd624bddf925896dc5",
-    "trends-all.svg": "acada34f85ff424b42284fff17f1287c1f3d68e400c1f54fcdd3134d129388f8",
-    "trends.svg": "acada34f85ff424b42284fff17f1287c1f3d68e400c1f54fcdd3134d129388f8",
-    "weekly_counts.csv": "3f9d166bd71ed050b9c6270e55f9cd07b9903d2c054aba3ce00786d44287c8df"
+    "base_model_audit.csv": "88254ae16c136a57b30f2e4c07ee292dff4fc2d8b797f2500e3353371d91e3aa",
+    "coverage_daily.csv": "4e2ddf80ab5b0abbb8d43ca690d331c03839e056f800fc4b9668b1ac2c41d5f2",
+    "daily_counts.csv": "c16327f036f317dcb9dd862c328867c9c5675d17d710c1f0cd16b79eed38b0ac",
+    "monthly_counts.csv": "77e63f77b43b95e77227c5c6a4925f64e7263aabf31b17c2f2095afb059daaa6",
+    "publication_daily_counts.csv": "a5e09f1b4221aa115022dc9e0e9a786defc4eb69e70a79ed3bacbadf0b589448",
+    "series_diagnostics.csv": "4e6e1de0de697d94c02789513ad5959b48bb6d900569a1b4ef18b645e91c08cb",
+    "trends-14d.svg": "50043c52c5381108083a47e90def3a14eb4c990bc3f3b9b780cbfef8cb767ee0",
+    "trends-30d.svg": "c43104f0f972b498aa8698172cd8a3409361b358b9d1cc99d4f01e2202c17eb9",
+    "trends-90d.svg": "3ea0013d295dd33c4c4e563aa089cf3eccb1532c25636db7a6fc9b917479a92d",
+    "trends-all.svg": "9a7f2037b401b862caf2b2a7d28be9813c366c96e8bd93e4fb2211a88e2adeef",
+    "trends.svg": "9a7f2037b401b862caf2b2a7d28be9813c366c96e8bd93e4fb2211a88e2adeef",
+    "weekly_counts.csv": "7d119530299f26dfdbb6ae84ea7ec29452a7158327f9bd6a5957f70a72369b96"
   },
-  "generated_at": "2026-11-20T21:59:58+00:00",
+  "generated_at": "2026-11-21T20:40:53+00:00",
   "grouping_hash": "035ac17b8df19a03b40fcd8319e7af8db9e5d02e597dfa670d79a5c120bce78f",
   "measurement_start": "2026-05-18",
-  "snapshot_id": "e1848895d6b73a2a08ded99106eb010ba1ed2f97418f7279874766e6b5930f23",
+  "snapshot_id": "fc0151cf8a3823958392a9f74cd49f88f9aacb2624c661cc5a57ccf14e5d8708",
   "timezone": "+09:00",
   "view_config_hash": "f2e81bf046be92c089b40adb091bbedc4057ee1291945bcc8ac4439b7fda73b7",
   "views": {
     "14d": {
       "bucket": "day",
-      "end_date": "2026-11-20",
+      "end_date": "2026-11-21",
       "max_series": 8,
       "pinned_groups": [
         "MOSS Image"
@@ -37,12 +37,12 @@
         "Checkpoint": {
           "new_models": [
             "Illustrious",
-            "MOSS Image",
             "Anima",
-            "Krea 2",
+            "MOSS Image",
             "Krea 2 Turbo",
-            "Legacy",
+            "Krea 2",
             "Z-Image",
+            "Legacy",
             "MiniMax H3"
           ],
           "new_versions": [
@@ -51,8 +51,8 @@
             "MOSS Image",
             "Krea 2",
             "Krea 2 Turbo",
-            "Legacy",
             "Z-Image",
+            "Legacy",
             "MiniMax H3"
           ]
         },
@@ -74,16 +74,16 @@
             "MOSS Image",
             "SDXL",
             "Pony",
-            "MiniMax H3",
-            "Z-Image"
+            "Z-Image",
+            "MiniMax H3"
           ]
         }
       },
-      "start_date": "2026-11-07"
+      "start_date": "2026-11-08"
     },
     "30d": {
       "bucket": "day",
-      "end_date": "2026-11-20",
+      "end_date": "2026-11-21",
       "max_series": 8,
       "pinned_groups": [
         "MOSS Image"
@@ -107,13 +107,13 @@
           ],
           "new_versions": [
             "Illustrious",
-            "MOSS Image",
             "Anima",
+            "MOSS Image",
             "Krea 2",
             "Krea 2 Turbo",
             "SDXL",
             "MiniMax H3",
-            "Legacy"
+            "SD 1.5"
           ]
         },
         "LORA": {
@@ -122,8 +122,8 @@
             "Illustrious",
             "Krea 2",
             "MOSS Image",
-            "SDXL",
             "Z-Image",
+            "SDXL",
             "Pony",
             "Flux"
           ],
@@ -139,18 +139,18 @@
           ]
         }
       },
-      "start_date": "2026-10-22"
+      "start_date": "2026-10-23"
     },
     "90d": {
       "bucket": "day",
-      "end_date": "2026-11-20",
+      "end_date": "2026-11-21",
       "max_series": 8,
       "pinned_groups": [
         "MOSS Image"
       ],
       "quality": {
-        "partial": 31,
-        "unknown": 59,
+        "partial": 32,
+        "unknown": 58,
         "verified": 0
       },
       "selected_series": {
@@ -199,17 +199,17 @@
           ]
         }
       },
-      "start_date": "2026-08-23"
+      "start_date": "2026-08-24"
     },
     "all": {
       "bucket": "week",
-      "end_date": "2026-11-20",
+      "end_date": "2026-11-21",
       "max_series": 8,
       "pinned_groups": [
         "MOSS Image"
       ],
       "quality": {
-        "partial": 31,
+        "partial": 32,
         "unknown": 156,
         "verified": 0
       },
