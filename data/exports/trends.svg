@@ -2,7 +2,7 @@
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="90" y="30" font-family="Arial" font-size="20" font-weight="700">Civitai publication trends — full measurement period (since observation began)</text>
 <text x="90" y="51" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt; week buckets; pinned groups consume the series limit.</text>
-<text x="90" y="68" font-family="Arial" font-size="11" fill="#4b5563">measurement 2026-05-18 · anchor 2026-11-22 · generated 2026-11-22T20:51:25+00:00</text>
+<text x="90" y="68" font-family="Arial" font-size="11" fill="#4b5563">measurement 2026-05-18 · anchor 2026-11-22 · generated 2026-11-22T21:07:10+00:00</text>
 <text x="90" y="86" font-family="Arial" font-size="12" fill="#b45309">Coverage: 4 partial (yellow), 23 unknown (gray); unverified counts are lower bounds. 0 means no recorded publications, not a verified absence.</text>
 <text x="90" y="121.0" font-family="Arial" font-size="15" font-weight="700">Checkpoint - Version publications</text>
 <rect data-quality="unknown" x="90.0" y="135.0" width="15.8" height="230" fill="#f3f4f6" opacity="0.55"/>
@@ -64,10 +64,10 @@
 <polyline fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,305.6 121.5,325.4 153.1,360.1 184.6,352.6 216.2,352.6 247.7,352.6 279.2,357.6 310.8,355.1 342.3,357.6 373.8,362.5 405.4,360.1 436.9,362.5 468.5,362.5 500.0,362.5 531.5,352.6 563.1,362.5 594.6,357.6 626.2,362.5 657.7,357.6 689.2,350.2 720.8,345.2 752.3,352.6 783.8,355.1 815.4,335.3 846.9,347.7 878.5,362.5 910.0,360.1"/>
 <line x1="940" y1="249" x2="962" y2="249" stroke="#dc2626" stroke-width="3"/>
 <text x="972" y="253" font-family="Arial" font-size="11"><tspan x="972" dy="0">SDXL (131)</tspan></text>
-<polyline fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,365.0 121.5,365.0 153.1,365.0 184.6,365.0 216.2,365.0 247.7,365.0 279.2,365.0 310.8,365.0 342.3,365.0 373.8,365.0 405.4,362.5 436.9,323.0 468.5,352.6 500.0,350.2 531.5,350.2 563.1,365.0 594.6,355.1 626.2,360.1 657.7,357.6 689.2,352.6 720.8,357.6 752.3,362.5 783.8,360.1 815.4,355.1 846.9,357.6 878.5,342.7 910.0,362.5"/>
-<line x1="940" y1="265" x2="962" y2="265" stroke="#0f766e" stroke-width="3"/>
-<text x="972" y="269" font-family="Arial" font-size="11"><tspan x="972" dy="0">MiniMax H3 (72)</tspan></text>
-<text x="940" y="285" font-family="Arial" font-size="11" fill="#6b7280">29 hidden series (426 total)</text>
+<polyline fill="none" stroke="#4f46e5" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,355.1 121.5,355.1 153.1,365.0 184.6,357.6 216.2,355.1 247.7,352.6 279.2,365.0 310.8,365.0 342.3,365.0 373.8,360.1 405.4,362.5 436.9,365.0 468.5,365.0 500.0,350.2 531.5,362.5 563.1,360.1 594.6,362.5 626.2,350.2 657.7,352.6 689.2,352.6 720.8,357.6 752.3,362.5 783.8,350.2 815.4,360.1 846.9,357.6 878.5,357.6 910.0,357.6"/>
+<line x1="940" y1="265" x2="962" y2="265" stroke="#4f46e5" stroke-width="3"/>
+<text x="972" y="269" font-family="Arial" font-size="11"><tspan x="972" dy="0">SD 1.5 (70)</tspan></text>
+<text x="940" y="285" font-family="Arial" font-size="11" fill="#6b7280">29 hidden series (429 total)</text>
 <text x="90" y="407.0" font-family="Arial" font-size="15" font-weight="700">Checkpoint - Earliest observed version per model</text>
 <rect data-quality="unknown" x="90.0" y="421.0" width="15.8" height="230" fill="#f3f4f6" opacity="0.55"/>
 <rect data-quality="unknown" x="105.8" y="421.0" width="31.5" height="230" fill="#f3f4f6" opacity="0.55"/>
@@ -131,7 +131,7 @@
 <polyline fill="none" stroke="#4f46e5" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,645.5 121.5,645.5 153.1,651.0 184.6,645.5 216.2,645.5 247.7,642.7 279.2,651.0 310.8,651.0 342.3,651.0 373.8,645.5 405.4,648.2 436.9,651.0 468.5,651.0 500.0,645.5 531.5,651.0 563.1,648.2 594.6,651.0 626.2,645.5 657.7,642.7 689.2,637.1 720.8,645.5 752.3,648.2 783.8,634.4 815.4,648.2 846.9,651.0 878.5,651.0 910.0,648.2"/>
 <line x1="940" y1="551" x2="962" y2="551" stroke="#4f46e5" stroke-width="3"/>
 <text x="972" y="555" font-family="Arial" font-size="11"><tspan x="972" dy="0">SD 1.5 (38)</tspan></text>
-<text x="940" y="571" font-family="Arial" font-size="11" fill="#6b7280">27 hidden series (182 total)</text>
+<text x="940" y="571" font-family="Arial" font-size="11" fill="#6b7280">27 hidden series (183 total)</text>
 <text x="90" y="693.0" font-family="Arial" font-size="15" font-weight="700">LORA - Version publications</text>
 <rect data-quality="unknown" x="90.0" y="707.0" width="15.8" height="230" fill="#f3f4f6" opacity="0.55"/>
 <rect data-quality="unknown" x="105.8" y="707.0" width="31.5" height="230" fill="#f3f4f6" opacity="0.55"/>

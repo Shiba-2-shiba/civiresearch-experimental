@@ -41,8 +41,8 @@ grouped,Checkpoint,MOSS Image,MOSS Image,197,yes
 ungrouped,Checkpoint,MageFlow,,9,yes
 ungrouped,Checkpoint,Ming Image Design 0.1,,1,yes
 ungrouped,Checkpoint,Ming Image Design Layer 0.1,,1,yes
-ungrouped,Checkpoint,MiniMax H3,,73,yes
-ungrouped,Checkpoint,MiniMax H3 Image,,1,yes
+ungrouped,Checkpoint,MiniMax H3,,70,yes
+ungrouped,Checkpoint,MiniMax H3 Image,,5,yes
 ungrouped,Checkpoint,MiniMax Music 3,,1,yes
 ungrouped,Checkpoint,Mochi,,5,yes
 ungrouped,Checkpoint,Nano Banana,,3,yes
@@ -96,7 +96,7 @@ grouped,Checkpoint,ZImageBase,Z-Image,115,yes
 grouped,Checkpoint,ZImageTurbo,Z-Image,456,yes
 grouped,LORA,ACE Audio,Legacy,153,yes
 ungrouped,LORA,ANIMA,,67,yes
-grouped,LORA,Anima,Anima,33230,yes
+grouped,LORA,Anima,Anima,33232,yes
 ungrouped,LORA,AuraFlow,,1,yes
 ungrouped,LORA,Boogu,,37,yes
 grouped,LORA,Chroma,Legacy,158,yes
@@ -119,10 +119,10 @@ grouped,LORA,HiDream,Hi-Dream O1,11,yes
 grouped,LORA,HiDream-O1,Hi-Dream O1,59,yes
 grouped,LORA,Hunyuan Video,Legacy,31,yes
 ungrouped,LORA,Ideogram 4.0,,58,yes
-grouped,LORA,Illustrious,Illustrious,40946,yes
+grouped,LORA,Illustrious,Illustrious,40947,yes
 grouped,LORA,Illustrious 0.1,Illustrious,3,yes
 grouped,LORA,Kolors,Legacy,1,yes
-ungrouped,LORA,Krea 2,,12232,yes
+ungrouped,LORA,Krea 2,,12236,yes
 ungrouped,LORA,Krea 2 Turbo,,254,yes
 ungrouped,LORA,LTXV,,1,yes
 grouped,LORA,LTXV 2.3,LTXV2.3,150,yes
@@ -130,11 +130,11 @@ ungrouped,LORA,LTXV 2.5,,49,yes
 grouped,LORA,LTXV2,Legacy,13,yes
 ungrouped,LORA,Lens,,9,yes
 ungrouped,LORA,Lumina,,2,yes
-grouped,LORA,MOSS Image,MOSS Image,2659,yes
+grouped,LORA,MOSS Image,MOSS Image,2660,yes
 grouped,LORA,MOSS Image Base,MOSS Image,4,yes
 ungrouped,LORA,MageFlow,,6,yes
 ungrouped,LORA,MiniMax H3,,743,yes
-ungrouped,LORA,MiniMax H3 Image,,20,yes
+ungrouped,LORA,MiniMax H3 Image,,21,yes
 ungrouped,LORA,Muse Image,,1,yes
 grouped,LORA,NoobAI,NoobAI,1701,yes
 grouped,LORA,Other,Legacy,190,yes

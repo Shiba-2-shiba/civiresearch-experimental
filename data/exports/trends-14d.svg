@@ -2,7 +2,7 @@
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="90" y="30" font-family="Arial" font-size="20" font-weight="700">Civitai publication trends — 14d</text>
 <text x="90" y="51" font-family="Arial" font-size="12" fill="#4b5563">Counts use modelVersion.publishedAt; day buckets; pinned groups consume the series limit.</text>
-<text x="90" y="68" font-family="Arial" font-size="11" fill="#4b5563">measurement 2026-05-18 · anchor 2026-11-22 · generated 2026-11-22T20:51:25+00:00</text>
+<text x="90" y="68" font-family="Arial" font-size="11" fill="#4b5563">measurement 2026-05-18 · anchor 2026-11-22 · generated 2026-11-22T21:07:10+00:00</text>
 <text x="90" y="86" font-family="Arial" font-size="12" fill="#b45309">Coverage: 14 partial (yellow), 0 unknown (gray); unverified counts are lower bounds. 0 means no recorded publications, not a verified absence.</text>
 <text x="90" y="121.0" font-family="Arial" font-size="15" font-weight="700">Checkpoint - Version publications</text>
 <rect data-quality="partial" x="90.0" y="135.0" width="31.5" height="230" fill="#fef3c7" opacity="0.55"/>
@@ -51,10 +51,10 @@
 <polyline fill="none" stroke="#6622aa" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,355.4 153.1,355.4 216.2,365.0 279.2,365.0 342.3,345.8 405.4,355.4 468.5,355.4 531.5,365.0 594.6,365.0 657.7,326.7 720.8,365.0 783.8,365.0 846.9,365.0 910.0,365.0"/>
 <line x1="940" y1="249" x2="962" y2="249" stroke="#6622aa" stroke-width="3"/>
 <text x="972" y="253" font-family="Arial" font-size="11"><tspan x="972" dy="0">Legacy (10)</tspan></text>
-<polyline fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,345.8 153.1,365.0 216.2,317.1 279.2,345.8 342.3,365.0 405.4,365.0 468.5,365.0 531.5,365.0 594.6,365.0 657.7,365.0 720.8,365.0 783.8,355.4 846.9,365.0 910.0,365.0"/>
+<polyline fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,345.8 153.1,365.0 216.2,345.8 279.2,345.8 342.3,365.0 405.4,365.0 468.5,365.0 531.5,365.0 594.6,365.0 657.7,365.0 720.8,365.0 783.8,355.4 846.9,365.0 910.0,365.0"/>
 <line x1="940" y1="265" x2="962" y2="265" stroke="#0f766e" stroke-width="3"/>
-<text x="972" y="269" font-family="Arial" font-size="11"><tspan x="972" dy="0">MiniMax H3 (10)</tspan></text>
-<text x="940" y="285" font-family="Arial" font-size="11" fill="#6b7280">8 hidden series (19 total)</text>
+<text x="972" y="269" font-family="Arial" font-size="11"><tspan x="972" dy="0">MiniMax H3 (7)</tspan></text>
+<text x="940" y="285" font-family="Arial" font-size="11" fill="#6b7280">8 hidden series (23 total)</text>
 <text x="90" y="407.0" font-family="Arial" font-size="15" font-weight="700">Checkpoint - Earliest observed version per model</text>
 <rect data-quality="partial" x="90.0" y="421.0" width="31.5" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="121.5" y="421.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
@@ -102,10 +102,10 @@
 <polyline fill="none" stroke="#6622aa" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,651.0 153.1,651.0 216.2,651.0 279.2,651.0 342.3,631.0 405.4,641.0 468.5,641.0 531.5,651.0 594.6,651.0 657.7,641.0 720.8,651.0 783.8,651.0 846.9,651.0 910.0,651.0"/>
 <line x1="940" y1="535" x2="962" y2="535" stroke="#6622aa" stroke-width="3"/>
 <text x="972" y="539" font-family="Arial" font-size="11"><tspan x="972" dy="0">Legacy (5)</tspan></text>
-<polyline fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,651.0 153.1,651.0 216.2,621.0 279.2,641.0 342.3,651.0 405.4,651.0 468.5,651.0 531.5,651.0 594.6,651.0 657.7,651.0 720.8,651.0 783.8,651.0 846.9,651.0 910.0,651.0"/>
+<polyline fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="90.0,651.0 153.1,651.0 216.2,631.0 279.2,641.0 342.3,651.0 405.4,651.0 468.5,651.0 531.5,651.0 594.6,651.0 657.7,651.0 720.8,651.0 783.8,651.0 846.9,651.0 910.0,651.0"/>
 <line x1="940" y1="551" x2="962" y2="551" stroke="#0f766e" stroke-width="3"/>
-<text x="972" y="555" font-family="Arial" font-size="11"><tspan x="972" dy="0">MiniMax H3 (4)</tspan></text>
-<text x="940" y="571" font-family="Arial" font-size="11" fill="#6b7280">6 hidden series (6 total)</text>
+<text x="972" y="555" font-family="Arial" font-size="11"><tspan x="972" dy="0">MiniMax H3 (3)</tspan></text>
+<text x="940" y="571" font-family="Arial" font-size="11" fill="#6b7280">6 hidden series (8 total)</text>
 <text x="90" y="693.0" font-family="Arial" font-size="15" font-weight="700">LORA - Version publications</text>
 <rect data-quality="partial" x="90.0" y="707.0" width="31.5" height="230" fill="#fef3c7" opacity="0.55"/>
 <rect data-quality="partial" x="121.5" y="707.0" width="63.1" height="230" fill="#fef3c7" opacity="0.55"/>
