@@ -1,6 +1,6 @@
 status,model_type,base_model_raw,base_model_group,version_count,present_in_daily_counts
 grouped,Checkpoint,ACE Audio,Legacy,9,yes
-grouped,Checkpoint,Anima,Anima,1398,yes
+grouped,Checkpoint,Anima,Anima,1401,yes
 ungrouped,Checkpoint,AuraFlow,,7,yes
 ungrouped,Checkpoint,Boogu,,13,yes
 grouped,Checkpoint,Chroma,Legacy,49,yes
@@ -25,11 +25,11 @@ grouped,Checkpoint,HiDream-O1,Hi-Dream O1,15,yes
 ungrouped,Checkpoint,Hunyuan 1,,7,yes
 grouped,Checkpoint,Hunyuan Video,Legacy,40,yes
 ungrouped,Checkpoint,Ideogram 4.0,,8,yes
-grouped,Checkpoint,Illustrious,Illustrious,5343,yes
+grouped,Checkpoint,Illustrious,Illustrious,5363,yes
 ungrouped,Checkpoint,Imagen4,,1,yes
 ungrouped,Checkpoint,Kling,,4,yes
 grouped,Checkpoint,Kolors,Legacy,19,yes
-ungrouped,Checkpoint,Krea 2,,597,yes
+ungrouped,Checkpoint,Krea 2,,599,yes
 ungrouped,Checkpoint,Krea 2 Turbo,,163,yes
 ungrouped,Checkpoint,LTXV,,29,yes
 grouped,Checkpoint,LTXV 2.3,LTXV2.3,64,yes
@@ -37,11 +37,11 @@ ungrouped,Checkpoint,LTXV 2.5,,11,yes
 grouped,Checkpoint,LTXV2,Legacy,8,yes
 ungrouped,Checkpoint,Lens,,2,yes
 ungrouped,Checkpoint,Lumina,,19,yes
-grouped,Checkpoint,MOSS Image,MOSS Image,203,yes
+grouped,Checkpoint,MOSS Image,MOSS Image,208,yes
 ungrouped,Checkpoint,MageFlow,,9,yes
 ungrouped,Checkpoint,Ming Image Design 0.1,,1,yes
 ungrouped,Checkpoint,Ming Image Design Layer 0.1,,1,yes
-ungrouped,Checkpoint,MiniMax H3,,70,yes
+ungrouped,Checkpoint,MiniMax H3,,71,yes
 ungrouped,Checkpoint,MiniMax H3 Image,,5,yes
 ungrouped,Checkpoint,MiniMax Music 3,,1,yes
 ungrouped,Checkpoint,Mochi,,5,yes
@@ -59,7 +59,7 @@ grouped,Checkpoint,Qwen,Qwen,192,yes
 grouped,Checkpoint,Qwen 2,Qwen,6,yes
 ungrouped,Checkpoint,Qwen 2.1,,35,yes
 ungrouped,Checkpoint,SD 1.4,,5,yes
-grouped,Checkpoint,SD 1.5,SD 1.5,7113,yes
+grouped,Checkpoint,SD 1.5,SD 1.5,7114,yes
 ungrouped,Checkpoint,SD 1.5 Hyper,,16,yes
 grouped,Checkpoint,SD 1.5 LCM,Legacy,86,yes
 ungrouped,Checkpoint,SD 2.0,,4,yes
@@ -96,14 +96,14 @@ grouped,Checkpoint,ZImageBase,Z-Image,116,yes
 grouped,Checkpoint,ZImageTurbo,Z-Image,461,yes
 grouped,LORA,ACE Audio,Legacy,153,yes
 ungrouped,LORA,ANIMA,,67,yes
-grouped,LORA,Anima,Anima,33461,yes
+grouped,LORA,Anima,Anima,33595,yes
 ungrouped,LORA,AuraFlow,,1,yes
-ungrouped,LORA,Boogu,,37,yes
+ungrouped,LORA,Boogu,,38,yes
 grouped,LORA,Chroma,Legacy,158,yes
 grouped,LORA,Ernie,Ernie,203,yes
 ungrouped,LORA,Fibo 2.0,,1,yes
 ungrouped,LORA,Flux 1.0,,4,yes
-grouped,LORA,Flux.1 D,Flux,2663,yes
+grouped,LORA,Flux.1 D,Flux,2678,yes
 ungrouped,LORA,Flux.1 Kontext,,14,yes
 grouped,LORA,Flux.1 Krea,Flux,242,yes
 grouped,LORA,Flux.1 S,Flux,22,yes
@@ -111,7 +111,7 @@ grouped,LORA,Flux.2 D,Legacy,56,yes
 grouped,LORA,Flux.2 Klein 4B,Legacy,120,yes
 grouped,LORA,Flux.2 Klein 4B-base,Legacy,102,yes
 grouped,LORA,Flux.2 Klein 9B,FLUX2 Klein 9B,638,yes
-grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,568,yes
+grouped,LORA,Flux.2 Klein 9B-base,FLUX2 Klein 9B,571,yes
 ungrouped,LORA,Flux.3,,6,yes
 ungrouped,LORA,Flux.3 Klein,,34,yes
 ungrouped,LORA,Flux.3 Klein-base,,10,yes
@@ -119,36 +119,36 @@ grouped,LORA,HiDream,Hi-Dream O1,11,yes
 grouped,LORA,HiDream-O1,Hi-Dream O1,59,yes
 grouped,LORA,Hunyuan Video,Legacy,31,yes
 ungrouped,LORA,Ideogram 4.0,,58,yes
-grouped,LORA,Illustrious,Illustrious,41254,yes
+grouped,LORA,Illustrious,Illustrious,41438,yes
 grouped,LORA,Illustrious 0.1,Illustrious,3,yes
 grouped,LORA,Kolors,Legacy,1,yes
-ungrouped,LORA,Krea 2,,12361,yes
-ungrouped,LORA,Krea 2 Turbo,,261,yes
+ungrouped,LORA,Krea 2,,12437,yes
+ungrouped,LORA,Krea 2 Turbo,,267,yes
 ungrouped,LORA,LTXV,,1,yes
 grouped,LORA,LTXV 2.3,LTXV2.3,150,yes
 ungrouped,LORA,LTXV 2.5,,50,yes
 grouped,LORA,LTXV2,Legacy,13,yes
 ungrouped,LORA,Lens,,9,yes
 ungrouped,LORA,Lumina,,2,yes
-grouped,LORA,MOSS Image,MOSS Image,2749,yes
+grouped,LORA,MOSS Image,MOSS Image,2839,yes
 grouped,LORA,MOSS Image Base,MOSS Image,4,yes
 ungrouped,LORA,MageFlow,,6,yes
-ungrouped,LORA,MiniMax H3,,754,yes
-ungrouped,LORA,MiniMax H3 Image,,40,yes
+ungrouped,LORA,MiniMax H3,,757,yes
+ungrouped,LORA,MiniMax H3 Image,,43,yes
 ungrouped,LORA,Muse Image,,1,yes
-grouped,LORA,NoobAI,NoobAI,1707,yes
-grouped,LORA,Other,Legacy,190,yes
+grouped,LORA,NoobAI,NoobAI,1709,yes
+grouped,LORA,Other,Legacy,191,yes
 ungrouped,LORA,PixArt E,,1,yes
 ungrouped,LORA,PixArt a,,1,yes
-grouped,LORA,Pony,Pony,5457,yes
+grouped,LORA,Pony,Pony,5487,yes
 grouped,LORA,Pony V7,Legacy,33,yes
 grouped,LORA,Qwen,Qwen,340,yes
 grouped,LORA,Qwen 2,Qwen,29,yes
 ungrouped,LORA,Qwen 2.1,,217,yes
 ungrouped,LORA,SD 1.4,,1,yes
-grouped,LORA,SD 1.5,SD 1.5,1933,yes
+grouped,LORA,SD 1.5,SD 1.5,1939,yes
 ungrouped,LORA,SD 2.0,,1,yes
-grouped,LORA,SDXL 1.0,SDXL,3761,yes
+grouped,LORA,SDXL 1.0,SDXL,3769,yes
 grouped,LORA,SDXL Hyper,Legacy,3,yes
 grouped,LORA,SDXL Lightning,Legacy,11,yes
 ungrouped,LORA,Wan Image 2.7,,2,yes
@@ -162,4 +162,4 @@ grouped,LORA,Wan Video 2.2 TI2V-5B,Wanvideo2.2,4,yes
 ungrouped,LORA,Wan Video 2.5 I2V,,1,yes
 ungrouped,LORA,Wan Video 3.0,,1,yes
 grouped,LORA,ZImageBase,Z-Image,551,yes
-grouped,LORA,ZImageTurbo,Z-Image,3425,yes
+grouped,LORA,ZImageTurbo,Z-Image,3435,yes
